@@ -1,3 +1,0 @@
-== README
-
-{<img alt='Stories in Ready' src='https://badge.waffle.io/launchacademy/food_trucks.png?label=ready&title=Ready' />}[https://waffle.io/launchacademy/food_trucks]
