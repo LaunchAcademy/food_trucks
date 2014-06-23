@@ -153,7 +153,7 @@ DEPENDENCIES
   jquery-rails
   pry
   rails (= 4.1.1)
-  rspec-rails (~> 3.0.0)
+  rspec-rails
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spring
