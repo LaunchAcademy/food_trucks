@@ -1,5 +1,4 @@
 require 'rails_helper'
-require 'spec_helper'
 
 feature 'user creates a new user', %Q{
   As a site visitor
