@@ -31,6 +31,7 @@ gem 'devise'
 group :development, :test do
   gem 'coveralls', require: false
   gem 'rspec-rails', '~> 3.0.0'
+  gem 'capybara'
   gem 'pry'
 end
 

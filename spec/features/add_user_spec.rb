@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'spec_helper'
 
 feature 'user creates a new user', %Q{
   As a site visitor
@@ -6,20 +7,8 @@ feature 'user creates a new user', %Q{
   So that other people can enjoy their crazy antics
 } do
 
-  attrs = {
-      name: 'joeSchmo',
-      email: 'joe@schmo.com',
-      photo: 'placeholder',
-      role: 'member',
-      password: 'qwer1234'
-    }
-
-
-
   scenario 'user creates a profile' do
     user = User.new(attrs)
-
-    #binding.pry
 
     visit "/users/new"
     fill_in 'Name', with: user.name
@@ -32,25 +21,7 @@ feature 'user creates a new user', %Q{
     expect(page).to have_content user.name
   end
 
-  scenario 'user passwords have to match' do
-    user = User.new(attrs)
-
-    #binding.pry
-
-    visit "/users/new"
-    fill_in 'Name', with: user.name
-    fill_in 'Email', with: user.email
-    fill_in 'password', with: user.password
-    fill_in 'verify password', with: 'foobars1'
-    click_on 'Create User'
-
-    expect(page).to have_content 'do not match'
-    expect(page).to have_content user.name
-  end
-
   scenario 'without required attributes' do
-
-    #user = User.create(attrs)
 
     visit "/users/new"
     click_on 'Create User'
@@ -59,7 +30,7 @@ feature 'user creates a new user', %Q{
     expect(page).to have_content "can't be blank"
   end
 
-  scenario 'user cannot add a user that is already in the database' do
+  scenario 'user cannot add a user with a username that already exists' do
 
     user = User.create(attrs)
 
@@ -81,7 +52,7 @@ feature 'user creates a new user', %Q{
     expect(page).to have_content "has already been taken"
   end
 
-  scenario 'user cannot add a user with an email that is already in the database' do
+  scenario 'user cannot add a user with an email that is already exists' do
 
     user = User.create(attrs)
 
@@ -103,6 +74,3 @@ feature 'user creates a new user', %Q{
     expect(page).to have_content "has already been taken"
   end
 end
-
-
-
