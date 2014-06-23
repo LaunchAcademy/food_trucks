@@ -22,5 +22,7 @@ feature 'user views food truck show page', %Q{
     expect(page).to have_content truck.description
     expect(page).to have_content truck.category
   end
+
+  # TODO user should see reviews for food truck as well
 end
 
