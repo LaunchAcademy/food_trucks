@@ -50,7 +50,7 @@ feature 'user creates a new user', %Q{
 
   scenario 'without required attributes' do
 
-    user = User.create(attrs)
+    #user = User.create(attrs)
 
     visit "/users/new"
     click_on 'Create User'
