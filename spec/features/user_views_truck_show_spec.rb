@@ -8,9 +8,9 @@ feature 'user views food truck show page', %Q{
 
   scenario 'user can see a food truck basic info' do
     attrs = {
-    name: 'stokes',
-    description: 'fire roasted pizza',
-    category: 'Pizza'
+      name: 'stokes',
+      description: 'fire roasted pizza',
+      category: 'Pizza'
     }
 
     truck = FoodTruck.new(attrs)
