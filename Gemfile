@@ -29,6 +29,7 @@ gem 'spring',        group: :development
 gem 'devise'
 
 group :development, :test do
+  gem 'coveralls', require: false
   gem 'rspec-rails', '~> 3.0.0'
   gem 'pry'
 end
