@@ -7,11 +7,11 @@ feature 'user creates a new user', %Q{
 } do
 
   attrs = {
-      name: 'joeSchmo',
-      email: 'joe@schmo.com',
-      photo: 'placeholder',
-      role: 'member',
-      password: 'qwer1234'
+  name: 'joeSchmo',
+  email: 'joe@schmo.com',
+  photo: 'placeholder',
+  role: 'member',
+  password: 'qwer1234'
     }
 
 

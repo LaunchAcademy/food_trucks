@@ -9,15 +9,15 @@ feature 'user views food truck index page', %Q{
   scenario 'user can view food trucks' do
     trucks = []
 
-    truck1 = FoodTruck.new(name: "Stoked")
+    truck1 = FoodTruck.new(name: 'Stoked')
     truck1.save
     trucks << truck1
 
-    truck2 = FoodTruck.new(name: "Meng's Kitchen")
+    truck2 = FoodTruck.new(name: 'Meng\'s Kitchen')
     truck2.save
     trucks << truck2
 
-    truck3 = FoodTruck.new(name: "Chicken and Rice Guys")
+    truck3 = FoodTruck.new(name: 'Chicken and Rice Guys')
     truck3.save
     trucks << truck3
 
@@ -28,4 +28,3 @@ feature 'user views food truck index page', %Q{
     end
   end
 end
-
