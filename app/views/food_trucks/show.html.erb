@@ -1,0 +1,15 @@
+<h1> <%= @food_truck.name %> </h1>
+
+<p><%= @food_truck.category %></p>
+<br>
+<p><%= @food_truck.description %></p>
+
+
+<h2> Reviews </h2>
+
+<% @food_truck.reviews.each do |review| %>
+  <ul>
+    <li> <%= review.rating %> </li>
+    <li> <%= review.body %> </li>
+  </ul>
+<% end %>
