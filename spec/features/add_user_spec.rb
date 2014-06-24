@@ -7,6 +7,12 @@ feature 'user creates a new user', %Q{
 } do
 
   scenario 'user creates a profile' do
+    attrs = {
+      name: 'Joe',
+      email: 'joe@schmoe.com',
+      password: 'qwerty'
+    }
+
     user = User.new(attrs)
 
     visit "/users/new"
@@ -31,6 +37,12 @@ feature 'user creates a new user', %Q{
 
   scenario 'user cannot add a user with a username that already exists' do
 
+    attrs = {
+      name: 'Joe',
+      email: 'joe@schmoe.com',
+      password: 'qwerty'
+    }
+
     user = User.create(attrs)
 
     visit "/users/new"
@@ -52,6 +64,12 @@ feature 'user creates a new user', %Q{
   end
 
   scenario 'user cannot add a user with an email that is already exists' do
+
+    attrs = {
+      name: 'Joe',
+      email: 'joe@schmoe.com',
+      password: 'qwerty'
+    }
 
     user = User.create(attrs)
 
