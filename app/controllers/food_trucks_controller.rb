@@ -1,4 +1,4 @@
-class FoodTruckController < ApplicationController
+class FoodTrucksController < ApplicationController
 
   def index
     @food_truck = FoodTruck.all

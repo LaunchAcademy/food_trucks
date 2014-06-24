@@ -9,3 +9,4 @@ class CreateFoodTrucks < ActiveRecord::Migration
     end
   end
 end
+

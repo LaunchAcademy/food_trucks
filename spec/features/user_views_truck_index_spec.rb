@@ -7,18 +7,25 @@ feature 'user views food truck index page', %Q{
 } do
 
   scenario 'user can view food trucks' do
+   attrs = {
+      name: 'stokes',
+      description: 'This is at least a fifty-character description of a food truck.',
+      category: 'Pizza'
+    }
+    attrs1 = {
+      name: 'stokes1',
+      description: 'This is at least a fifty-character description of a food truck.1',
+      category: 'Pizza1'
+    }
+
     trucks = []
 
-    truck1 = FoodTruck.create!(name: 'Stoked')
+    truck1 = FoodTruck.create!(attrs)
+    truck2 = FoodTruck.create!(attrs1)
     trucks << truck1
-
-    truck2 = FoodTruck.create!(name: 'Meng\'s Kitchen')
     trucks << truck2
 
-    truck3 = FoodTruck.create!(name: 'Chicken and Rice Guys')
-    trucks << truck3
-
-    visit '/food_trucks'
+    visit food_trucks_path
 
     trucks.each do |truck|
       expect(page).to have_content truck.name
