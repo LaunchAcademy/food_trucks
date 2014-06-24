@@ -7,29 +7,24 @@ feature 'user creates a new user', %Q{
 } do
 
   scenario 'user creates a profile' do
-    attrs = {
-      name: 'Joe',
-      email: 'joe@schmoe.com',
-      password: 'qwerty'
-    }
 
-    user = User.new(attrs)
+    user = FactoryGirl.create(:user)
 
-    visit "/users/new"
-    fill_in 'Name', with: user.name
+    visit new_user_registration_path
+    fill_in 'Username', with: user.username
     fill_in 'Email', with: user.email
     fill_in 'password', with: user.password
     fill_in 'verify password', with: user.password
-    click_on 'Create User'
+    click_on 'Sign up'
 
     expect(User.count).to eq(1)
     expect(page).to have_content 'Success'
-    expect(page).to have_content user.name
+    expect(page).to have_content user.username
   end
 
   scenario 'without required attributes' do
 
-    visit "/users/new"
+    visit new_user_registration_path
     click_on 'Create User'
 
     expect(page).to_not have_content 'Success'
@@ -38,23 +33,17 @@ feature 'user creates a new user', %Q{
 
   scenario 'user cannot add a user with a username that already exists' do
 
-    attrs = {
-      name: 'Joe',
-      email: 'joe@schmoe.com',
-      password: 'qwerty'
-    }
+    user = FactoryGirl.build(:user)
 
-    user = User.create(attrs)
-
-    visit "/users/new"
-    fill_in 'Name', with: user.name
+    visit new_user_registration_path
+    fill_in 'Name', with: user.username
     fill_in 'Email', with: user.email
     fill_in 'password', with: user.password
     fill_in 'verify password', with: user.password
     click_on 'Create User'
 
-    visit "/users/new"
-    fill_in 'Name', with: user.name
+    visit new_user_registration_path
+    fill_in 'Name', with: user.username
     fill_in 'Email', with: 'random@test.com'
     fill_in 'password', with: user.password
     fill_in 'verify password', with: user.password
@@ -66,22 +55,16 @@ feature 'user creates a new user', %Q{
 
   scenario 'user cannot add a user with an email that is already exists' do
 
-    attrs = {
-      name: 'Joe',
-      email: 'joe@schmoe.com',
-      password: 'qwerty'
-    }
+    user = FactoryGirl.build(:user)
 
-    user = User.create(attrs)
-
-    visit "/users/new"
-    fill_in 'Name', with: user.name
+    visit new_user_registration_path
+    fill_in 'Name', with: user.username
     fill_in 'Email', with: user.email
     fill_in 'password', with: user.password
     fill_in 'verify password', with: user.password
     click_on 'Create User'
 
-    visit "/users/new"
+    visit new_user_registration_path
     fill_in 'Name', with: 'schmozeby'
     fill_in 'Email', with: user.email
     fill_in 'password', with: user.password
