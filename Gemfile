@@ -30,9 +30,10 @@ gem 'devise'
 
 group :development, :test do
   gem 'coveralls', require: false
+  gem 'capybara'
   gem 'rspec-rails'
   gem 'pry-rails'
-  gem 'capybara'
+  gem 'factory_girl_rails'
 end
 
 
