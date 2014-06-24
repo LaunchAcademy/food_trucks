@@ -14,11 +14,9 @@ feature 'user views food truck index page', %Q{
     }
     attrs1 = {
       name: 'stokes1',
-      description: 'This is at least a fifty-character description of a food truck.1',
+      description: 'beeeps that like to boop while booping into the beeps making sure this is long enough',
       category: 'Pizza1'
     }
-
-    trucks = []
 
     truck1 = FoodTruck.create!(attrs)
     truck2 = FoodTruck.create!(attrs1)
