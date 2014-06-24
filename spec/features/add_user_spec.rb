@@ -22,6 +22,7 @@ feature 'user creates a new user', %Q{
     fill_in 'verify password', with: user.password
     click_on 'Create User'
 
+    expect(User.count).to eq(1)
     expect(page).to have_content 'Success'
     expect(page).to have_content user.name
   end
