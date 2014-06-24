@@ -7,7 +7,7 @@ feature 'user views food truck index page', %Q{
 } do
 
   scenario 'user can view food trucks' do
-   attrs = {
+    attrs = {
       name: 'stokes',
       description: 'This is at least a fifty-character description of a food truck.',
       category: 'Pizza'
@@ -22,13 +22,10 @@ feature 'user views food truck index page', %Q{
 
     truck1 = FoodTruck.create!(attrs)
     truck2 = FoodTruck.create!(attrs1)
-    trucks << truck1
-    trucks << truck2
 
     visit food_trucks_path
 
-    trucks.each do |truck|
-      expect(page).to have_content truck.name
-    end
+    expect(page).to have_content truck1.name
+    expect(page).to have_content truck2.name
   end
 end
