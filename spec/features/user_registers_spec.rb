@@ -11,10 +11,9 @@ feature 'user creates a new user', %Q{
     user = FactoryGirl.create(:user)
 
     visit new_user_registration_path
-    fill_in 'Username', with: user.username
     fill_in 'Email', with: user.email
-    fill_in 'password', with: user.password
-    fill_in 'verify password', with: user.password
+    fill_in 'Password', with: user.password
+    fill_in 'Password confirmation', with: user.password
     click_on 'Sign up'
 
     expect(User.count).to eq(1)
@@ -25,32 +24,10 @@ feature 'user creates a new user', %Q{
   scenario 'without required attributes' do
 
     visit new_user_registration_path
-    click_on 'Create User'
+    click_on 'Sign up'
 
     expect(page).to_not have_content 'Success'
     expect(page).to have_content "can't be blank"
-  end
-
-  scenario 'user cannot add a user with a username that already exists' do
-
-    user = FactoryGirl.build(:user)
-
-    visit new_user_registration_path
-    fill_in 'Name', with: user.username
-    fill_in 'Email', with: user.email
-    fill_in 'password', with: user.password
-    fill_in 'verify password', with: user.password
-    click_on 'Create User'
-
-    visit new_user_registration_path
-    fill_in 'Name', with: user.username
-    fill_in 'Email', with: 'random@test.com'
-    fill_in 'password', with: user.password
-    fill_in 'verify password', with: user.password
-    click_on 'Create User'
-
-    expect(page).to_not have_content 'Success'
-    expect(page).to have_content "has already been taken"
   end
 
   scenario 'user cannot add a user with an email that is already exists' do
@@ -58,18 +35,16 @@ feature 'user creates a new user', %Q{
     user = FactoryGirl.build(:user)
 
     visit new_user_registration_path
-    fill_in 'Name', with: user.username
     fill_in 'Email', with: user.email
     fill_in 'password', with: user.password
     fill_in 'verify password', with: user.password
-    click_on 'Create User'
+    click_on 'Sign up'
 
     visit new_user_registration_path
-    fill_in 'Name', with: 'schmozeby'
     fill_in 'Email', with: user.email
     fill_in 'password', with: user.password
     fill_in 'verify password', with: user.password
-    click_on 'Create User'
+    click_on 'Sign up'
 
     expect(page).to_not have_content 'Success'
     expect(page).to have_content "has already been taken"
