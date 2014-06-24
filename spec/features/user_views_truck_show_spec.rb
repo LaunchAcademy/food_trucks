@@ -33,8 +33,8 @@ feature 'user views food truck show page', %Q{
     truck = FoodTruck.create!(attrs)
 
     user_attrs = {
-      email: "foo@bar.net",
-      password: "foobar92"
+      email: 'foo@bar.net',
+      password: 'foobar92'
     }
 
     test_user = User.create!(user_attrs)
@@ -45,7 +45,6 @@ feature 'user views food truck show page', %Q{
       body: 'This is at least a fifty-character review of a food truck.',
       food_truck: truck
     }
-
 
     review = Review.create!(review_attrs)
 
