@@ -15,7 +15,7 @@ feature 'user views food truck show page', %Q{
 
     truck = FoodTruck.create!(attrs)
 
-    visit "/food_trucks/#{truck.id}"
+    visit food_truck_path(truck)
 
     expect(page).to have_content truck.name
     expect(page).to have_content truck.description
@@ -23,17 +23,28 @@ feature 'user views food truck show page', %Q{
   end
 
   scenario 'user can see food truck reviews' do
-    review_attrs = {
-    rating: 3,
-    body: 'This is at least a fifty-character review of a food truck.',
-    food_truck_id: truck.id
+
+    attrs = {
+      name: 'stokes',
+      description: 'This is at least a fifty-character description of a food truck.',
+      category: 'Pizza'
     }
+
+    truck = FoodTruck.create!(attrs)
+
+    review_attrs = {
+      rating: 3,
+      user_id: 1,
+      body: 'This is at least a fifty-character review of a food truck.',
+      food_truck_id: truck.id
+    }
+
 
     review = Review.create!(review_attrs)
 
     visit food_truck_path(truck)
 
-    expect(page).to have_content truck.review.rating
-    expect(page).to have_content truck.review.body
+    expect(page).to have_content review.rating
+    expect(page).to have_content review.body
   end
 end
