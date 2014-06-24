@@ -1,5 +1,6 @@
+<h2>Food Trucks List</h2>
 <ul>
-<% @food_truck.each do |truck| %>
-  <li> <%= truck.name %> </li>
-<% end %>
+  <% @food_trucks.each do |truck| %>
+    <li> <%= truck.name %> </li>
+  <% end %>
 </ul>

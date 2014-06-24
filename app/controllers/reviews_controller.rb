@@ -1,12 +1,13 @@
 class ReviewsController < ApplicationController
   def create
-    @food_truck = FoodTruck.find(prarams[:food_truck_id])
+    @food_truck = FoodTruck.find(params[:food_truck_id])
     @review = Review.new(review_params)
 
     @review.food_truck = @food_truck
 
     if @review.save
       flash.now[:notice] = 'Your review was saved!'
+      binding.pry
       redirect_to food_truck_path(@food_truck)
     else
       flash.now[:notice] = 'Your review could not be saved'

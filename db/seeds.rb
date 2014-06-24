@@ -8,4 +8,4 @@
 
 food_trucks = FoodTruck.create([{name: 'stokes1', description: 'This is at least a fifty-character description of a food truck.1', category: 'Pizza1'}])
 
-reviews = Review.create([{user_id: 1, rating: 4, description: 'This is at least a fifty-character description of a review'}])
+reviews = Review.create([{user_id: 1, rating: 4, body: 'This is at least a fifty-character description of a review'}])
