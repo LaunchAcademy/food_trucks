@@ -8,7 +8,7 @@ feature 'user creates a new user', %Q{
 
   scenario 'user creates a profile' do
 
-    user = FactoryGirl.create(:user)
+    user = FactoryGirl.build(:user)
 
     visit new_user_registration_path
     fill_in 'Email', with: user.email
@@ -17,8 +17,7 @@ feature 'user creates a new user', %Q{
     click_on 'Sign up'
 
     expect(User.count).to eq(1)
-    expect(page).to have_content 'Success'
-    expect(page).to have_content user.username
+    expect(page).to have_content 'successfully'
   end
 
   scenario 'without required attributes' do
@@ -26,7 +25,7 @@ feature 'user creates a new user', %Q{
     visit new_user_registration_path
     click_on 'Sign up'
 
-    expect(page).to_not have_content 'Success'
+    expect(page).to_not have_content 'successfully'
     expect(page).to have_content "can't be blank"
   end
 
@@ -36,14 +35,16 @@ feature 'user creates a new user', %Q{
 
     visit new_user_registration_path
     fill_in 'Email', with: user.email
-    fill_in 'password', with: user.password
-    fill_in 'verify password', with: user.password
+    fill_in 'Password', with: user.password
+    fill_in 'Password confirmation', with: user.password
     click_on 'Sign up'
+
+    click_on 'Logout'
 
     visit new_user_registration_path
     fill_in 'Email', with: user.email
-    fill_in 'password', with: user.password
-    fill_in 'verify password', with: user.password
+    fill_in 'Password', with: user.password
+    fill_in 'Password confirmation', with: user.password
     click_on 'Sign up'
 
     expect(page).to_not have_content 'Success'
