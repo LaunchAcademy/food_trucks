@@ -8,6 +8,6 @@ class CreateReviews < ActiveRecord::Migration
 
       t.timestamps
     end
-    add_index :reviews, [:user_id, :food_truck_id], :unique => true
+    add_index :reviews, [:user_id, :food_truck_id], unique: true
   end
 end

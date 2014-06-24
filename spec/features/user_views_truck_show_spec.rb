@@ -13,8 +13,7 @@ feature 'user views food truck show page', %Q{
       category: 'Pizza'
     }
 
-    truck = FoodTruck.new(attrs)
-    truck.save
+    truck = FoodTruck.create!(attrs)
 
     visit "/food_trucks/#{truck.id}"
 
@@ -30,10 +29,9 @@ feature 'user views food truck show page', %Q{
     food_truck_id: truck.id
     }
 
-    review = Review.new(review_attrs)
-    review.save
+    review = Review.create!(review_attrs)
 
-    visit "/food_trucks/#{truck.id}"
+    visit food_truck_path(truck)
 
     expect(page).to have_content truck.review.rating
     expect(page).to have_content truck.review.body
