@@ -1,0 +1,2 @@
+module FoodTruckHelper
+end
