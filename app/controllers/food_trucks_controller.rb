@@ -1,6 +1,6 @@
 class FoodTrucksController < ApplicationController
   def index
-    @food_trucks = FoodTruck.all.limit(10)
+    @food_trucks = FoodTruck.order(:created_at).page params[:page]
   end
 
   def show
