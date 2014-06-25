@@ -13,3 +13,33 @@
     <li> <%= review.body %> </li>
   </ul>
 <% end %>
+
+<h3>Post new Review</h3>
+<%= form_for [@food_truck, @review] do |f| %>
+  <% if @review.errors.any? %>
+    <ul>
+      <% @review.errors.full_messages.each do |msg| %>
+        <li> <%= msg %> </li>
+      <% end %>
+    </ul>
+  <% end %>
+
+  <%= f.label :rating %>
+  <br>
+  <%= f.label :rating, 'It was Not Good', value: 1 %>
+  <%= f.radio_button :rating, 1 %>
+  <%= f.label :rating, 'It was OK', value: 2 %>
+  <%= f.radio_button :rating, 2 %>
+  <%= f.label :rating, 'It was Good', value: 3 %>
+  <%= f.radio_button :rating, 3 %>
+  <%= f.label :rating, 'Really Good', value: 4 %>
+  <%= f.radio_button :rating, 4 %>
+  <%= f.label :rating, 'Fantastic', value: 5 %>
+  <%= f.radio_button :rating, 5 %>
+<br>
+  <%= f.label :body %>
+  <%= f.text_area :body %>
+
+  <%= f.submit 'Submit' %>
+
+<% end %>

@@ -1,9 +1,10 @@
 class FoodTrucksController < ApplicationController
   def index
-    @food_truck = FoodTruck.all
+    @food_trucks = FoodTruck.all.limit(10)
   end
 
   def show
     @food_truck = FoodTruck.find(params[:id])
+    @review = Review.new
   end
 end
