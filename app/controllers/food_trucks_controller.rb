@@ -1,6 +1,6 @@
 class FoodTrucksController < ApplicationController
   def index
-    @food_trucks = FoodTruck.all
+    @food_trucks = FoodTruck.all.limit(10)
   end
 
   def show
