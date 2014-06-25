@@ -14,10 +14,8 @@ feature 'user destroys a review', %Q{
     review = FactoryGirl.create(:review, food_truck: food_truck)
     review2 = FactoryGirl.create(:review, food_truck: food_truck)
 
-    save_and_open_page
     visit food_truck_path(food_truck)
     click_on "delete-review-#{review.id}"
-    save_and_open_page
 
     expect(page).to have_content('Review deleted!')
     expect(page).to_not have_content(review.body)

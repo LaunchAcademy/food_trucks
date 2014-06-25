@@ -20,8 +20,11 @@ feature 'user creates a new review for a truck', %Q{
     food_truck = FactoryGirl.create(:food_truck)
     review = FactoryGirl.create(:review)
     visit food_truck_path(food_truck)
-    choose ('Fantastic')
-    fill_in ('review_body'), with: review.body
+
+    within("#posting-review") do
+      choose ('Fantastic')
+      fill_in ('review_body'), with: review.body
+    end
 
     click_on 'Submit'
 
@@ -70,8 +73,10 @@ feature 'user creates a new review for a truck', %Q{
 
     review = FactoryGirl.create(:review)
     visit food_truck_path(food_truck)
-    choose ('Fantastic')
-    fill_in ('review_body'), with: review.body
+    within("#posting-review") do
+      choose ('Fantastic')
+      fill_in ('review_body'), with: review.body
+    end
 
     click_on 'Submit'
 
