@@ -28,6 +28,8 @@ gem 'spring',        group: :development
 
 gem 'devise'
 
+gem 'kaminari'
+
 group :development, :test do
   gem 'coveralls', require: false
   gem 'capybara'
