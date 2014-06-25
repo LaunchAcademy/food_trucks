@@ -13,7 +13,7 @@ feature 'user creates a new review for a truck', %Q{
     review.food_truck = food_truck
 
     visit food_truck_path(food_truck)
-    fill_in 'Rating', with: review.rating
+    choose(review.rating)
     fill_in 'Body', with: review.body
     click_on 'Submit'
 
