@@ -6,15 +6,19 @@ class ReviewsController < ApplicationController
     @review.food_truck = @food_truck
     @review.user = user
     if @review.save
-      flash.now[:notice] = 'Your review was saved!'
-      redirect_to food_trucks_path(@food_truck)
+      flash[:notice] = 'Your review was saved!'
+      redirect_to food_truck_path(@food_truck)
     else
-      flash.now[:notice] = 'Your review could not be saved'
+      flash[:notice] = 'Your review could not be saved'
       render 'food_trucks/show'
     end
   end
 
   def destroy
+    @review = Review.find(params[:id])
+    @review.destroy
+
+    redirect_to food_trucks_path(@food_truck)
   end
 
   def update
