@@ -1,6 +1,6 @@
 class FoodTrucksController < ApplicationController
   def index
-    @food_trucks = FoodTruck.order(:created_at).page params[:page]
+    @food_trucks = FoodTruck.order(:created_at).page(params[:page])
   end
 
   def show
