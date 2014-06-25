@@ -8,17 +8,17 @@ feature 'user destroys a review', %Q{
 
   scenario 'user deletes a review' do
     user = FactoryGirl.create(:user)
-
     sign_in_as(user)
 
-    truck = FactoryGirl.create(:food_truck)
-    review = FactoryGirl.create(:review)
+    food_truck = FactoryGirl.create(:food_truck)
+    review = FactoryGirl.create(:review, food_truck: food_truck)
 
-    visit food_truck_path(truck)
-    click_on 'Delete review'
+    save_and_open_page
+    visit food_truck_path(food_truck)
+    click_on "delete-review-#{review.id}"
+    save_and_open_page
 
     expect(page).to have_content('Review deleted!')
-    expect(page).to_not have_content(review.rating)
     expect(page).to_not have_content(review.body)
   end
 end

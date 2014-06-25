@@ -3,7 +3,7 @@ FactoryGirl.define do
     user
     food_truck
     rating 5
-    body 'This is the body and it must be 50 characters long. I like this food truck.
-      DogeDogeDogeDogeDogeDogeDogeDogeDogeDogeDogeDoge'
+    sequence(:body) { |n| "This is the body and it must be 50#{n} characters long. I like this food truck.
+      DogeDogeDogeDogeDogeDogeDogeDogeDogeDogeDogeDoge" }
   end
 end
