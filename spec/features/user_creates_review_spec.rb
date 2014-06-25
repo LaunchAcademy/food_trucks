@@ -14,6 +14,7 @@ feature 'user creates a new review for a truck', %Q{
     fill_in 'Email', with: user.email
     fill_in 'Password', with: user.password
     fill_in 'Password confirmation', with: user.password
+
     click_on 'Sign up'
 
     food_truck = FactoryGirl.create(:food_truck)
@@ -21,6 +22,7 @@ feature 'user creates a new review for a truck', %Q{
     visit food_truck_path(food_truck)
     choose ('Fantastic')
     fill_in ('review_body'), with: review.body
+
     click_on 'Submit'
 
     expect(page).to have_content 'Your review was saved!'
@@ -44,11 +46,10 @@ feature 'user creates a new review for a truck', %Q{
     click_on 'Submit'
 
     expect(page).to_not have_content 'Your review was saved!'
-    expect(page).to have_content "can't be blank"
+    expect(page).to have_content 'can\'t be blank'
   end
 
-  scenario 'review can not add a review if they have already reviewed a truck' do
-
+  scenario 'user can not add a review if they have already reviewed a truck' do
     user = FactoryGirl.build(:user)
 
     visit new_user_registration_path
@@ -56,6 +57,7 @@ feature 'user creates a new review for a truck', %Q{
     fill_in 'Email', with: user.email
     fill_in 'Password', with: user.password
     fill_in 'Password confirmation', with: user.password
+
     click_on 'Sign up'
 
     food_truck = FactoryGirl.create(:food_truck)
@@ -63,15 +65,17 @@ feature 'user creates a new review for a truck', %Q{
     visit food_truck_path(food_truck)
     choose ('Fantastic')
     fill_in ('review_body'), with: review.body
+
     click_on 'Submit'
 
     review = FactoryGirl.create(:review)
     visit food_truck_path(food_truck)
     choose ('Fantastic')
     fill_in ('review_body'), with: review.body
+
     click_on 'Submit'
 
     expect(page).to_not have_content 'Your review was saved!'
-    expect(page).to have_content "has already been taken"
+    expect(page).to have_content 'has already been taken'
   end
 end
