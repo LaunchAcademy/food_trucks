@@ -8,11 +8,12 @@ feature 'user destroys a review', %Q{
 
   scenario 'user deletes a review' do
     user = FactoryGirl.create(:user)
+    user2 = FactoryGirl.create(:user)
     sign_in_as(user)
 
     food_truck = FactoryGirl.create(:food_truck)
-    review = FactoryGirl.create(:review, food_truck: food_truck)
-    review2 = FactoryGirl.create(:review, food_truck: food_truck)
+    review = FactoryGirl.create(:review, food_truck: food_truck, user: user)
+    review2 = FactoryGirl.create(:review, food_truck: food_truck, user: user2)
 
     visit food_truck_path(food_truck)
     click_on "delete-review-#{review.id}"
