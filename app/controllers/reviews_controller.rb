@@ -19,14 +19,7 @@ class ReviewsController < ApplicationController
     if @review.destroy
       flash[:notice] = 'Review deleted!'
       redirect_to food_truck_path(@food_truck)
-    else
-      flash[:notice] = 'Oops! Something went wrong.'
-      render 'food_trucks/show'
     end
-  end
-
-  def edit
-    @review = Review.find(params[:id])
   end
 
   def update

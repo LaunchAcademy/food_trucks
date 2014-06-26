@@ -6,7 +6,6 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-
 food_truck = FoodTruck.create(name: 'stokes1', description: 'This is at least a fifty-character description of a food truck.1',
   category: 'Pizza1')
 
@@ -18,4 +17,3 @@ review = Review.create(user: user, food_truck: food_truck, rating: 4, body: 'Thi
     description: "This is at least a fifty-character description of a food truck.#{truck_number}",
     category: 'Dumplings')
 end
-
