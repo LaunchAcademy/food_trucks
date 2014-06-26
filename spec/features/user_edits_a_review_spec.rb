@@ -67,7 +67,7 @@ feature 'user edits a review', %Q(
     sign_in_as(user2)
 
     food_truck = FactoryGirl.create(:food_truck)
-    review = FactoryGirl.create(:review, food_truck: food_truck, user: user)
+    FactoryGirl.create(:review, food_truck: food_truck, user: user)
 
     visit food_truck_path(food_truck)
     expect(page).to_not have_button('Save changes')
