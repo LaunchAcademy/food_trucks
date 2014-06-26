@@ -1,6 +1,6 @@
 class FoodTrucksController < ApplicationController
   def index
-    @food_trucks = FoodTruck.order(created_at: :desc ).page(params[:page])
+    @food_trucks = FoodTruck.order(created_at: :desc).page(params[:page])
   end
 
   def show
@@ -10,6 +10,8 @@ class FoodTrucksController < ApplicationController
 
   def create
     @food_truck = FoodTruck.new(food_truck_params)
+    @food_truck.user = current_user
+
     if @food_truck.save
       redirect_to '/food_trucks'
     else
@@ -27,8 +29,28 @@ class FoodTrucksController < ApplicationController
     end
   end
 
-  def destroy
+  def edit
+    @food_truck = FoodTruck.find(params[:id])
+  end
 
+  def update
+    @food_truck = FoodTruck.find(params[:id])
+    if @food_truck.update(food_truck_params)
+      redirect_to(@food_truck)
+    else
+      flash.now[:notice] = "Uh oh! Your Food Truck could not be updated."
+      render :edit
+    end
+  end
+
+  def destroy
+    @food_truck = FoodTruck.find(params[:id])
+    if @food_truck.destroy
+      flash[:notice] = "Your Food Truck was deleted"
+      redirect_to '/'
+    else
+      flash.now[:notice] = "Uh oh! Your Food Truck could not be deleted."
+    end
   end
 
   private
@@ -36,6 +58,5 @@ class FoodTrucksController < ApplicationController
   def food_truck_params
     params.require(:food_truck).permit(:name, :category, :description)
   end
-
 
 end

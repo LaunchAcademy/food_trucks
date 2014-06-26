@@ -7,13 +7,7 @@ feature 'user views food truck show page', %Q{
 } do
 
   scenario 'user can see a food truck basic info' do
-    attrs = {
-      name: 'stokes',
-      description: 'This is at least a fifty-character description of a food truck.',
-      category: 'Pizza'
-    }
-
-    truck = FoodTruck.create!(attrs)
+    truck = FactoryGirl.create(:food_truck)
 
     visit food_truck_path(truck)
 
@@ -24,29 +18,9 @@ feature 'user views food truck show page', %Q{
 
   scenario 'user can see food truck reviews' do
 
-    attrs = {
-      name: 'stokes',
-      description: 'This is at least a fifty-character description of a food truck.',
-      category: 'Pizza'
-    }
-
-    truck = FoodTruck.create!(attrs)
-
-    user_attrs = {
-      email: 'foo@bar.net',
-      password: 'foobar92'
-    }
-
-    test_user = User.create!(user_attrs)
-
-    review_attrs = {
-      rating: 3,
-      user: test_user,
-      body: 'This is at least a fifty-character review of a food truck.',
-      food_truck: truck
-    }
-
-    review = Review.create!(review_attrs)
+    truck = FactoryGirl.create(:food_truck)
+    test_user = FactoryGirl.create(:user)
+    review = FactoryGirl.create(:review, user: test_user, food_truck: truck)
 
     visit food_truck_path(truck)
 

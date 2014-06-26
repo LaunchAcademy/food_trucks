@@ -7,19 +7,8 @@ feature 'user views food truck index page', %Q{
 } do
 
   scenario 'user can view food trucks' do
-    attrs = {
-      name: 'stokes',
-      description: 'This is at least a fifty-character description of a food truck.',
-      category: 'Pizza'
-    }
-    attrs1 = {
-      name: 'stokes1',
-      description: 'beeeps that like to boop while booping into the beeps making sure this is long enough',
-      category: 'Pizza1'
-    }
-
-    truck1 = FoodTruck.create!(attrs)
-    truck2 = FoodTruck.create!(attrs1)
+    truck1 = FactoryGirl.create(:food_truck)
+    truck2 = FactoryGirl.create(:food_truck)
 
     visit food_trucks_path
 

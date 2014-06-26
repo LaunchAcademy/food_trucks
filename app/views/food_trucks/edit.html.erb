@@ -1,0 +1,12 @@
+<%= form_for @food_truck do |f| %>
+  <%= f.label :name %>:
+  <%= f.text_field :name %><br>
+
+  <%= f.label :category %>:
+  <%= f.text_field :category %><br>
+
+  <%= f.label :description %>:
+  <%= f.text_area :description %><br>
+
+  <%= f.submit %>
+<% end %>
