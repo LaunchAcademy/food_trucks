@@ -28,8 +28,6 @@ class ReviewsController < ApplicationController
     if @review.update(review_params)
       flash[:notice] = 'Changes saved!'
       redirect_to food_truck_path(@food_truck)
-    else
-      render 'food_trucks/show'
     end
   end
 
