@@ -26,7 +26,7 @@ feature 'user adds a new truck', %Q{
 
   scenario 'user can not add a food truck if they are not signed in' do
     visit new_food_truck_path
-    expect(page).to have_content "You must be signed in to do that."
+    expect(page).to have_content 'You must be signed in to do that.'
   end
 
   scenario 'user can edit a truck they created' do

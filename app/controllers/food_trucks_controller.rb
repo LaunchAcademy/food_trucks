@@ -15,14 +15,14 @@ class FoodTrucksController < ApplicationController
     if @food_truck.save
       redirect_to '/food_trucks'
     else
-      flash.now[:notice] = "Uh oh! Your food truck could not be saved."
+      flash.now[:notice] = 'Uh oh! Your food truck could not be saved.'
       render :new
     end
   end
 
   def new
     if !user_signed_in?
-      flash[:notice] = "You must be signed in to do that."
+      flash[:notice] = 'You must be signed in to do that.'
       redirect_to '/food_trucks'
     else
       @food_truck = FoodTruck.new
@@ -38,7 +38,7 @@ class FoodTrucksController < ApplicationController
     if @food_truck.update(food_truck_params)
       redirect_to(@food_truck)
     else
-      flash.now[:notice] = "Uh oh! Your Food Truck could not be updated."
+      flash.now[:notice] = 'Uh oh! Your Food Truck could not be updated.'
       render :edit
     end
   end
@@ -46,10 +46,10 @@ class FoodTrucksController < ApplicationController
   def destroy
     @food_truck = FoodTruck.find(params[:id])
     if @food_truck.destroy
-      flash[:notice] = "Your Food Truck was deleted"
+      flash[:notice] = 'Your Food Truck was deleted'
       redirect_to '/'
     else
-      flash.now[:notice] = "Uh oh! Your Food Truck could not be deleted."
+      flash.now[:notice] = 'Uh oh! Your Food Truck could not be deleted.'
     end
   end
 
@@ -58,5 +58,4 @@ class FoodTrucksController < ApplicationController
   def food_truck_params
     params.require(:food_truck).permit(:name, :category, :description)
   end
-
 end
