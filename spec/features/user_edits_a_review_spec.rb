@@ -1,10 +1,10 @@
 require 'rails_helper'
 
-feature 'user edits a review', %Q{
+feature 'user edits a review', %Q(
   As a user
   I want to edit a review which I wrote
   So that I can make additions and correct mistakes
-} do
+) do
 
   scenario 'user successfully edits a review' do
     user = FactoryGirl.create(:user)
