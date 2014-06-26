@@ -4,3 +4,5 @@
     <li><%= link_to truck.name, food_truck_path(truck) %></li>
   <% end %>
 </ul>
+
+<%= paginate @food_trucks %>
