@@ -11,7 +11,7 @@ feature 'user edits a review', %Q(
     sign_in_as(user)
 
     food_truck = FactoryGirl.create(:food_truck)
-    review = FactoryGirl.create(:review, food_truck: food_truck)
+    review = FactoryGirl.create(:review, food_truck: food_truck, user: user)
 
     visit food_truck_path(food_truck)
     within "#editing-review-#{review.id}" do
@@ -30,7 +30,7 @@ feature 'user edits a review', %Q(
     sign_in_as(user)
 
     food_truck = FactoryGirl.create(:food_truck)
-    review = FactoryGirl.create(:review, food_truck: food_truck)
+    review = FactoryGirl.create(:review, food_truck: food_truck, user: user)
 
     visit food_truck_path(food_truck)
     within "#editing-review-#{review.id}" do
@@ -48,7 +48,7 @@ feature 'user edits a review', %Q(
     sign_in_as(user)
 
     food_truck = FactoryGirl.create(:food_truck)
-    review = FactoryGirl.create(:review, food_truck: food_truck)
+    review = FactoryGirl.create(:review, food_truck: food_truck, user: user)
 
     visit food_truck_path(food_truck)
     within "#editing-review-#{review.id}" do
@@ -59,5 +59,16 @@ feature 'user edits a review', %Q(
 
     expect(page).to_not have_content('Changes saved!')
     expect(page).to have_content('Body is too short (minimum is 50 characters)')
+  end
+
+  scenario 'user tries to edit a review which is not his/her own' do
+    user = FactoryGirl.create(:user)
+    review = FactoryGirl.create(:review)
+
+    sign_in_as(user)
+    visit food_truck_path(review.food_truck)
+
+    expect(page).to have_content(review.body)
+    expect(page).to_not have_button('Save changes')
   end
 end
