@@ -11,7 +11,7 @@ feature 'user edits a review', %Q(
     sign_in_as(user)
 
     food_truck = FactoryGirl.create(:food_truck)
-    review = FactoryGirl.create(:review, food_truck: food_truck)
+    review = FactoryGirl.create(:review, food_truck: food_truck, user: user)
 
     visit food_truck_path(food_truck)
     within "#editing-review-#{review.id}" do
@@ -30,7 +30,7 @@ feature 'user edits a review', %Q(
     sign_in_as(user)
 
     food_truck = FactoryGirl.create(:food_truck)
-    review = FactoryGirl.create(:review, food_truck: food_truck)
+    review = FactoryGirl.create(:review, food_truck: food_truck, user: user)
 
     visit food_truck_path(food_truck)
     within "#editing-review-#{review.id}" do
@@ -48,7 +48,7 @@ feature 'user edits a review', %Q(
     sign_in_as(user)
 
     food_truck = FactoryGirl.create(:food_truck)
-    review = FactoryGirl.create(:review, food_truck: food_truck)
+    review = FactoryGirl.create(:review, food_truck: food_truck, user: user)
 
     visit food_truck_path(food_truck)
     within "#editing-review-#{review.id}" do
@@ -70,11 +70,11 @@ feature 'user edits a review', %Q(
     review = FactoryGirl.create(:review, food_truck: food_truck, user: user)
 
     visit food_truck_path(food_truck)
-    within "#editing-review-#{review.id}" do
-      choose 'It was OK'
-      fill_in 'review_body', with: 'This is at least a 50-character change' +
-        'to the original review'
-    end
+    # within "#editing-review-#{review.id}" do
+    #   choose 'It was OK'
+    #   fill_in 'review_body', with: 'This is at least a 50-character change' +
+    #     'to the original review'
+    # end
     expect(page).to_not have_button('Save changes')
   end
 end

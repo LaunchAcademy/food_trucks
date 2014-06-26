@@ -1,9 +1,9 @@
 require 'rails_helper'
 
 feature 'user destroys a review', %Q{
-  As a user (eventually admin)
+  As a user
   I want to remove a review from the site
-  So that inappropriate reviews do not stay on the site
+  So that reviews of which I am no longer proud do not have to stay
 } do
 
   scenario 'user deletes a review' do
@@ -31,12 +31,6 @@ feature 'user destroys a review', %Q{
     review = FactoryGirl.create(:review, food_truck: food_truck, user: user)
 
     visit food_truck_path(food_truck)
-    within "#editing-review-#{review.id}" do
-      choose 'It was OK'
-      fill_in 'review_body', with: 'This is at least a 50-character change' +
-        'to the original review'
-    end
-    save_and_open_page
     expect(page).to_not have_button("delete-review-#{review.id}")
   end
 end
