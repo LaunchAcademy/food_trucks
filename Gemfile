@@ -30,6 +30,12 @@ gem 'devise'
 
 gem 'kaminari'
 
+gem 'carrierwave'
+
+gem 'mini_magick'
+
+gem 'fog'
+
 group :development, :test do
   gem 'coveralls', require: false
   gem 'capybara'
@@ -37,6 +43,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'factory_girl_rails'
   gem 'launchy'
+  gem 'dotenv-rails'
 end
 
 
