@@ -19,3 +19,4 @@
 
 #Ignore .env
 /.env
+/public/uploads

@@ -1,6 +1,6 @@
 <h2>Food Trucks List</h2>
 
-<%= image_tag(current_user.avatar.url) %>
+<%= current_user ? image_tag(current_user.avatar.url) : "" %>
 
 <ul>
   <% @food_trucks.each do |truck| %>
