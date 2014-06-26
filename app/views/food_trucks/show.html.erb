@@ -4,44 +4,46 @@
 <br>
 <p><%= @food_truck.description %></p>
 
-
 <h2> Reviews </h2>
-
 
 <% @food_truck.reviews.each do |review| %>
   <ul>
     <li><%= review.rating %></li>
     <li><%= review.body %></li>
-    <%= button_to 'Delete', food_truck_review_path(@food_truck, review),
-      method: :delete, data:
-      { confirm: 'Please confirm that you want to delete this review' }, id: "delete-review-#{review.id}" %>
+    <% if review.user == current_user %>
+      <%= button_to 'Delete', food_truck_review_path(@food_truck, review),
+        method: :delete, data:
+        { confirm: 'Please confirm that you want to delete this review' },
+        id: "delete-review-#{review.id}" %>
 
-    <%= form_for [@food_truck, review], html: { id: "editing-review-#{review.id}" },
-      url: food_truck_review_path(@food_truck, review),
-      method: :patch do |f| %>
-        <% if review.errors.any? %>
-          <p>There were errors with your submission:</p>
-          <ul>
-            <% review.full_messages.each do |msg| %>
-              <li><%= msg %></li>
-            <% end %>
-          </ul>
+      <%= form_for [@food_truck, review], html:
+        { id: "editing-review-#{review.id}" },
+        url: food_truck_review_path(@food_truck, review),
+        method: :patch do |f| %>
+          <% if review.errors.any? %>
+            <p>There were errors with your submission:</p>
+            <ul>
+              <% review.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+              <% end %>
+            </ul>
+          <% end %>
+
+          <%= f.label :rating, 'It was Not Good', value: 1 %>
+          <%= f.radio_button :rating, 1 %>
+          <%= f.label :rating, 'It was OK', value: 2 %>
+          <%= f.radio_button :rating, 2 %>
+          <%= f.label :rating, 'It was Good', value: 3 %>
+          <%= f.radio_button :rating, 3 %>
+          <%= f.label :rating, 'Really Good', value: 4 %>
+          <%= f.radio_button :rating, 4 %>
+          <%= f.label :rating, 'Fantastic', value: 5 %>
+          <%= f.radio_button :rating, 5 %>
+
+          <%= f.label :body %>
+          <%= f.text_area :body %>
+          <%= f.submit "Save changes" %>
         <% end %>
-
-        <%= f.label :rating, 'It was Not Good', value: 1 %>
-        <%= f.radio_button :rating, 1 %>
-        <%= f.label :rating, 'It was OK', value: 2 %>
-        <%= f.radio_button :rating, 2 %>
-        <%= f.label :rating, 'It was Good', value: 3 %>
-        <%= f.radio_button :rating, 3 %>
-        <%= f.label :rating, 'Really Good', value: 4 %>
-        <%= f.radio_button :rating, 4 %>
-        <%= f.label :rating, 'Fantastic', value: 5 %>
-        <%= f.radio_button :rating, 5 %>
-
-        <%= f.label :body %>
-        <%= f.text_area :body %>
-        <%= f.submit "Save changes" %>
       <% end %>
   </ul>
 <% end %>
