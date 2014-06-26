@@ -14,8 +14,8 @@ feature 'user adds an avatar', %Q(
     fill_in 'Password', with: user.password
     fill_in 'Password confirmation', with: user.password
 
-    attach_file 'user_avatar',File.join(Rails.root,
-     '/spec/images/fancydoge.jpg')
+    attach_file 'user_avatar',
+      File.join(Rails.root, '/spec/images/fancydoge.jpg')
 
     click_on 'Sign up'
 
