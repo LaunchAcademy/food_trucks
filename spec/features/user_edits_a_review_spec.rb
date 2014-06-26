@@ -63,13 +63,11 @@ feature 'user edits a review', %Q(
 
   scenario 'user tries to edit a review which is not his/her own' do
     user = FactoryGirl.create(:user)
-    user2 = FactoryGirl.create(:user)
-    sign_in_as(user2)
+    review = FactoryGirl.create(:review)
 
-    food_truck = FactoryGirl.create(:food_truck)
-    review = FactoryGirl.create(:review, food_truck: food_truck, user: user)
+    sign_in_as(user)
+    visit food_truck_path(review.food_truck)
 
-    visit food_truck_path(food_truck)
     expect(page).to have_content(review.body)
     expect(page).to_not have_button('Save changes')
   end
