@@ -16,7 +16,8 @@
         { confirm: 'Please confirm that you want to delete this review' },
         id: "delete-review-#{review.id}" %>
 
-      <%= form_for [@food_truck, review], html: { id: "editing-review-#{review.id}" },
+      <%= form_for [@food_truck, review], html:
+        { id: "editing-review-#{review.id}" },
         url: food_truck_review_path(@food_truck, review),
         method: :patch do |f| %>
           <% if review.errors.any? %>
