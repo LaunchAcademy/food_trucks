@@ -1,6 +1,5 @@
 class Review < ActiveRecord::Base
   validates :rating, presence: true
-  validates :body, presence: true, length: { minimum: 50 }
   validates :user, presence: true
   validates :food_truck, presence: true
   validates :user, uniqueness: { scope: :food_truck }
