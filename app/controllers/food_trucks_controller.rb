@@ -11,8 +11,7 @@ class FoodTrucksController < ApplicationController
   end
 
   def create
-    @food_truck = FoodTruck.new(food_truck_params)
-    @food_truck.user = current_user
+    @food_truck = current_user.food_trucks.build(food_truck_params)
 
     if @food_truck.save
       redirect_to '/food_trucks'
