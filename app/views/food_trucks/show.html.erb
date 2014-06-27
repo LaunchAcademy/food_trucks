@@ -4,10 +4,12 @@
 <br>
 <p><%= @food_truck.description %></p>
 
-<%= button_to 'Delete', "/admin/food_trucks/#{@food_truck.id}",
-        method: :delete, data:
-        { confirm: 'Please confirm that you want to delete this food_truck' },
-        id: "delete-truck-#{@food_truck.id}" %>
+<% if current_user && current_user.admin? %>
+  <%= button_to 'Delete', "/admin/food_trucks/#{@food_truck.id}",
+          method: :delete, data:
+          { confirm: 'Please confirm that you want to delete this food_truck' },
+          id: "delete-truck-#{@food_truck.id}" %>
+<% end %>
 
 <h2> Reviews </h2>
 
