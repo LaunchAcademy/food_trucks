@@ -14,7 +14,7 @@ class FoodTrucksController < ApplicationController
     @food_truck = current_user.food_trucks.build(food_truck_params)
 
     if @food_truck.save
-      redirect_to '/food_trucks'
+      redirect_to food_trucks_path
     else
       flash.now[:notice] = 'Uh oh! Your food truck could not be saved.'
       render :new
@@ -46,7 +46,7 @@ class FoodTrucksController < ApplicationController
     verify_authorized!(@food_truck)
     if @food_truck.destroy
       flash[:notice] = 'Your Food Truck was deleted'
-      redirect_to '/'
+      redirect_to food_trucks_path
     else
       flash.now[:notice] = 'Uh oh! Your Food Truck could not be deleted.'
     end

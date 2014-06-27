@@ -18,7 +18,7 @@ feature 'user adds a new truck', %Q{
     fill_in 'Name', with: truck.name
     fill_in 'Category', with: truck.category
     fill_in 'Description', with: truck.description
-    click_on 'Create Food truck'
+    click_on 'Submit'
 
     expect(page).to have_content truck.name
   end
@@ -26,6 +26,15 @@ feature 'user adds a new truck', %Q{
   scenario 'user can not add a food truck if they are not signed in' do
     visit new_food_truck_path
     expect(page).to have_content 'You need to sign in or sign up before continuing.'
+  end
+
+  scenario 'user tries to add a blank food truck' do
+    user = FactoryGirl.create(:user)
+    sign_in_as(user)
+
+    visit new_food_truck_path
+    click_on 'Submit'
+    expect(page).to have_content 'Uh oh! Your food truck could not be saved.'
   end
 
   scenario 'user can edit a truck they created' do
@@ -36,7 +45,7 @@ feature 'user adds a new truck', %Q{
 
     click_on 'Edit Food Truck'
     fill_in 'Name', with: 'New Truck'
-    click_on 'Update Food truck'
+    click_on 'Save changes'
 
     expect(page).to have_content 'New Truck'
   end
