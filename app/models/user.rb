@@ -10,4 +10,7 @@ class User < ActiveRecord::Base
   def is_admin?
     role == 'admin'
   end
+
+  has_many :reviews
+  has_many :food_trucks
 end

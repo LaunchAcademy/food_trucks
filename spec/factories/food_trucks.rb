@@ -3,5 +3,6 @@ FactoryGirl.define do
     name 'stokes'
     description 'This is the body and it must be 50 characters long. I like this food truck.'
     category 'Pizza'
+    user
   end
 end

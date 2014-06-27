@@ -22,7 +22,10 @@ ActiveRecord::Schema.define(version: 20140627014539) do
     t.string   "category",    null: false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
   end
+
+  add_index "food_trucks", ["user_id"], name: "index_food_trucks_on_user_id", using: :btree
 
   create_table "reviews", force: true do |t|
     t.integer  "rating",        null: false

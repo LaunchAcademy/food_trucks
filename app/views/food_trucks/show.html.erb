@@ -11,6 +11,10 @@
           id: "delete-truck-#{@food_truck.id}" %>
 <% end %>
 
+<% if current_user == @food_truck.user %>
+  <%= button_to 'Edit Food Truck', edit_food_truck_path(@food_truck), method: :get %>
+<% end %>
+
 <h2> Reviews </h2>
 
 <% @food_truck.reviews.each do |review| %>
@@ -85,3 +89,7 @@
   <%= f.submit 'Submit' %>
 
 <% end %>
+
+<p>
+  This food truck was submitted by <%= @food_truck.user.email %>.
+</p>

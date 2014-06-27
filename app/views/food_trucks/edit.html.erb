@@ -1,0 +1,20 @@
+<%= form_for @food_truck do |f| %>
+  <% if @food_truck.errors.any? %>
+    <ul>
+    <% @food_truck.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  <% end %>
+
+  <%= f.label :name %>:
+  <%= f.text_field :name %><br>
+
+  <%= f.label :category %>:
+  <%= f.text_field :category %><br>
+
+  <%= f.label :description %>:
+  <%= f.text_area :description %><br>
+
+  <%= f.submit 'Save changes' %>
+<% end %>
