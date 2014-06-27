@@ -67,14 +67,23 @@ feature 'user adds a new truck', %Q{
   end
 
   scenario 'user can not remove a truck they did not create' do
-    user = FactoryGirl.create(:user)
-    user2 = FactoryGirl.create(:user)
-    truck = FactoryGirl.create(:food_truck, user: user)
-    sign_in_as(user2)
 
+    user = FactoryGirl.create(:user)
+    truck = FactoryGirl.create(:truck)
+
+    sign_in_as(user)
     visit food_truck_path(truck)
 
     expect(page).to_not have_button 'Delete Food truck'
+
+    # user = FactoryGirl.create(:user)
+    # user2 = FactoryGirl.create(:user)
+    # truck = FactoryGirl.create(:food_truck, user: user)
+    # sign_in_as(user2)
+
+    # visit food_truck_path(truck)
+
+    # expect(page).to_not have_button 'Delete Food truck'
   end
 
 end

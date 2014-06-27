@@ -7,9 +7,9 @@ feature 'user views food truck show page', %Q{
 } do
 
   scenario 'user can see a food truck basic info' do
-    truck = FactoryGirl.create(:food_truck)
+    review = FactoryGirl.create(:review)
 
-    visit food_truck_path(truck)
+    visit food_truck_path(review.food_truck)
 
     expect(page).to have_content truck.name
     expect(page).to have_content truck.description
@@ -18,11 +18,10 @@ feature 'user views food truck show page', %Q{
 
   scenario 'user can see food truck reviews' do
 
-    truck = FactoryGirl.create(:food_truck)
     test_user = FactoryGirl.create(:user)
-    review = FactoryGirl.create(:review, user: test_user, food_truck: truck)
+    review = FactoryGirl.create(:review, user: test_user)
 
-    visit food_truck_path(truck)
+    visit food_truck_path(review.food_truck)
 
     expect(page).to have_content review.rating
     expect(page).to have_content review.body
