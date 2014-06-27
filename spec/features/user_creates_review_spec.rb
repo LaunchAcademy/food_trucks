@@ -22,8 +22,8 @@ feature 'user creates a new review for a truck', %Q{
     visit food_truck_path(food_truck)
 
     within('.new_review') do
-      choose ('Fantastic')
-      fill_in ('review_body'), with: review.body
+      choose 'Fantastic'
+      fill_in 'review_body', with: review.body
     end
 
     click_on 'Submit'
@@ -48,6 +48,7 @@ feature 'user creates a new review for a truck', %Q{
     visit food_truck_path(food_truck)
     click_on 'Submit'
 
+    expect(page).to_not have_content review.body
     expect(page).to_not have_content 'Your review was saved!'
     expect(page).to have_content 'can\'t be blank'
   end
@@ -66,16 +67,16 @@ feature 'user creates a new review for a truck', %Q{
     food_truck = FactoryGirl.create(:food_truck)
     review = FactoryGirl.create(:review)
     visit food_truck_path(food_truck)
-    choose ('Fantastic')
-    fill_in ('review_body'), with: review.body
+    choose 'Fantastic'
+    fill_in 'review_body', with: review.body
 
     click_on 'Submit'
 
     review = FactoryGirl.create(:review)
     visit food_truck_path(food_truck)
     within('.new_review') do
-      choose ('Fantastic')
-      fill_in ('review_body'), with: review.body
+      choose 'Fantastic'
+      fill_in 'review_body', with: review.body
     end
 
     click_on 'Submit'
