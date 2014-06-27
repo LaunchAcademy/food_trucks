@@ -47,8 +47,6 @@ class FoodTrucksController < ApplicationController
     if @food_truck.destroy
       flash[:notice] = 'Your Food Truck was deleted'
       redirect_to food_trucks_path
-    else
-      flash.now[:notice] = 'Uh oh! Your Food Truck could not be deleted.'
     end
   end
 
