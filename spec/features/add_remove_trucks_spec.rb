@@ -10,9 +10,8 @@ feature 'user adds a new truck', %Q{
   scenario 'user can add a food truck' do
 
     truck = FactoryGirl.build(:food_truck)
-    user = FactoryGirl.create(:user)
 
-    sign_in_as(user)
+    sign_in_as(truck.user)
 
     visit new_food_truck_path
 
@@ -26,13 +25,12 @@ feature 'user adds a new truck', %Q{
 
   scenario 'user can not add a food truck if they are not signed in' do
     visit new_food_truck_path
-    expect(page).to have_content 'You must be signed in to do that.'
+    expect(page).to have_content 'You need to sign in or sign up before continuing.'
   end
 
   scenario 'user can edit a truck they created' do
-    user = FactoryGirl.create(:user)
-    truck = FactoryGirl.create(:food_truck, user: user)
-    sign_in_as(user)
+    truck = FactoryGirl.create(:food_truck)
+    sign_in_as(truck.user)
 
     visit food_truck_path(truck)
 
@@ -44,9 +42,8 @@ feature 'user adds a new truck', %Q{
   end
 
   scenario 'user can remove a truck they created' do
-    user = FactoryGirl.create(:user)
-    truck = FactoryGirl.create(:food_truck, user: user)
-    sign_in_as(user)
+    truck = FactoryGirl.create(:food_truck)
+    sign_in_as(truck.user)
 
     visit food_truck_path(truck)
 
@@ -57,10 +54,9 @@ feature 'user adds a new truck', %Q{
 
   scenario 'user can not edit a truck they did not create' do
     user = FactoryGirl.create(:user)
-    user2 = FactoryGirl.create(:user)
-    truck = FactoryGirl.create(:food_truck, user: user)
-    sign_in_as(user2)
+    truck = FactoryGirl.create(:food_truck)
 
+    sign_in_as(user)
     visit food_truck_path(truck)
 
     expect(page).to_not have_button 'Edit Food truck'
@@ -69,21 +65,12 @@ feature 'user adds a new truck', %Q{
   scenario 'user can not remove a truck they did not create' do
 
     user = FactoryGirl.create(:user)
-    truck = FactoryGirl.create(:truck)
+    truck = FactoryGirl.create(:food_truck)
 
     sign_in_as(user)
     visit food_truck_path(truck)
 
     expect(page).to_not have_button 'Delete Food truck'
-
-    # user = FactoryGirl.create(:user)
-    # user2 = FactoryGirl.create(:user)
-    # truck = FactoryGirl.create(:food_truck, user: user)
-    # sign_in_as(user2)
-
-    # visit food_truck_path(truck)
-
-    # expect(page).to_not have_button 'Delete Food truck'
   end
 
 end

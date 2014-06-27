@@ -11,9 +11,9 @@ feature 'user views food truck show page', %Q{
 
     visit food_truck_path(review.food_truck)
 
-    expect(page).to have_content truck.name
-    expect(page).to have_content truck.description
-    expect(page).to have_content truck.category
+    expect(page).to have_content review.food_truck.name
+    expect(page).to have_content review.food_truck.description
+    expect(page).to have_content review.food_truck.category
   end
 
   scenario 'user can see food truck reviews' do
