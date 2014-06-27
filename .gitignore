@@ -18,5 +18,5 @@
 /coverage
 
 #Ignore .env
-/.env
+.env
 /public/uploads
