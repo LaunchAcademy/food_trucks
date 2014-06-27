@@ -30,8 +30,8 @@ feature 'user adds a new truck', %Q{
 
   scenario 'user can edit a truck they created' do
     truck = FactoryGirl.create(:food_truck)
-    sign_in_as(truck.user)
 
+    sign_in_as(truck.user)
     visit food_truck_path(truck)
 
     click_on 'Edit Food Truck'
