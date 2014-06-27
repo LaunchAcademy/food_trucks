@@ -7,48 +7,21 @@ feature 'user views food truck show page', %Q{
 } do
 
   scenario 'user can see a food truck basic info' do
-    attrs = {
-      name: 'stokes',
-      description: 'This is at least a fifty-character description of a food truck.',
-      category: 'Pizza'
-    }
+    review = FactoryGirl.create(:review)
 
-    truck = FoodTruck.create!(attrs)
+    visit food_truck_path(review.food_truck)
 
-    visit food_truck_path(truck)
-
-    expect(page).to have_content truck.name
-    expect(page).to have_content truck.description
-    expect(page).to have_content truck.category
+    expect(page).to have_content review.food_truck.name
+    expect(page).to have_content review.food_truck.description
+    expect(page).to have_content review.food_truck.category
   end
 
   scenario 'user can see food truck reviews' do
 
-    attrs = {
-      name: 'stokes',
-      description: 'This is at least a fifty-character description of a food truck.',
-      category: 'Pizza'
-    }
+    test_user = FactoryGirl.create(:user)
+    review = FactoryGirl.create(:review, user: test_user)
 
-    truck = FoodTruck.create!(attrs)
-
-    user_attrs = {
-      email: 'foo@bar.net',
-      password: 'foobar92'
-    }
-
-    test_user = User.create!(user_attrs)
-
-    review_attrs = {
-      rating: 3,
-      user: test_user,
-      body: 'This is at least a fifty-character review of a food truck.',
-      food_truck: truck
-    }
-
-    review = Review.create!(review_attrs)
-
-    visit food_truck_path(truck)
+    visit food_truck_path(review.food_truck)
 
     expect(page).to have_content review.rating
     expect(page).to have_content review.body
