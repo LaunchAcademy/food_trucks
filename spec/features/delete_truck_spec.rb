@@ -1,9 +1,9 @@
 require 'rails_helper'
 
-feature 'user adds a new truck', %Q{
+feature 'user adds a new truck', %Q(
   As a user
   I want to add a new truck I found.
-} do
+) do
 
   scenario 'user can remove a truck they created' do
     truck = FactoryGirl.create(:food_truck)

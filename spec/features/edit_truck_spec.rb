@@ -1,9 +1,9 @@
 require 'rails_helper'
 
-feature 'user adds a new truck', %Q{
+feature 'user adds a new truck', %Q(
   As a user
   I want to add a new truck I found.
-} do
+) do
 
   scenario 'user can not edit a truck they did not create' do
     user = FactoryGirl.create(:user)
