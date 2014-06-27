@@ -4,5 +4,10 @@ FactoryGirl.define do
     password 'qwerty1234567'
     avatar File.open(File.join(Rails.root,
       '/spec/images/fancydoge.jpg'))
+
+    trait :admin do
+      admin true
+    end
+
   end
 end

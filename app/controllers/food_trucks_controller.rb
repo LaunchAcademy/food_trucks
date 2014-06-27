@@ -9,7 +9,6 @@ class FoodTrucksController < ApplicationController
   end
 
   def destroy
-    binding.pry
     @food_truck = FoodTruck.find(params[:id])
     if @food_truck.destroy
       flash[:notice] = 'Truck deleted!'
