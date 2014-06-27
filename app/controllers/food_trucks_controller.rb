@@ -42,11 +42,12 @@ class FoodTrucksController < ApplicationController
   end
 
   def destroy
-    @food_truck = FoodTruck.find(params[:id])
-    verify_authorized!(@food_truck)
-    if @food_truck.destroy
-      flash[:notice] = 'Your Food Truck was deleted'
-      redirect_to food_trucks_path
+    if current_user.admin?
+      @food_truck = FoodTruck.find(params[:id])
+      if @food_truck.destroy
+        flash[:notice] = 'Truck deleted!'
+        redirect_to food_trucks_path
+      end
     end
   end
 
