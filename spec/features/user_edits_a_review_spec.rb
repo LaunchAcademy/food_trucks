@@ -25,42 +25,6 @@ feature 'user edits a review', %Q(
     expect(page).to_not have_content(review.body)
   end
 
-  scenario 'user tries to edit a review with a blank body' do
-    user = FactoryGirl.create(:user)
-    sign_in_as(user)
-
-    food_truck = FactoryGirl.create(:food_truck)
-    review = FactoryGirl.create(:review, food_truck: food_truck, user: user)
-
-    visit food_truck_path(food_truck)
-    within "#editing-review-#{review.id}" do
-      choose 'It was OK'
-      fill_in 'review_body', with: ''
-    end
-    click_on 'Save changes'
-
-    expect(page).to_not have_content('Changes saved!')
-    expect(page).to have_content('Body can\'t be blank')
-  end
-
-  scenario 'user tries to edit a review with too short of a body' do
-    user = FactoryGirl.create(:user)
-    sign_in_as(user)
-
-    food_truck = FactoryGirl.create(:food_truck)
-    review = FactoryGirl.create(:review, food_truck: food_truck, user: user)
-
-    visit food_truck_path(food_truck)
-    within "#editing-review-#{review.id}" do
-      choose 'It was OK'
-      fill_in 'review_body', with: 'This is a very short review'
-    end
-    click_on 'Save changes'
-
-    expect(page).to_not have_content('Changes saved!')
-    expect(page).to have_content('Body is too short (minimum is 50 characters)')
-  end
-
   scenario 'user tries to edit a review which is not his/her own' do
     user = FactoryGirl.create(:user)
     review = FactoryGirl.create(:review)
