@@ -27,12 +27,12 @@ class FoodTrucksController < ApplicationController
 
   def edit
     @food_truck = FoodTruck.find(params[:id])
-    current_user_posted?(@food_truck)
+    verify_authorized!(@food_truck)
   end
 
   def update
     @food_truck = FoodTruck.find(params[:id])
-    current_user_posted?(@food_truck)
+    verify_authorized!(@food_truck)
     if @food_truck.update(food_truck_params)
       redirect_to(@food_truck)
     else
@@ -43,7 +43,7 @@ class FoodTrucksController < ApplicationController
 
   def destroy
     @food_truck = FoodTruck.find(params[:id])
-    current_user_posted?(@food_truck)
+    verify_authorized!(@food_truck)
     if @food_truck.destroy
       flash[:notice] = 'Your Food Truck was deleted'
       redirect_to '/'
@@ -54,7 +54,7 @@ class FoodTrucksController < ApplicationController
 
   private
 
-  def current_user_posted?(food_truck)
+  def verify_authorized!(food_truck)
     if current_user != food_truck.user
       flash[:notice] = 'You did not post this food truck.'
       redirect_to food_trucks_path
