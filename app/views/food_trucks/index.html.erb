@@ -1,5 +1,5 @@
 <h2>Food Trucks List</h2>
-<% if current_user && current_user.avatar.url != nil %>
+<% if current_user && current_user.avatar.url %>
   <%= image_tag(current_user.avatar.url) %>
 <% end %>
 <ul>
