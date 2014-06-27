@@ -6,7 +6,7 @@ FactoryGirl.define do
       '/spec/images/fancydoge.jpg'))
 
     trait :admin do
-      admin true
+      role 'admin'
     end
 
   end
