@@ -42,7 +42,7 @@ class FoodTrucksController < ApplicationController
   end
 
   def destroy
-    if current_user.is_admin?
+    if current_user.admin?
       @food_truck = FoodTruck.find(params[:id])
       if @food_truck.destroy
         flash[:notice] = 'Truck deleted!'
@@ -63,5 +63,4 @@ class FoodTrucksController < ApplicationController
   def food_truck_params
     params.require(:food_truck).permit(:name, :category, :description)
   end
-
 end

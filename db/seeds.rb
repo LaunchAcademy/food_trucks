@@ -7,9 +7,11 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 user = User.create(email: 'test@test.com', password: 'test123123')
-admin_user = User.create(email: 'admin@admin.com', password: 'admin123456',role: 'admin')
+admin_user = User.create(email: 'admin@admin.com',
+  password: 'admin123456',role: 'admin')
 
-food_truck = FoodTruck.create(name: 'stokes1', description: 'This is at least a fifty-character description of a food truck.1',
+food_truck = FoodTruck.create(name: 'stokes1',
+  description: 'This is at least a fifty-character description of a food truck.1',
   category: 'Pizza1')
 
 review = Review.create(user: user.id, food_truck: food_truck, rating: 4,

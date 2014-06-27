@@ -7,7 +7,7 @@ feature 'only admin user destroys a food truck', %Q(
 ) do
 
   scenario 'admin user deletes a food truck' do
-    admin = FactoryGirl.create(:user,:admin)
+    admin = FactoryGirl.create(:user, :admin)
     sign_in_as(admin)
 
     food_truck = FactoryGirl.create(:food_truck)
