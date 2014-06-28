@@ -2,6 +2,12 @@
 <% if current_user && current_user.avatar.url %>
   <%= image_tag(current_user.avatar.url) %>
 <% end %>
+
+<% form_tag projects_path %>
+  <%= text_field_tag :search, params[:search] %>
+  <%= submit_tag "Search" %>
+<% end %>
+
 <ul>
   <% @food_trucks.each do |truck| %>
     <li><%= link_to truck.name, food_truck_path(truck) %></li>
