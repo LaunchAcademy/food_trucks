@@ -36,6 +36,8 @@ gem 'mini_magick'
 
 gem 'fog'
 
+gem 'httparty'
+
 group :development, :test do
   gem 'coveralls', require: false
   gem 'capybara'
@@ -58,4 +60,3 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-

@@ -4,7 +4,9 @@
 <% end %>
 <ul>
   <% @food_trucks.each do |truck| %>
+    <% unless truck.id == nil %>
     <li><%= link_to truck.name, food_truck_path(truck) %></li>
+    <% end %>
   <% end %>
 </ul>
 
