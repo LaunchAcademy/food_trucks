@@ -12,5 +12,5 @@ admin_user = User.create(email: 'admin@admin.com',
 
 FoodTruck.populate
 
-review = Review.create(user: user.id, food_truck: food_truck, rating: 4,
+review = Review.create(user: user.id, food_truck: FoodTruck.find(1), rating: 4,
   body: 'This is at least a fifty-character description of a review')

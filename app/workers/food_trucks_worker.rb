@@ -9,7 +9,8 @@ class FoodTrucksWorker
       unless FoodTruck.find_by(name: food_truck_info[1]['name'])
         truck = FoodTruck.create(name: food_truck_info[1]['name'],category: 'Unknown',
           description: food_truck_info[1]['description'],user_id: 1,
-          api_identifier: food_truck_info[1]['identifier'])
+          api_identifier: food_truck_info[1]['identifier'], twitter: '@' +
+          food_truck_info[1]['twitter'])
       end
     end
   end
