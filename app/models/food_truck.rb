@@ -17,4 +17,14 @@ class FoodTruck < ActiveRecord::Base
       end
     end
   end
+
+  def location
+    #two options for restructuring our DB to make API calls work well - need to either
+    #add optional column to trucks for 'identifier', so we can fill in this API call
+    #correctly, since data structure makes it impossible to call just using name
+    #or can just store schedule somehow associated to truck when we make the first
+    #API call from populate, either way
+    response = HTTParty.get("http://data.streetfoodapp.com/1.1/locations/boston/#{identifier}")
+    binding.pry
+  end
 end
