@@ -1,3 +1,5 @@
+require 'sidekiq/web'
+
 Rails.application.routes.draw do
 
   resources :food_trucks do
@@ -11,5 +13,5 @@ Rails.application.routes.draw do
   devise_for :users
 
   root to: "food_trucks#index"
-
+  mount Sidekiq::Web, at: '/sidekiq'
 end

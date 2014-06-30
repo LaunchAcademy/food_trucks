@@ -4,10 +4,8 @@
 <br>
 <p><%= @food_truck.description %></p>
 
-<% @food_truck.location.each do |truck_schedule| %>
-  <ul>
-    <li><%= "Parked at #{truck_schedule[:location]}, starting at #{truck_schedule[:start_time]}" %></li>
-  </ul>
+<% if @locations != nil %>
+  <%= @locations %>
 <% end %>
 
 <% if current_user && current_user.admin? %>

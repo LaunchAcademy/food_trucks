@@ -1,13 +1,8 @@
-class FoodTruck < ActiveRecord::Base
-  validates :name, :description, :category, presence: true
-  validates :description, length: { minimum: 50 }
-  validates :user, presence: true
+class FoodTrucksWorker
+  include Sidekiq::Worker
 
-  has_many :reviews
-  belongs_to :user
-
-  def self.populate
-    response = HTTParty.get('http://data.streetfoodapp.com/1.1/schedule/boston/')
+  def perform()
+    response = RestClient.get('http://data.streetfoodapp.com/1.1/schedule/boston/')
     food_truck_data = JSON.parse(response)
     parsable_food_truck_data = food_truck_data['vendors'].sort
     parsable_food_truck_data.each do |food_truck_info|

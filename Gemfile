@@ -36,7 +36,14 @@ gem 'mini_magick'
 
 gem 'fog'
 
-gem 'httparty'
+# gem 'httparty'
+gem 'rest-client'
+
+gem 'sidekiq'
+
+gem 'sinatra', '>= 1.3.0', require: false
+
+gem 'slim'
 
 group :development, :test do
   gem 'coveralls', require: false
@@ -44,10 +51,13 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'pry-rails'
   gem 'factory_girl_rails'
+  gem 'factory_girl_json'
   gem 'launchy'
   gem 'dotenv-rails'
+  gem 'vcr'
 end
 
+gem 'webmock', group: :test
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
