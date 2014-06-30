@@ -19,6 +19,7 @@
 
 <% @food_truck.reviews.each do |review| %>
   <ul>
+    <li>Score: <%= review.cached_votes_score %></li>
     <li><%= review.rating %></li>
     <li><%= review.body %></li>
     <% if review.user == current_user %>

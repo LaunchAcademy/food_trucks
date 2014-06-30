@@ -36,6 +36,8 @@ gem 'mini_magick'
 
 gem 'fog'
 
+gem 'acts_as_votable', '~> 0.10.0'
+
 group :development, :test do
   gem 'coveralls', require: false
   gem 'capybara'
@@ -58,4 +60,3 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
