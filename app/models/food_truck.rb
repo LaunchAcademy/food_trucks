@@ -8,7 +8,9 @@ class FoodTruck < ActiveRecord::Base
 
   def self.search(search)
     if search
-      FoodTruck.where('name LIKE ?', "%#{search}%")
+      FoodTruck.where('name ILIKE ?', "%#{search}%")
+    else
+      FoodTruck.all
     end
   end
 end

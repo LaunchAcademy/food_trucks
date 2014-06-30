@@ -2,12 +2,8 @@ class FoodTrucksController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
 
   def index
-    if params[:search]
-      @food_trucks = FoodTruck.search(params[:search]).order(created_at: :desc)
+    @food_trucks = FoodTruck.search(params[:search]).order(created_at: :desc)
         .page(params[:page])
-    else
-      @food_trucks = FoodTruck.order(created_at: :desc).page(params[:page])
-    end
   end
 
   def show
