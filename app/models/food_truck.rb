@@ -5,6 +5,7 @@ class FoodTruck < ActiveRecord::Base
 
   has_many :reviews
   belongs_to :user
+  has_many :stops
 
   def self.populate
     response = RestClient.get('http://data.streetfoodapp.com/1.1/schedule/boston/')

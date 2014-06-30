@@ -4,8 +4,10 @@
 <br>
 <p><%= @food_truck.description %></p>
 
-<% if @locations != nil %>
-  <%= @locations %>
+<% unless @food_truck.stops == nil %>
+  <% @food_truck.stops.each do |stop| %>
+    <p><%= stop.time_arrive %></p>
+  <% end %>
 <% end %>
 
 <% if current_user && current_user.admin? %>
