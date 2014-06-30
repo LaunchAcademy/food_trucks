@@ -36,7 +36,6 @@ gem 'mini_magick'
 
 gem 'fog'
 
-# gem 'httparty'
 gem 'rest-client'
 
 gem 'sidekiq'

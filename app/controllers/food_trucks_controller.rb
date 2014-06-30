@@ -10,7 +10,6 @@ class FoodTrucksController < ApplicationController
     @food_truck = FoodTruck.find(params[:id])
     @locations = LocationsWorker.perform_async(@food_truck.api_identifier)
     #@locations = @food_truck.location
-    binding.pry
     @review = Review.new
   end
 

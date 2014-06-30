@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140630201424) do
+ActiveRecord::Schema.define(version: 20140630210046) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,6 +29,12 @@ ActiveRecord::Schema.define(version: 20140630201424) do
 
   add_index "food_trucks", ["user_id"], name: "index_food_trucks_on_user_id", using: :btree
 
+  create_table "locations", force: true do |t|
+    t.string "name",      null: false
+    t.float  "latitude",  null: false
+    t.float  "longitude", null: false
+  end
+
   create_table "reviews", force: true do |t|
     t.integer  "rating",        null: false
     t.text     "body",          null: false
@@ -39,6 +45,12 @@ ActiveRecord::Schema.define(version: 20140630201424) do
   end
 
   add_index "reviews", ["user_id", "food_truck_id"], name: "index_reviews_on_user_id_and_food_truck_id", unique: true, using: :btree
+
+  create_table "stops", force: true do |t|
+    t.string "location_id",   null: false
+    t.float  "food_truck_id", null: false
+    t.float  "time_arrive",   null: false
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "",       null: false
