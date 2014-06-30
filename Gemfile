@@ -36,6 +36,8 @@ gem 'mini_magick'
 
 gem 'fog'
 
+gem 'mandrill-api'
+
 group :development, :test do
   gem 'coveralls', require: false
   gem 'capybara'
