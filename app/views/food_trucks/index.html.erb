@@ -4,7 +4,7 @@
 <% end %>
 
 <%= form_tag(food_trucks_path, method: "get", id: "search-form") do %>
-  <%= text_field_tag :search, params[:search], placeholder: "Search Users" %>
+  <%= text_field_tag :search, params[:search], placeholder: "Search Trucks" %>
   <%= submit_tag "Search" %>
 <% end %>
 

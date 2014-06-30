@@ -7,15 +7,15 @@ feature 'Login and Signup', %Q(
 ) do
 
   scenario 'user searches for food truck' do
-    food_truck1 = FactoryGirl.create(:food_truck)
-    food_truck2 = FactoryGirl.create(:food_truck)
+    pizza_truck  = FactoryGirl.create(:food_truck, name: "Pizza Truck")
+    taco_truck  = FactoryGirl.create(:food_truck, name: "Taco Truck")
 
     visit food_trucks_path
 
-    fill_in 'Search Users', with: food_truck1.name
+    fill_in 'Search Trucks', with: pizza_truck.name
     click_on 'Search'
 
-    expect(page).to have_content food_truck1.name
-    expect(page).to_not have_content food_truck2.name
+    expect(page).to have_content pizza_truck.name
+    expect(page).to_not have_content taco_truck.name
   end
 end
