@@ -1,11 +1,24 @@
-<h2>Food Trucks List</h2>
+<h2 class="cent">Welcome!</h2>
 <% if current_user && current_user.avatar.url %>
   <%= image_tag(current_user.avatar.url) %>
 <% end %>
-<ul>
-  <% @food_trucks.each do |truck| %>
-    <li><%= link_to truck.name, food_truck_path(truck) %></li>
-  <% end %>
-</ul>
+<div class="centerT">
+  <table class="table table-hover">
+    <thead>
+      <tr class="table_header">
+        <th>Food Trucks List</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @food_trucks.each do |truck| %>
+        <tr>
+          <td style="width:100%"><%= link_to truck.name, food_truck_path(truck) %></td>
+          </td>
+        </tr>
+        <% end %>
+    </tbody>
+  </table>
+</div>
+<div class="cent"><%= paginate @food_trucks %></div>
 
-<%= paginate @food_trucks %>
+
