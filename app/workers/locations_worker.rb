@@ -4,7 +4,6 @@ class LocationsWorker
   def perform(food_truck_api_identifier, food_truck_id)
     response = RestClient.get("http://data.streetfoodapp.com/1.1/locations/boston/#{food_truck_api_identifier}")
     location_data = JSON.parse response
-    #Time.at(location_info['last'].to_f)
     location_data.to_a.each do |location_info|
       place = Location.create(name: location_info['display'],
         latitude: location_info['latitude'], longitude: location_info['longitude'])
