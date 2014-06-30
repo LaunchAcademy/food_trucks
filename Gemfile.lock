@@ -70,6 +70,9 @@ GEM
     dotenv-deployment (0.0.2)
     dotenv-rails (0.11.1)
       dotenv (= 0.11.1)
+    email_spec (1.6.0)
+      launchy (~> 2.1)
+      mail (~> 2.2)
     erubis (2.7.0)
     eventmachine (1.0.3)
     excon (0.37.0)
@@ -266,6 +269,7 @@ DEPENDENCIES
   coveralls
   devise
   dotenv-rails
+  email_spec
   factory_girl_rails
   fog
   jbuilder (~> 2.0)
