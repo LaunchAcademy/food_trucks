@@ -13,5 +13,8 @@ Rails.application.routes.draw do
   devise_for :users
 
   root to: "food_trucks#index"
-  mount Sidekiq::Web, at: '/sidekiq'
+
+  if Rails.env.development?
+    mount Sidekiq::Web, at: '/sidekiq'
+  end
 end

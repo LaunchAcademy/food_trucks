@@ -20,3 +20,4 @@
 #Ignore .env
 .env
 /public/uploads
+.DS_Store

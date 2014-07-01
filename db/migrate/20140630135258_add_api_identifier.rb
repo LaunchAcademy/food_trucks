@@ -4,6 +4,6 @@ class AddApiIdentifier < ActiveRecord::Migration
   end
 
   def self.down
-    remove_column :food_trucks, :api_identifier, :string
+    remove_column :food_trucks, :api_identifier
   end
 end

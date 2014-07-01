@@ -4,6 +4,6 @@ class AddTwitterToTrucks < ActiveRecord::Migration
   end
 
   def self.down
-    remove_column :food_trucks, :twitter, :string
+    remove_column :food_trucks, :twitter
   end
 end
