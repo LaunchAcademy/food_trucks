@@ -46,8 +46,6 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'launchy'
   gem 'dotenv-rails'
-  gem 'mailcatcher'
-  gem 'email_spec'
 end
 
 
