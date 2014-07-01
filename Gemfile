@@ -38,6 +38,8 @@ gem 'fog'
 
 gem 'devise-bootstrap-views'
 
+gem 'mandrill-api'
+
 group :development, :test do
   gem 'coveralls', require: false
   gem 'capybara'
@@ -60,4 +62,3 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-

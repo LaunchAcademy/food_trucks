@@ -21,6 +21,7 @@
 <% if current_user && current_user.avatar.url %>
   <%= image_tag(current_user.avatar.url) %>
 <% end %>
+
 <div class="centerT">
   <table class="table table-hover">
     <thead>
@@ -39,4 +40,17 @@
   </table>
 </div>
 <div class="cent"><%= paginate @food_trucks %></div>
+
+
+<%= form_tag(food_trucks_path, method: "get", id: "search-form") do %>
+  <%= text_field_tag :search, params[:search], placeholder: "Search Trucks" %>
+  <%= submit_tag "Search" %>
+<% end %>
+
+<ul>
+  <% @food_trucks.each do |truck| %>
+    <li><%= link_to truck.name, food_truck_path(truck) %></li>
+  <% end %>
+</ul>
+
 

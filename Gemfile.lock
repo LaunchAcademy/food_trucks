@@ -72,7 +72,7 @@ GEM
       dotenv (= 0.11.1)
     erubis (2.7.0)
     excon (0.37.0)
-    execjs (2.2.0)
+    execjs (2.2.1)
     factory_girl (4.4.0)
       activesupport (>= 3.0.0)
     factory_girl_rails (4.4.1)
@@ -117,6 +117,9 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    mandrill-api (1.0.52)
+      excon (>= 0.16.0, < 1.0)
+      json (>= 1.7.7, < 2.0)
     method_source (0.8.2)
     mime-types (1.25.1)
     mini_magick (3.7.0)
@@ -241,6 +244,7 @@ DEPENDENCIES
   jquery-rails
   kaminari
   launchy
+  mandrill-api
   mini_magick
   pg
   pry-rails
