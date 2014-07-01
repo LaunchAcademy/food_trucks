@@ -36,6 +36,8 @@ gem 'mini_magick'
 
 gem 'fog'
 
+gem 'devise-bootstrap-views'
+
 group :development, :test do
   gem 'coveralls', require: false
   gem 'capybara'

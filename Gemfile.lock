@@ -62,6 +62,7 @@ GEM
       railties (>= 3.2.6, < 5)
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
+    devise-bootstrap-views (0.0.3)
     diff-lcs (1.2.5)
     docile (1.1.5)
     dotenv (0.11.1)
@@ -232,6 +233,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   coveralls
   devise
+  devise-bootstrap-views
   dotenv-rails
   factory_girl_rails
   fog
