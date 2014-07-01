@@ -59,6 +59,6 @@ feature 'user adds a new truck', %Q(
     fill_in 'Description', with: 'Short description here'
     click_on 'Save changes'
     expect(page).to have_content 'Description is too short ' +
-    '(minimum is 50 characters)'
+    '(minimum is 25 characters)'
   end
 end

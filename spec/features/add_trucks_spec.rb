@@ -52,6 +52,6 @@ feature 'user adds a new truck', %Q(
     visit new_food_truck_path
     click_on 'Submit'
     expect(page).to have_content 'Description is too short ' +
-    '(minimum is 50 characters)'
+    '(minimum is 25 characters)'
   end
 end

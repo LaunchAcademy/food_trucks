@@ -40,6 +40,8 @@ gem 'rest-client'
 
 gem 'sidekiq'
 
+gem 'sidetiq'
+
 gem 'sinatra', '>= 1.3.0', require: false
 
 gem 'slim'

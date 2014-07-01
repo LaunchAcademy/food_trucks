@@ -2,13 +2,11 @@ class FoodTrucksController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
 
   def index
-    FoodTrucksWorker.perform_async()
     @food_trucks = FoodTruck.order(created_at: :desc).page(params[:page])
   end
 
   def show
     @food_truck = FoodTruck.find(params[:id])
-    @locations = LocationsWorker.perform_async(@food_truck.api_identifier, @food_truck.id)
     @review = Review.new
   end
 

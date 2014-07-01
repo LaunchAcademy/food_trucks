@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20140630210046) do
     t.string   "twitter"
   end
 
+  add_index "food_trucks", ["api_identifier"], name: "index_food_trucks_on_api_identifier", unique: true, using: :btree
   add_index "food_trucks", ["user_id"], name: "index_food_trucks_on_user_id", using: :btree
 
   create_table "locations", force: true do |t|

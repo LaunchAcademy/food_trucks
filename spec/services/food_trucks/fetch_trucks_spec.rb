@@ -26,19 +26,23 @@ describe FoodTrucks::FetchTrucks do
       FactoryGirl.create(:user)
       food_truck = FactoryGirl.create(:food_truck)
       fetch_trucks = FoodTrucks::FetchTrucks.new
-      fake_response = fake_food_truck_response(food_truck.name)
+      fake_response = fake_food_truck_response(food_truck.api_identifier)
 
       expect {
+        fetch_trucks.import_food_truck(fake_response)
+        fetch_trucks.import_food_truck(fake_response)
+        fetch_trucks.import_food_truck(fake_response)
+        fetch_trucks.import_food_truck(fake_response)
         fetch_trucks.import_food_truck(fake_response)
       }.to change(FoodTruck, :count).by(0)
     end
   end
 end
 
-def fake_food_truck_response(name="taco-party")
-  attributes = {
+def fake_food_truck_response(name="Taco Party")
+  {
     "identifier" => "taco-party",
-    "name" => "Taco Party",
+    "name" => name,
     "description" => "A food truck serving vegetarian tacos. You can eat here.",
     "rating" => 152,
     "url" => "tacopartytruck.com",
@@ -46,6 +50,4 @@ def fake_food_truck_response(name="taco-party")
     "email" => "keith@tacopartytruck.com",
     "twitter" => "tacopartytruck"
   }
-
-  [name, attributes]
 end

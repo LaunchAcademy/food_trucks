@@ -1,9 +1,6 @@
 class AddApiIdentifier < ActiveRecord::Migration
-  def self.up
+  def change
     add_column :food_trucks, :api_identifier, :string
-  end
-
-  def self.down
-    remove_column :food_trucks, :api_identifier
+    add_index :food_trucks, :api_identifier, unique: true
   end
 end
