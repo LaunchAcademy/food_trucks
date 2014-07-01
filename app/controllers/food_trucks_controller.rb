@@ -2,8 +2,8 @@ class FoodTrucksController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
 
   def index
-    @food_trucks = FoodTruck.order(cached_votes_score: :desc).page(params[:page])
-    @vote = Vote.new
+    @food_trucks = FoodTruck.search(params[:search]).order(cached_votes_score: :desc)
+        .page(params[:page])
   end
 
   def show

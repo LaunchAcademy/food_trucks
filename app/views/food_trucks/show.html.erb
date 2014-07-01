@@ -19,7 +19,7 @@
 
 <h2> Reviews </h2>
 
-<% @food_truck.reviews.each do |review| %>
+<% @food_truck.reviews.sort_by( |review| review.cached_votes_score ).reverse.each do |review| %>
   <ul>
     <li>
       <%= link_to "Upvote",

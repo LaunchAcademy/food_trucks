@@ -7,4 +7,12 @@ class FoodTruck < ActiveRecord::Base
 
   has_many :reviews
   belongs_to :user
+
+  def self.search(search)
+    if search
+      FoodTruck.where('name ILIKE ?', "%#{search}%")
+    else
+      FoodTruck.all
+    end
+  end
 end
