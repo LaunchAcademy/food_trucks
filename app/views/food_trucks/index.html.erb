@@ -1,6 +1,8 @@
 <!-- Warming Up -->
 <link href='http://fonts.googleapis.com/css?family=Buenard:700' rel='stylesheet' type='text/css'>
 <script src="http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js"></script>
+<script src="/js/video.js"></script>
+<link href="/css/video.css" rel="stylesheet" media="screen">
 <!--Video Section-->
 <section class="content-section video-section">
   <div class="pattern-overlay">
@@ -10,14 +12,12 @@
         <div class="col-lg-12">
         <h1>Food Trucks</h1>
         <h3>Boston, MA</h3>
-     </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 <!--Video Section Ends Here-->
-<script src="/js/video.js"></script>
-<link href="/css/video.css" rel="stylesheet" media="screen">
 <% if current_user && current_user.avatar.url %>
   <%= image_tag(current_user.avatar.url) %>
 <% end %>
