@@ -25,3 +25,7 @@ margin: 0px auto 15px;
 }
 .video-section .buttonBar{display:none;}
 .player {font-size: 1px;}
+
+.beep {
+  margin-top: -20px;
+}

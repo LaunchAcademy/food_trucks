@@ -14,7 +14,7 @@ feature 'Login and Signup', %Q{
     expect(page).to have_content "Email"
     expect(page).to have_content "Password"
     expect(page).to_not have_content "Password confirmation"
-    expect(page).to have_button('Login')
+    expect(page).to have_button('Sign in')
   end
 
   scenario 'User visit sign-up' do
@@ -28,7 +28,7 @@ feature 'Login and Signup', %Q{
     expect(page).to have_content "Password"
     expect(page).to have_content "Password confirmation"
     expect(page).to have_button('Sign up')
-    expect(page).to_not have_button('Logout')
+    expect(page).to_not have_link('Logout')
   end
 
   scenario 'User has logout button after login' do
@@ -41,8 +41,8 @@ feature 'Login and Signup', %Q{
     fill_in 'Password confirmation', with: user.password
     click_on 'Sign up'
 
-    expect(page).to have_button('Logout')
-    expect(page).to_not have_button('Login')
+    expect(page).to have_link('Logout')
+    expect(page).to_not have_button('Sign in')
     expect(page).to_not have_button('Sign Up')
 
   end
