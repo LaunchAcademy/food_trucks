@@ -54,26 +54,21 @@ class FoodTrucksController < ApplicationController
 
   def upvote
     @food_truck = FoodTruck.find(params[:id])
-    @food_truck.liked_by current_user
-    # @vote = Vote.find_by(food_truck: @food_truck, user: current_user)
-    # if @vote.nil?
-    #   @vote = Vote.new(food_truck: @food_truck, user: current_user)
-    # end
-    # @vote.vote_flag = true
-    # @vote.save
+    if current_user.voted_up_on? @food_truck
+      @food_truck.unliked_by current_user
+    else
+      @food_truck.liked_by current_user
+    end
     redirect_to food_trucks_path
-    # @food_truck.vote_by voter: current_user
   end
 
   def downvote
     @food_truck = FoodTruck.find(params[:id])
-    @food_truck.downvote_from current_user
-    # @vote = Vote.find_by(food_truck: @food_truck, user: current_user)
-    # if @vote.nil?
-    #   @vote = Vote.new(food_truck: @food_truck, user: current_user)
-    # end
-    # @vote.vote_flag = true
-    # @vote.save
+    if current_user.voted_down_on? @food_truck
+      @food_truck.undisliked_by current_user
+    else
+      @food_truck.downvote_from current_user
+    end
     redirect_to food_trucks_path
   end
 

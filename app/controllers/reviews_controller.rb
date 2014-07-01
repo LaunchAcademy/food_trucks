@@ -31,6 +31,28 @@ class ReviewsController < ApplicationController
     end
   end
 
+  def upvote
+    @food_truck = FoodTruck.find(params[:food_truck_id])
+    @review = Review.find(params[:id])
+    if current_user.voted_up_on? @review
+      @review.unliked_by current_user
+    else
+      @review.liked_by current_user
+    end
+    redirect_to @food_truck
+  end
+
+  def downvote
+    @food_truck = FoodTruck.find(params[:food_truck_id])
+    @review = Review.find(params[:id])
+    if current_user.voted_down_on? @review
+      @review.undisliked_by current_user
+    else
+      @review.downvote_from current_user
+    end
+    redirect_to @food_truck
+  end
+
   private
 
   def review_params

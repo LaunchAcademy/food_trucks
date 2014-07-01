@@ -6,7 +6,10 @@ Rails.application.routes.draw do
       post "downvote", to: "food_trucks#downvote"
     end
     resources :reviews, only: [:create, :new, :destroy, :edit, :update] do
-      resources :votes, only: [:create]
+      member do
+        post "upvote", to: "reviews#upvote"
+        post "downvote", to: "reviews#downvote"
+      end
     end
   end
 
