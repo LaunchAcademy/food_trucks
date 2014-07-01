@@ -10,3 +10,5 @@ user = User.create(email: 'test@test.com', password: 'test123123')
 
 admin_user = User.create(email: 'admin@admin.com',
   password: 'admin123456',role: 'admin')
+
+FoodTrucks::FetchTrucks.call
