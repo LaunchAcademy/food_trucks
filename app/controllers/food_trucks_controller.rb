@@ -2,7 +2,7 @@ class FoodTrucksController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
 
   def index
-    @food_trucks = FoodTruck.search(params[:search]).order(cached_votes_score: :desc)
+    @food_trucks = FoodTruck.search(params[:search]).order(created_at: :desc)
         .page(params[:page])
   end
 
@@ -50,26 +50,6 @@ class FoodTrucksController < ApplicationController
         redirect_to food_trucks_path
       end
     end
-  end
-
-  def upvote
-    @food_truck = FoodTruck.find(params[:id])
-    if current_user.voted_up_on? @food_truck
-      @food_truck.unliked_by current_user
-    else
-      @food_truck.liked_by current_user
-    end
-    redirect_to food_trucks_path
-  end
-
-  def downvote
-    @food_truck = FoodTruck.find(params[:id])
-    if current_user.voted_down_on? @food_truck
-      @food_truck.undisliked_by current_user
-    else
-      @food_truck.downvote_from current_user
-    end
-    redirect_to food_trucks_path
   end
 
   private
