@@ -2,7 +2,8 @@ class FoodTrucksController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
 
   def index
-    @food_trucks = FoodTruck.order(created_at: :desc).page(params[:page])
+    @food_trucks = FoodTruck.order(cached_votes_score: :desc).page(params[:page])
+    @vote = Vote.new
   end
 
   def show
@@ -49,6 +50,31 @@ class FoodTrucksController < ApplicationController
         redirect_to food_trucks_path
       end
     end
+  end
+
+  def upvote
+    @food_truck = FoodTruck.find(params[:id])
+    @food_truck.liked_by current_user
+    # @vote = Vote.find_by(food_truck: @food_truck, user: current_user)
+    # if @vote.nil?
+    #   @vote = Vote.new(food_truck: @food_truck, user: current_user)
+    # end
+    # @vote.vote_flag = true
+    # @vote.save
+    redirect_to food_trucks_path
+    # @food_truck.vote_by voter: current_user
+  end
+
+  def downvote
+    @food_truck = FoodTruck.find(params[:id])
+    @food_truck.downvote_from current_user
+    # @vote = Vote.find_by(food_truck: @food_truck, user: current_user)
+    # if @vote.nil?
+    #   @vote = Vote.new(food_truck: @food_truck, user: current_user)
+    # end
+    # @vote.vote_flag = true
+    # @vote.save
+    redirect_to food_trucks_path
   end
 
   private

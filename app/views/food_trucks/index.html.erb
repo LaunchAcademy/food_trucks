@@ -4,7 +4,14 @@
 <% end %>
 <ul>
   <% @food_trucks.each do |truck| %>
-    <li><%= link_to truck.name, food_truck_path(truck) %></li>
+    <li>
+
+      <%= link_to "Upvote",  upvote_food_truck_path(truck), method: :post %>
+      <%= link_to "Downvote",  downvote_food_truck_path(truck), method: :post %>
+
+      <%= truck.cached_votes_score %>
+      - <%= link_to truck.name, food_truck_path(truck) %>
+    </li>
   <% end %>
 </ul>
 
