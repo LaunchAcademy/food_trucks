@@ -53,10 +53,8 @@ group :development, :test do
   gem 'factory_girl_json'
   gem 'launchy'
   gem 'dotenv-rails'
-  gem 'vcr'
 end
 
-gem 'webmock', group: :test
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
