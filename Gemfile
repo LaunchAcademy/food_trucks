@@ -36,11 +36,11 @@ gem 'mini_magick'
 
 gem 'fog'
 
-<<<<<<< HEAD
+
 gem 'devise-bootstrap-views'
-=======
+
 gem 'acts_as_votable', '~> 0.10.0'
->>>>>>> a589567aaaafd9ed7916192ee5db9c7b551d3857
+
 
 gem 'mandrill-api'
 
