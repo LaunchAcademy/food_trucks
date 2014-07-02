@@ -62,9 +62,9 @@ ActiveRecord::Schema.define(version: 20140701223743) do
   add_index "reviews", ["user_id", "food_truck_id"], name: "index_reviews_on_user_id_and_food_truck_id", unique: true, using: :btree
 
   create_table "stops", force: true do |t|
-    t.integer "location_id",   null: false
-    t.integer "food_truck_id", null: false
-    t.string  "time_arrive",   null: false
+    t.integer  "location_id",   null: false
+    t.integer  "food_truck_id", null: false
+    t.datetime "time_arrive",   null: false
   end
 
   create_table "users", force: true do |t|
