@@ -36,6 +36,16 @@ gem 'mini_magick'
 
 gem 'fog'
 
+gem 'rest-client'
+
+gem 'sidekiq'
+
+gem 'sidetiq'
+
+gem 'sinatra', '>= 1.3.0', require: false
+
+gem 'slim'
+
 gem 'acts_as_votable', '~> 0.10.0'
 
 gem 'mandrill-api'
