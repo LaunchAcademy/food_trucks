@@ -1,3 +1,5 @@
+require 'sidekiq/web'
+
 Rails.application.routes.draw do
 
   resources :food_trucks do
@@ -17,4 +19,7 @@ Rails.application.routes.draw do
 
   root to: "food_trucks#index"
 
+  if Rails.env.development?
+    mount Sidekiq::Web, at: '/sidekiq'
+  end
 end
