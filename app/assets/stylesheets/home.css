@@ -1,0 +1,21 @@
+tr.table_header { background-color: #f5f5f5; }
+
+.cent {
+   margin: 0 auto !important;
+   float: none !important;
+}
+
+.paddedLabel { padding-right: 5px; }
+
+.cent {
+  text-align: center;
+}
+
+.centerT {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.searchFloat {
+  float: right;
+}
