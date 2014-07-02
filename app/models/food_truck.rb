@@ -1,5 +1,7 @@
 class FoodTruck < ActiveRecord::Base
 
+  scope :reviews, -> {order('cached_votes_score desc')}
+
   validates :name, :description, :category, presence: true
   validates :description, length: { minimum: 50 }
   validates :user, presence: true
