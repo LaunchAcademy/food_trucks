@@ -3,3 +3,11 @@ rvm:
   - "2.1.2"
 before_script:
   - psql -c 'create database food_trucks_test;' -U postgres
+
+require "rake/testtask"
+
+Rake::TestTask.new do |t|
+  t.pattern = "test/**/*_test.rb"
+end
+
+task default: :test
