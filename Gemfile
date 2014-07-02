@@ -40,6 +40,10 @@ gem 'devise-bootstrap-views'
 
 gem 'mandrill-api'
 
+gem 'bootstrap-sass', '~> 3.2.0'
+
+gem 'autoprefixer-rails'
+
 group :development, :test do
   gem 'coveralls', require: false
   gem 'capybara'

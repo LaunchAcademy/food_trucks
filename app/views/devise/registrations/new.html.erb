@@ -1,5 +1,5 @@
-<link href="/css/sign.css" rel="stylesheet">
 <%= bootstrap_devise_error_messages! %>
+
 <div class="centerTable">
   <div class="panel panel-default">
     <div class="panel-heading">
@@ -19,16 +19,20 @@
           <%= f.label :password_confirmation %>
           <%= f.password_field :password_confirmation, class: "form-control" %>
         </div>
+
         <div>
-        <%= f.label :avatar do %>
-        <%= f.file_field :avatar %>
-        <%= f.hidden_field :avatar_cache %>
-        <% end %>
+          <%= f.label :avatar do %>
+            <%= f.file_field :avatar %>
+          <% end %>
+
+          <%= f.hidden_field :avatar_cache %>
         </div>
+
         <%= f.submit t('.sign_up', :default => "Sign up"), class: "btn btn-primary" %>
       <% end %>
     </div>
   </div>
+
   <%= render "devise/shared/links" %>
 </div>
 

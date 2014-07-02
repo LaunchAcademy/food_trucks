@@ -5,11 +5,8 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
-  <script src="/js/bootstrap.min.js"></script>
-  <link href="/css/home.css" rel="stylesheet">
 </head>
-<body>
+<body class="<%= body_class %>">
   <header class="page-header">
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
@@ -35,8 +32,18 @@
         </div><!--/.nav-collapse -->
       </div>
     </div>
-</header>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <% flash.each do |key, value| %>
+          <div class="<%= flash_class(key) %>">
+            <%= value %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
   <%= yield %>
-  <p class="notice"><%= notice %></p> <p class="alert"><%= alert %></p>
 </body>
 </html>

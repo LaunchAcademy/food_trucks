@@ -2,7 +2,6 @@
 background-color: rgba(71, 71, 71, 0.59);
 padding: 110px 0 32px;
 min-height: 496px;
-/* Incase of overlay problems just increase the min-height*/
 }
 .video-section h1, .video-section h3{
 text-align:center;
