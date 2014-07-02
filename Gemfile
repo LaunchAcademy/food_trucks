@@ -38,8 +38,17 @@ gem 'fog'
 
 gem 'devise-bootstrap-views'
 
-gem 'acts_as_votable', '~> 0.10.0'
+gem 'rest-client'
 
+gem 'sidekiq'
+
+gem 'sidetiq'
+
+gem 'sinatra', '>= 1.3.0', require: false
+
+gem 'slim'
+
+gem 'acts_as_votable', '~> 0.10.0'
 
 gem 'mandrill-api'
 
@@ -56,7 +65,6 @@ group :development, :test do
   gem 'launchy'
   gem 'dotenv-rails'
 end
-
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

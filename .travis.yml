@@ -3,4 +3,5 @@ rvm:
   - "2.1.2"
 before_script:
   - psql -c 'create database food_trucks_test;' -U postgres
-
+services:
+  - redis-server

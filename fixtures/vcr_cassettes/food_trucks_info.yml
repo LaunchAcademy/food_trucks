@@ -1,0 +1,840 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://data.streetfoodapp.com/1.1/schedule/boston/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 30 Jun 2014 17:40:17 GMT
+      Server:
+      - Apache/2.2.22 (Ubuntu)
+      Accept-Ranges:
+      - bytes
+      X-Mod-Pagespeed:
+      - 1.7.30.4-3847
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - max-age=0, no-cache
+      Content-Length:
+      - '47416'
+      Content-Type:
+      - text/html
+    body:
+      encoding: UTF-8
+      string: '{"vendors":{"baja":{"identifier":"baja","name":"Baja Taco Truck","description":"Baja
+        Taco Truck''s mission is to bring the San Diego taqueria\/taco shop to the
+        streets of Brookline, Waltham and Boston. We''ll feature amazing tacos, burritos
+        and tostadas made with Carne Asada, chicken and fish prepared as it is in
+        Baja.","rating":366,"url":"bajatacotruck.com","phone":"(781) 631-2700","email":"info@bajatacotruck.com","twitter":"bajatacotruck","open":[{"start":1404142200,"end":1404153000,"latitude":42.35581796,"longitude":-71.05475365,"display":"Pearl
+        & Franklin Street"},{"start":1404228600,"end":1404237600,"latitude":42.35736908,"longitude":-71.05496899,"display":"Milk
+        & Kilby Streeet"},{"start":1404315000,"end":1404324000,"latitude":42.39443623,"longitude":-71.14547464,"display":"36
+        Cambridgepark Drive"},{"start":1404401400,"end":1404410400,"latitude":42.41700333,"longitude":-71.25854551,"display":"Constant
+        Contact"}],"last":{"display":"Constant Contact","latitude":42.41700333,"longitude":-71.25854551,"time":1404401400},"promoted":true,"images":{"logo":"http:\/\/cdn.streetfoodapp.com\/images\/baja\/logo\/90w@2x.png","logo_small":"http:\/\/cdn.streetfoodapp.com\/images\/baja\/logo\/90w.png"}},"benny":{"identifier":"benny","name":"Benny''s
+        Crepe Cafe","description":"We serve both savory and sweet crepes made from
+        organic buckwheat and pastry flours. Combining traditional recipes and original
+        recipes, we have a crepe to satisfy most any taste.","rating":160,"url":"bennyscrepecafe.com","phone":"(508)
+        269-9988","email":"frank@bennyscrepecafe.com","twitter":"bennyscrepecafe","open":[{"start":1404140400,"end":1404154800,"latitude":42.34985695,"longitude":-71.07768528,"display":"Boston
+        Public Library"},{"start":1404223200,"end":1404252000,"latitude":42.37477716,"longitude":-71.11662019,"display":"Harvard
+        Univ, Science Center Plaza, Oxford & Kirkland Sts"},{"start":1404313200,"end":1404327600,"latitude":42.3586492,"longitude":-71.05186606,"display":"Rings
+        Fountain, Greenway, at Milk Street"},{"start":1404396000,"end":1404424800,"latitude":42.35998369,"longitude":-71.05738919,"display":"Special
+        Event, not open to the public"},{"start":1404486000,"end":1404523800,"latitude":42.35791794,"longitude":-71.21564799,"display":"Albermarle
+        Field, Newton"}],"last":{"display":"Dewey Square, Greenway","latitude":42.3527952,"longitude":-71.05543206,"time":1404486000},"promoted":true,"images":{"logo":"http:\/\/cdn.streetfoodapp.com\/images\/benny\/logo\/90w@2x.png","logo_small":"http:\/\/cdn.streetfoodapp.com\/images\/benny\/logo\/90w.png","header":["http:\/\/cdn.streetfoodapp.com\/images\/benny\/header\/1-1.jpg","http:\/\/cdn.streetfoodapp.com\/images\/benny\/header\/2-1.jpg","http:\/\/cdn.streetfoodapp.com\/images\/benny\/header\/3-1.jpg"]}},"bon-me":{"identifier":"bon-me","name":"Bon
+        Me Blue","description":"Bold, fresh, and fun Vietnamese food; made from scratch
+        and served from a bright blue truck. For you, Bon Me.","rating":617,"url":"bonmetruck.com","phone":"(617)
+        942-1656","email":"info@bonmetruck.com","twitter":"bonme","open":[{"start":1404140400,"end":1404153000,"latitude":42.360304,"longitude":-71.058798,"display":"City
+        Hall Plaza","special":"Special: Sichuan Peppercorn Chicken"},{"start":1404226800,"end":1404241200,"latitude":42.36416139,"longitude":-71.06834822,"display":"Blossom
+        St by MGH"},{"start":1404241200,"end":1404255600,"latitude":42.34930984,"longitude":-71.10141497,"display":"Boston
+        University EAST - Outside of Morse Auditorium"},{"start":1404313200,"end":1404325800,"latitude":42.37449423,"longitude":-71.03207469,"display":"High
+        Street on The Greenway"},{"start":1404399600,"end":1404432000,"latitude":42.37486098,"longitude":-71.11728022,"display":"Harvard
+        Yard"},{"start":1404574200,"end":1404594000,"latitude":42.37486098,"longitude":-71.11728022,"display":"Harvard
+        Yard"},{"start":1404658800,"end":1404673200,"latitude":42.35110363,"longitude":-71.07540112,"display":"Clarendon
+        St & Boylston St"},{"start":1404673200,"end":1404687600,"latitude":42.35781211,"longitude":-71.08335341,"display":"Boston
+        Public Library"}],"last":{"display":"Boston Public Library","latitude":42.35781211,"longitude":-71.08335341,"time":1404673200},"promoted":false},"bon-me-4":{"identifier":"bon-me-4","name":"Bon
+        Me Orange","description":"Bold, fresh, and fun Vietnamese food; made from
+        scratch and served from a bright red truck. For you, Bon Me.","rating":59,"url":"bonmetruck.com","phone":"(617)
+        942-1656","email":"info@bonmetruck.com","twitter":"bonme","open":[{"start":1404140400,"end":1404154800,"latitude":42.35292217,"longitude":-71.05577264,"display":"Dewey
+        Sq on the Greenway","special":"Special: Sichuan Peppercorn Chicken"},{"start":1404226800,"end":1404241200,"latitude":42.35292217,"longitude":-71.05577264,"display":"Dewey
+        Sq on the Greenway"},{"start":1404313200,"end":1404327600,"latitude":42.35292217,"longitude":-71.05577264,"display":"Dewey
+        Sq on the Greenway"},{"start":1404399600,"end":1404424800,"latitude":42.35292217,"longitude":-71.05577264,"display":"Dewey
+        Sq on the Greenway"}],"last":{"display":"Dewey Sq on the Greenway","latitude":42.35292217,"longitude":-71.05577264,"time":1404399600},"promoted":false},"bon-me-3":{"identifier":"bon-me-3","name":"Bon
+        Me Red","description":"Bold, fresh, and fun Vietnamese food; made from scratch
+        and served from a bright red truck. For you, Bon Me.","rating":250,"url":"bonmetruck.com","phone":"(617)
+        942-1656","email":"info@bonmetruck.com","twitter":"bonme","open":[{"start":1404140400,"end":1404172800,"latitude":42.37582631,"longitude":-71.11669693,"display":"Harvard
+        Yard outside Science Center","special":"Special: Sichuan Peppercorn Chicken"},{"start":1404226800,"end":1404259200,"latitude":42.37582631,"longitude":-71.11669693,"display":"Harvard
+        Yard outside Science Center"},{"start":1404313200,"end":1404345600,"latitude":42.37582631,"longitude":-71.11669693,"display":"Harvard
+        Yard outside Science Center"},{"start":1404399600,"end":1404412200,"latitude":42.35205924,"longitude":-71.04652812,"display":"Seaport
+        Blvd & Thomson Pl"},{"start":1404419400,"end":1404432000,"latitude":42.37682631,"longitude":-71.11769693,"display":"Peter''s
+        Park, South End"},{"start":1404572400,"end":1404590400,"latitude":42.3881604,"longitude":-71.09990001,"display":"Assembly
+        Square in Somerville"}],"last":{"display":"Assembly Square in Somerville","latitude":42.3881604,"longitude":-71.09990001,"time":1404572400},"promoted":false},"bon-me-2":{"identifier":"bon-me-2","name":"Bon
+        Me Yellow","description":"Bold, fresh, and fun Vietnamese food; made from
+        scratch and served from a bright yellow truck. For you, Bon Me.","rating":548,"url":"bonmetruck.com","phone":"(617)
+        942-1656","email":"info@bonmetruck.com","twitter":"bonme","open":[],"last":{"display":"Boston
+        Public Library on Boylston St","latitude":42.3497086,"longitude":-71.07853039,"time":1404068400},"promoted":false},"bostons-baddest-burger":{"identifier":"bostons-baddest-burger","name":"Boston''s
+        Baddest Burger","description":"Grillin'' up The Baddest homemade, fresh-ground
+        burgers. Bringin'' you breakfast, sliced-to-order sandwiches, soups, salads,
+        and cookies baked right on the truck.","rating":148,"url":"bostonsbaddestburger.com","phone":"(888)
+        444-1774","email":"info@bostonsbaddestburger.com","twitter":"BBBTruck","open":[],"last":{"display":"135
+        Santilli Hway Everett","latitude":42.38459524,"longitude":-70.99852797,"time":1399478400},"promoted":true,"images":{"logo":"http:\/\/cdn.streetfoodapp.com\/images\/bostons-baddest-burger\/logo\/90w@2x.png","logo_small":"http:\/\/cdn.streetfoodapp.com\/images\/bostons-baddest-burger\/logo\/90w.png","header":["http:\/\/cdn.streetfoodapp.com\/images\/bostons-baddest-burger\/header\/1-1.jpg","http:\/\/cdn.streetfoodapp.com\/images\/bostons-baddest-burger\/header\/2-1.jpg","http:\/\/cdn.streetfoodapp.com\/images\/bostons-baddest-burger\/header\/3-1.jpg","http:\/\/cdn.streetfoodapp.com\/images\/bostons-baddest-burger\/header\/4-1.jpg","http:\/\/cdn.streetfoodapp.com\/images\/bostons-baddest-burger\/header\/5-1.jpg"]}},"cameo-macaron":{"identifier":"cameo-macaron","name":"Cameo
+        Macaron","description":"Recent Northeastern University grad Kinesha Goldson
+        brings a piece of France to Boston with her French macaron food truck.","rating":70,"url":"cameomacaron.com","phone":"(617)
+        909-1228","email":"cameomacaron@gmail.com","twitter":"cameomacaron","open":[],"last":{"display":"Belvidere
+        St. \/ Prudential Center","latitude":42.34587259,"longitude":-71.08308383,"time":1403964000},"promoted":false},"chicken-rice":{"identifier":"chicken-rice","name":"Chicken
+        & Rice Guys","description":"Chicken & rice with addictingly delicious white
+        sauce & spicy-hot red sauce. Served with rice, lettuce and pita, with a choice
+        of lamb, chicken, both, or just veggies.","rating":746,"url":"thechickenriceguys.com","phone":"(914)
+        473-0622","email":"info@thechickenriceguys.com","twitter":"CnRG_Boston","open":[{"start":1404140400,"end":1404151200,"latitude":42.395272,"longitude":-71.142547,"display":"Alewife
+        Station - Cambridge"},{"start":1404158400,"end":1404172800,"latitude":42.33533212,"longitude":-71.07461439,"display":"Boston
+        Medical Center on Harrison"},{"start":1404226800,"end":1404239400,"latitude":42.352249,"longitude":-71.062982,"display":"Boylston
+        St near Washington St"},{"start":1404244800,"end":1404255600,"latitude":42.350969,"longitude":-71.112721,"display":"BU
+        Bridge across from Darque Tan"},{"start":1404313200,"end":1404325800,"latitude":42.345644,"longitude":-71.08250269,"display":"Prudential
+        Center Plaza near P.F. Chang''s"},{"start":1404331200,"end":1404345600,"latitude":42.350969,"longitude":-71.112721,"display":"BU
+        Bridge across from Darque Tan"},{"start":1404399600,"end":1404412200,"latitude":42.35989648,"longitude":-71.05920773,"display":"City
+        Hall Plaza"},{"start":1404417600,"end":1404428400,"latitude":42.350969,"longitude":-71.112721,"display":"BU
+        Bridge across from Darque Tan"},{"start":1404504000,"end":1404518400,"latitude":42.33533212,"longitude":-71.07461439,"display":"Boston
+        Medical Center on Harrison"},{"start":1404572400,"end":1404601200,"latitude":42.37559323,"longitude":-71.11642358,"display":"Harvard
+        University"},{"start":1404658800,"end":1404687600,"latitude":42.37559323,"longitude":-71.11642358,"display":"Harvard
+        University"}],"last":{"display":"Harvard University","latitude":42.37559323,"longitude":-71.11642358,"time":1404658800},"promoted":true,"images":{"logo":"http:\/\/cdn.streetfoodapp.com\/images\/chicken-rice\/logo\/90w@2x.png","logo_small":"http:\/\/cdn.streetfoodapp.com\/images\/chicken-rice\/logo\/90w.png","header":["http:\/\/cdn.streetfoodapp.com\/images\/chicken-rice\/header\/2-1.jpg","http:\/\/cdn.streetfoodapp.com\/images\/chicken-rice\/header\/3-1.jpg","http:\/\/cdn.streetfoodapp.com\/images\/chicken-rice\/header\/4-1.jpg"]}},"chicken-rice-2":{"identifier":"chicken-rice-2","name":"Chicken
+        & Rice Guys 2","description":"Chicken & rice with addictingly delicious white
+        sauce & spicy-hot red sauce. Served with rice, lettuce and pita, with a choice
+        of lamb, chicken, both, or just veggies.","rating":449,"url":"thechickenriceguys.com","phone":"(914)
+        473-0622","email":"info@thechickenriceguys.com","twitter":"CnRG_Boston","open":[{"start":1404226800,"end":1404237600,"latitude":42.465734,"longitude":-71.263826,"display":"Lexington:
+        101 Hartwell Ave"},{"start":1404244800,"end":1404259200,"latitude":42.426715,"longitude":-71.07407,"display":"Malden
+        Center T Stop"},{"start":1404313200,"end":1404325800,"latitude":42.35105615,"longitude":-71.059625,"display":"China
+        Town Gate"},{"start":1404331200,"end":1404345600,"latitude":42.334728,"longitude":-71.075401,"display":"Boston
+        Medical Center on Harrison Ave"},{"start":1404399600,"end":1404410400,"latitude":42.34474009,"longitude":-71.03096965,"display":"Innovation
+        And Design Building 21 Drydock Ave Boston"},{"start":1404417600,"end":1404432000,"latitude":42.426715,"longitude":-71.07407,"display":"Malden
+        Center T Stop"},{"start":1404658800,"end":1404673200,"latitude":42.340695,"longitude":-71.089166,"display":"Northeastern
+        by Opera Place"}],"last":{"display":"Northeastern by Opera Place","latitude":42.340695,"longitude":-71.089166,"time":1404658800},"promoted":true,"images":{"logo":"http:\/\/cdn.streetfoodapp.com\/images\/chicken-rice-2\/logo\/90w@2x.png","logo_small":"http:\/\/cdn.streetfoodapp.com\/images\/chicken-rice-2\/logo\/90w.png","header":["http:\/\/cdn.streetfoodapp.com\/images\/chicken-rice-2\/header\/2-1.jpg","http:\/\/cdn.streetfoodapp.com\/images\/chicken-rice-2\/header\/3-1.jpg","http:\/\/cdn.streetfoodapp.com\/images\/chicken-rice-2\/header\/4-1.jpg"]}},"chicken-rice-3":{"identifier":"chicken-rice-3","name":"Chicken
+        & Rice Guys 3","description":"Chicken & rice with addictingly delicious white
+        sauce & spicy-hot red sauce. Served with rice, lettuce and pita, with a choice
+        of lamb, chicken, both, or just veggies.","rating":130,"url":"thechickenriceguys.com","phone":"(914)
+        473-0622","email":"info@thechickenriceguys.com","twitter":"CnRG_Boston","open":[{"start":1404140400,"end":1404153000,"latitude":42.353787,"longitude":-71.053798,"display":"Dewey
+        Sq - Congress St"},{"start":1404158400,"end":1404172800,"latitude":42.340422,"longitude":-71.088919,"display":"NEU
+        Huntington Ave & Opera Pl"},{"start":1404226800,"end":1404239400,"latitude":42.35108225,"longitude":-71.059625,"display":"China
+        Town Gate"},{"start":1404244800,"end":1404261000,"latitude":42.340422,"longitude":-71.088919,"display":"NEU
+        Huntington Ave & Opera Pl"},{"start":1404313200,"end":1404327600,"latitude":42.348601,"longitude":-71.075513,"display":"Stuart
+        St & Trinity Pl"},{"start":1404399600,"end":1404412200,"latitude":42.363998,"longitude":-71.068599,"display":"Mass
+        General Hospital at Blossom St"},{"start":1404417600,"end":1404433800,"latitude":42.340422,"longitude":-71.088919,"display":"NEU
+        Huntington Ave & Opera Pl"},{"start":1404676800,"end":1404687600,"latitude":42.33574862,"longitude":-71.15066388,"display":"Cleveland
+        Circle Cassidy Park"}],"last":{"display":"Cleveland Circle Cassidy Park","latitude":42.33574862,"longitude":-71.15066388,"time":1404676800},"promoted":true,"images":{"logo":"http:\/\/cdn.streetfoodapp.com\/images\/chicken-rice-3\/logo\/90w@2x.png","logo_small":"http:\/\/cdn.streetfoodapp.com\/images\/chicken-rice-3\/logo\/90w.png","header":["http:\/\/cdn.streetfoodapp.com\/images\/chicken-rice-3\/header\/2-1.jpg","http:\/\/cdn.streetfoodapp.com\/images\/chicken-rice-3\/header\/3-1.jpg","http:\/\/cdn.streetfoodapp.com\/images\/chicken-rice-3\/header\/4-1.jpg"]}},"clover-dwy":{"identifier":"clover-dwy","name":"Clover
+        DWY","description":"We''re here to make food you love, the kind you talk about
+        and look forward to eating. This food is local, it''s just-cut, when we can
+        it will be organic.","rating":183,"url":"cloverfoodlab.com","phone":null,"email":"info@cloverfastfood.com","twitter":"cloverDWY","open":[],"last":{"display":"Dewey
+        Square on the Greenway","latitude":42.35276892,"longitude":-71.0553774,"time":1396609200},"promoted":false},"compliments":{"identifier":"compliments","name":"Compliments
+        Food Truck","description":"Compliments brings local meat and produce to the
+        streets, serving sandwiches and gluten free fried sides.","rating":137,"url":null,"phone":"(617)
+        895-6058","email":"complimentsfoodco@gmail.com","twitter":"complimentsfood","open":[],"last":{"display":"City
+        Hall Plaza","latitude":42.35993107,"longitude":-71.05923226,"time":1401291000},"promoted":false},"cookie-monstah":{"identifier":"cookie-monstah","name":"Cookie
+        Monstah","description":"Boston''s newest food truck devoted exclusively to
+        cookies. Whether looking for a breakfast cookie to get you moving, an afternoon
+        pick-me-up or a cookie dessert, the Monstah has a cookie for all tastes.","rating":380,"url":"thecookiemonstah.com","phone":"(617)
+        615-6595","email":"info@thecookiemonstah.com","twitter":"MonstahTruck","open":[{"start":1404136800,"end":1404154800,"latitude":42.35290288,"longitude":-71.05571116,"display":"Dewey
+        Square on the Greenway"},{"start":1404309600,"end":1404338400,"latitude":42.35290288,"longitude":-71.05571116,"display":"Dewey
+        Square on the Greenway"},{"start":1404396000,"end":1404414000,"latitude":42.3561811,"longitude":-71.05518954,"display":"Franklin
+        St & Pearl St"},{"start":1404415800,"end":1404428400,"latitude":42.352328,"longitude":-71.046524,"display":"Seaport
+        Blvd & Thompson Pl"},{"start":1404486000,"end":1404514800,"latitude":42.35290288,"longitude":-71.05571116,"display":"Dewey
+        Square on the Greenway"},{"start":1404572400,"end":1404586800,"latitude":42.35092947,"longitude":-71.07552629,"display":"Clarendon
+        St & Boylston St"},{"start":1404588600,"end":1404604800,"latitude":42.34989077,"longitude":-71.07781153,"display":"Boston
+        Public Library on Boylston St"}],"last":{"display":"Boston Public Library
+        on Boylston St","latitude":42.34989077,"longitude":-71.07781153,"time":1404588600},"promoted":false},"cookie-monstah-2":{"identifier":"cookie-monstah-2","name":"Cookie
+        Monstah 2","description":"Boston''s newest food truck devoted exclusively
+        to cookies. Whether looking for a breakfast cookie to get you moving, an afternoon
+        pick-me-up or a cookie dessert, the Monstah has a cookie for all tastes.","rating":1,"url":"thecookiemonstah.com","phone":"(617)
+        615-6595","email":"info@thecookiemonstah.com","twitter":"MonstahTruck","open":[],"last":{"display":"SoWa
+        Open Market","latitude":42.34073343,"longitude":-71.06542588,"time":1404054000},"promoted":false},"cupcake-city":{"identifier":"cupcake-city","name":"Cupcake
+        City","description":"Delicious cupcakes baked fresh daily at our shop in Reading,
+        MA. Gluten free and low fat options available too!","rating":33,"url":"cupcakecityreading.com","phone":"(781)
+        944-0400","email":"info@cupcakecityreading.com","twitter":"readingcupcakes","open":[],"last":{"display":"Malden:
+        Malden Center at City Hall across from T Station","latitude":42.426878,"longitude":-71.072273,"time":1396555200},"promoted":false},"evans-ny-deli":{"identifier":"evans-ny-deli","name":"Evan''s
+        NY Deli Food Truck","description":"NY deli meat coming directly from New York!
+        Generous portions and delicious sandwiches and salads. Our specialty sandwiches
+        are made with the BEST corned beef, pastrami, beef brisket, turkey breast
+        and more. Don''t forget to try our knishes!","rating":52,"url":"evansdeli.com","phone":"(617)
+        637-3354","email":"info@evansdeli.com","twitter":"evansfoodtruck","open":[{"start":1404140400,"end":1404154800,"latitude":42.358841,"longitude":-71.0511,"display":"Milk
+        street by Aquarium and Rings Fountain"},{"start":1404216000,"end":1404241200,"latitude":42.35266805,"longitude":-71.04781814,"display":"Seaport
+        Blvd. between Sleeper & Boston Wharf rd. - Courthouse station"},{"start":1404300600,"end":1404329400,"latitude":42.35287124,"longitude":-71.05564476,"display":"South
+        Station \/ Dewey Square on Green Way"},{"start":1404387000,"end":1404414000,"latitude":42.345858,"longitude":-71.083045,"display":"Prudential
+        on Belvedere St. between Dalton & Huntington"}],"last":{"display":"Prudential
+        on Belvedere St. between Dalton & Huntington","latitude":42.345858,"longitude":-71.083045,"time":1404387000},"promoted":false},"frozen-hoagies":{"identifier":"frozen-hoagies","name":"Frozen
+        Hoagies","description":"Handmade gourmet ice cream sandwiches between bakery
+        fresh cookies","rating":146,"url":"frozenhoagies.com","phone":null,"email":null,"twitter":"frozenhoagies","open":[{"start":1404154800,"end":1404169200,"latitude":42.36411352,"longitude":-71.06854996,"display":"Mass
+        General: Blossom St at Emerson Place"},{"start":1404226800,"end":1404241200,"latitude":42.3571202,"longitude":-71.05046965,"display":"Rowes
+        Wharf on the Greenway","special":"free sandwiches 12-2 paid for by wework.com"},{"start":1404243000,"end":1404255600,"latitude":42.335542,"longitude":-71.150867,"display":"Cleveland
+        Circle"},{"start":1404313200,"end":1404324000,"latitude":42.3628749,"longitude":-71.15959128,"display":"Arsenal
+        Mall, Watertown"},{"start":1404313200,"end":1404327600,"latitude":42.37399016,"longitude":-71.05477413,"display":"Charlestown
+        Navy Yard"},{"start":1404329400,"end":1404342000,"latitude":42.351511,"longitude":-71.118198,"display":"BU
+        West near the Agganis Arena"}],"last":{"display":"BU West near the Agganis
+        Arena","latitude":42.351511,"longitude":-71.118198,"time":1404329400},"promoted":false},"fugu":{"identifier":"fugu","name":"Fugu
+        Truck","description":"Our vision is to transport the street food experience
+        of Asia to the streets of Boston. We believe in working with the most pristine
+        and locally sourced ingredients. Hand crafted street food or meticulously
+        composed dishes, we strive to follow the simple, seasonal, yet sophisticated
+        style of cooking.","rating":269,"url":"fugutruck.com","phone":"(646) 309-6821","email":"info@fugutruck.com","twitter":"FuguTruck","open":[{"start":1404140400,"end":1404153000,"latitude":42.34846612,"longitude":-71.07535906,"display":"\u200bStuart
+        St & Trinity Pl (Back Bay)"},{"start":1404226800,"end":1404239400,"latitude":42.39395409,"longitude":-71.14360297,"display":"36
+        Cambridge Park Dr  (near Alewife T)"},{"start":1404313200,"end":1404324000,"latitude":42.3620141,"longitude":-71.15756118,"display":"Arsenal
+        Mall (Watertown)"}],"last":{"display":"Arsenal Mall (Watertown)","latitude":42.3620141,"longitude":-71.15756118,"time":1404313200},"promoted":true,"images":{"logo":"http:\/\/cdn.streetfoodapp.com\/images\/fugu\/logo\/90w@2x.png","logo_small":"http:\/\/cdn.streetfoodapp.com\/images\/fugu\/logo\/90w.png","header":["http:\/\/cdn.streetfoodapp.com\/images\/fugu\/header\/1-2.jpg","http:\/\/cdn.streetfoodapp.com\/images\/fugu\/header\/2-3.jpg","http:\/\/cdn.streetfoodapp.com\/images\/fugu\/header\/3-2.jpg","http:\/\/cdn.streetfoodapp.com\/images\/fugu\/header\/4-2.jpg","http:\/\/cdn.streetfoodapp.com\/images\/fugu\/header\/5-2.jpg","http:\/\/cdn.streetfoodapp.com\/images\/fugu\/header\/6-2.jpg","http:\/\/cdn.streetfoodapp.com\/images\/fugu\/header\/7-1.jpg"]}},"green-bean":{"identifier":"green-bean","name":"Green
+        Bean","description":"Waffles, waffle sandwiches & panini sandwiches","rating":40,"url":"ilovegreenbean.com","phone":"(857)
+        205-9285","email":"jaime@ilovegreenbean.com","twitter":"ilovegreenbean","open":[],"last":{"display":"City
+        Hall Plaza","latitude":42.35965939,"longitude":-71.05919669,"time":1397230200},"promoted":false},"kickass-cupcakes":{"identifier":"kickass-cupcakes","name":"Kickass
+        Cupcakes","description":"We bake from scratch every day in small batches,
+        and use only the best all natural ingredients - no hydrogenated oils, no trans
+        fats, no artificial flavors or preservatives. That''s right, we think butter
+        is the yellow brick road to happiness!","rating":310,"url":"kickasscupcakes.com","phone":"(617)
+        628-2877","email":"info@kickasscupcakes.com","twitter":"kickasscupcakes","open":[],"last":{"display":"Boston
+        Public Library on Boylston","latitude":42.34974804,"longitude":-71.07839089,"time":1396638000},"promoted":false},"eiffel-tourer":{"identifier":"eiffel-tourer","name":"la
+        Tour Eiffel","description":"Delicious crepes for breakfast, lunch, dinner
+        and dessert, brought to you by Paris Creperie","rating":298,"url":"pariscrepe.com","phone":null,"email":"nick@pariscrepe.com","twitter":"ParisCreperie","open":[],"last":{"display":"Milk
+        St on the Greenway","latitude":42.35867411,"longitude":-71.0517843,"time":1396623600},"promoted":false},"latin-spoon-truck":{"identifier":"latin-spoon-truck","name":"Latin
+        Spoon Truck","description":"Our goal is to bring the flavors of South America
+        to the city, with our own unique twists. Our signature dish is our \"Patacone\",
+        a cone shaped plantain with a variety of tasty fillings.","rating":24,"url":null,"phone":"(617)
+        314-3657","email":"foodtruck@thelatinspoon.com","twitter":"Latin_Spoon","open":[],"last":{"display":"SoWa
+        Open Market","latitude":42.34101506,"longitude":-71.06637179,"time":1403449200},"promoted":false},"m-and-m":{"identifier":"m-and-m","name":"M
+        & M Ribs","description":"Ribs, BBQ chicken, pulled pork and beef brisket sandwiches","rating":179,"url":"mandmribs.com","phone":"
+        (617) 306-0788","email":"mmribscatering@gmail.com","twitter":"theribtruck","open":[],"last":{"display":"SoWa
+        Food Truck Court, 540 Harrison Ave","latitude":42.34037913,"longitude":-71.06447957,"time":1404054000},"promoted":false},"makin-jamaican":{"identifier":"makin-jamaican","name":"Makin''
+        Jamaican","description":"Bursting with island flavor, Makin'' Jamaican provides
+        fresh authentic Jamaican food.","rating":61,"url":"makinjamaican.com","phone":"(978)
+        595-6882","email":"kevinwilliams@makinjamaican.com","twitter":"MakinJamaican","open":[{"start":1404241200,"end":1404259200,"latitude":42.426265,"longitude":-71.074033,"display":"Malden:
+        Malden Center T Stop"},{"start":1404399600,"end":1404414000,"latitude":42.3460286,"longitude":-71.08329105,"display":"Belvidere
+        St"},{"start":1404486000,"end":1404500400,"latitude":42.34859864,"longitude":-71.06819,"display":"Stuart
+        Street, Site 3"}],"last":{"display":"Stuart Street, Site 3","latitude":42.34859864,"longitude":-71.06819,"time":1404486000},"promoted":false},"meimei":{"identifier":"meimei","name":"Mei
+        Mei Street Kitchen","description":"We are a sibling-run food truck serving
+        up creative, local, sustainable Chinese-American fare. Our farm-sourced menu
+        changes often - come try it for yourself!","rating":961,"url":"meimeiboston.com","phone":null,"email":"hello@meimeiboston.com","twitter":"meimeiboston","open":[{"start":1404142200,"end":1404153000,"latitude":42.3603859,"longitude":-71.05904663,"display":"City
+        Hall Plaza"},{"start":1404228600,"end":1404239400,"latitude":42.34824754,"longitude":-71.07529495,"display":"Stuart
+        St & Trinity Pl"},{"start":1404315000,"end":1404325800,"latitude":42.35285219,"longitude":-71.05557304,"display":"Dewey
+        Square on the Greenway"},{"start":1404399600,"end":1404413100,"latitude":42.34895,"longitude":-71.101241,"display":"BU
+        East - Morse Auditorium on Commonwealth Ave"},{"start":1404487800,"end":1404498600,"latitude":42.35285219,"longitude":-71.05557304,"display":"Dewey
+        Square on the Greenway"}],"last":{"display":"Dewey Square on the Greenway","latitude":42.35285219,"longitude":-71.05557304,"time":1404487800},"promoted":false},"momogoose-1":{"identifier":"momogoose-1","name":"Momogoose
+        1","description":"Gourmet, healthy Southeast Asian cuisine. Vegan, vegetarian,
+        and non-vegetarian. We invest profits to local and global charities, including
+        the United Nation''s World Food Programme via our Meal for Meal Initiative.","rating":135,"url":"momogoose.com","phone":"(617)
+        858-6182","email":"info@momogoose.com","twitter":"momogoose","open":[],"last":{"display":"1-2
+        International Place (behind Howl at the Moon)","latitude":42.356602,"longitude":-71.052049,"time":1396620000},"promoted":false},"momogoose-2":{"identifier":"momogoose-2","name":"Momogoose
+        2","description":"Gourmet, healthy Southeast Asian cuisine. Vegan, vegetarian,
+        and non-vegetarian. We invest profits to local and global charities, including
+        the United Nation''s World Food Programme via our Meal for Meal Initiative.","rating":89,"url":"momogoose.com","phone":"(617)
+        858-6182","email":"info@momogoose.com","twitter":"momogoose","open":[],"last":{"display":"MIT\/Kendall
+        Square (70 Carleton St., Kendall Inbound T stop)","latitude":42.36184903,"longitude":-71.08625185,"time":1396621800},"promoted":false},"momogoose-3":{"identifier":"momogoose-3","name":"Momogoose
+        3","description":"Gourmet, healthy Southeast Asian cuisine. Vegan, vegetarian,
+        and non-vegetarian. We invest profits to local and global charities, including
+        the United Nation''s World Food Programme via our Meal for Meal Initiative.","rating":85,"url":"momogoose.com","phone":"(617)
+        858-6182","email":"info@momogoose.com","twitter":"momogoose","open":[{"start":1404138600,"end":1404153000,"latitude":42.35727898,"longitude":-71.05508574,"display":"FIDI
+        (Milk & Kilby)"},{"start":1404225000,"end":1404239400,"latitude":42.33579,"longitude":-71.072445,"display":"Boston
+        Medical Center"},{"start":1404484200,"end":1404498600,"latitude":42.33579,"longitude":-71.072445,"display":"Boston
+        Medical Center"}],"last":{"display":"Boston Medical Center","latitude":42.33579,"longitude":-71.072445,"time":1404484200},"promoted":false},"momogoose-4":{"identifier":"momogoose-4","name":"Momogoose
+        4","description":"Gourmet, healthy Southeast Asian cuisine. Vegan, vegetarian,
+        and non-vegetarian. We invest profits to local and global charities, including
+        the United Nation''s World Food Programme via our Meal for Meal Initiative.","rating":129,"url":"momogoose.com","phone":"(617)
+        858-6182","email":"info@momogoose.com","twitter":"momogoose","open":[{"start":1404138600,"end":1404153000,"latitude":42.35369137,"longitude":-71.05360458,"display":"Rose
+        Fitzgerald Kennedy Greenway @ Congress St"},{"start":1404225000,"end":1404239400,"latitude":42.35369137,"longitude":-71.05360458,"display":"Rose
+        Fitzgerald Kennedy Greenway @ Congress St"},{"start":1404311400,"end":1404325800,"latitude":42.35369137,"longitude":-71.05360458,"display":"Rose
+        Fitzgerald Kennedy Greenway @ Congress St"},{"start":1404397800,"end":1404412200,"latitude":42.35369137,"longitude":-71.05360458,"display":"Rose
+        Fitzgerald Kennedy Greenway @ Congress St"},{"start":1404484200,"end":1404498600,"latitude":42.35369137,"longitude":-71.05360458,"display":"Rose
+        Fitzgerald Kennedy Greenway @ Congress St"}],"last":{"display":"Rose Fitzgerald
+        Kennedy Greenway @ Congress St","latitude":42.35369137,"longitude":-71.05360458,"time":1404484200},"promoted":false},"moyzilla":{"identifier":"moyzilla","name":"Moyzilla","description":"Dumplings
+        & Asian Street Food","rating":40,"url":"moyzillaboston.com","phone":"(781)
+        640-2361","email":"moyzilla@gmail.com","twitter":"moyzillatruck","open":[{"start":1404140400,"end":1404154800,"latitude":42.35276805,"longitude":-71.05541643,"display":"Dewey
+        Square on the Greenway"},{"start":1404226800,"end":1404241200,"latitude":42.34548631,"longitude":-71.08210771,"display":"Belvidere
+        St @ Prudential"},{"start":1404313200,"end":1404327600,"latitude":42.3506016,"longitude":-71.07506108,"display":"Clarendon
+        St. (Intersection of Boylston St.)"}],"last":{"display":"Clarendon St. (Intersection
+        of Boylston St.)","latitude":42.3506016,"longitude":-71.07506108,"time":1404313200},"promoted":false},"pennypackers":{"identifier":"pennypackers","name":"Pennypackers","description":"House
+        made sausages, unique sandwiches, and delicious soups and salads. Our menu
+        changes regularly.","rating":80,"url":"pennypackersfoodtruck.com","phone":"(857)
+        523-8948","email":"PennypackersFoodTruck@gmail.com","twitter":"Pennypackers","open":[],"last":{"display":"Tide
+        St in the Marine Industrial Park","latitude":42.345065,"longitude":-71.031826,"time":1396612800},"promoted":false},"pennypackers-2":{"identifier":"pennypackers-2","name":"Pennypackers
+        2","description":"House made sausages, unique sandwiches, and delicious soups
+        and salads. Our menu changes regularly.","rating":19,"url":"pennypackersfoodtruck.com","phone":"(857)
+        523-8948","email":"PennypackersFoodTruck@gmail.com","twitter":"Pennypackers","open":[],"last":{"display":"Congress
+        St on the Greenway","latitude":42.353771,"longitude":-71.053605,"time":1399647600},"promoted":false},"renulas":{"identifier":"renulas","name":"Renula''s
+        Greek Kitchen","description":"Serving authentic, healthful Mediterranean and
+        Aegean cuisine, at an affordable price. Some of our signature dishes include:
+        100% lamb gyros, souvlaki and handcut fries. Come down and see us!","rating":85,"url":"renulas.com","phone":"(617)
+        877-3939","email":"phil@renulas.com","twitter":"RenulasKitchen","open":[{"start":1404138600,"end":1404154800,"latitude":42.34990662,"longitude":-71.10661309,"display":"Commonwealth
+        Ave & St. Mary''s St"},{"start":1404226800,"end":1404237600,"latitude":42.29340094,"longitude":-71.19766489,"display":"Newton:
+        160 Wells Ave"},{"start":1404311400,"end":1404327600,"latitude":42.34990662,"longitude":-71.10661309,"display":"Commonwealth
+        Ave & St. Mary''s St"}],"last":{"display":"Commonwealth Ave & St. Mary''s
+        St","latitude":42.34990662,"longitude":-71.10661309,"time":1404311400},"promoted":false},"roxys":{"identifier":"roxys","name":"Roxy''s
+        Grilled Cheese","description":"We don''t make your grandma''s grilled cheese.
+        We can if you''d like us to, but if you leave it up to us, we''re going to
+        put our own twist on things. We''re about taking grilled cheese to the next
+        level by adding ingredients you never really thought possible.","rating":940,"url":"roxysgrilledcheese.com","phone":null,"email":"james@roxysgrilledcheese.com","twitter":"RoxysGrilledChz","open":[{"start":1404140400,"end":1404154800,"latitude":42.35286979,"longitude":-71.05564283,"display":"Dewey
+        Square on the Greenway"}],"last":{"display":"Dewey Square on the Greenway","latitude":42.35286979,"longitude":-71.05564283,"time":1404140400},"promoted":false},"roxys-2":{"identifier":"roxys-2","name":"Roxy''s
+        Grilled Cheese 2","description":"We don''t make your grandma''s grilled cheese.
+        We can if you''d like us to, but if you leave it up to us, we''re going to
+        put our own twist on things. We''re about taking grilled cheese to the next
+        level by adding ingredients you never really thought possible.","rating":408,"url":"roxysgrilledcheese.com","phone":null,"email":"james@roxysgrilledcheese.com","twitter":"RoxysGrilledChz","open":[{"start":1404140400,"end":1404153000,"latitude":42.35741508,"longitude":-71.05501238,"display":"Milk
+        St & Kilby St"}],"last":{"display":"Milk St & Kilby St","latitude":42.35741508,"longitude":-71.05501238,"time":1404140400},"promoted":false},"savory":{"identifier":"savory","name":"Savory
+        Food Truck","description":"High quality, convenient and economical Asian meals","rating":65,"url":"savoryfoodtruck.com","phone":"(617)
+        888-1837","email":"info@savoryfoodtruck.com","twitter":"savoryfoodtruck","open":[{"start":1404138600,"end":1404153000,"latitude":42.36424,"longitude":-71.068701,"display":"Blossom
+        St & Emerson Pl"},{"start":1404225000,"end":1404239400,"latitude":42.348459,"longitude":-71.075428,"display":"Stuart
+        St & Trinity Pl"},{"start":1404311400,"end":1404325800,"latitude":42.36424,"longitude":-71.068701,"display":"Blossom
+        St & Emerson Pl"},{"start":1404397800,"end":1404412200,"latitude":42.348459,"longitude":-71.075428,"display":"Stuart
+        St & Trinity Pl"},{"start":1404484200,"end":1404498600,"latitude":42.36424,"longitude":-71.068701,"display":"Blossom
+        St & Emerson Pl"}],"last":{"display":"Blossom St & Emerson Pl","latitude":42.36424,"longitude":-71.068701,"time":1404484200},"promoted":false},"savory-2":{"identifier":"savory-2","name":"Savory
+        Food Truck 2","description":"High quality, convenient and economical Asian
+        meals","rating":35,"url":"savoryfoodtruck.com","phone":"(617) 888-1837","email":"info@savoryfoodtruck.com","twitter":"savoryfoodtruck","open":[{"start":1404138600,"end":1404153000,"latitude":42.337087,"longitude":-71.072788,"display":"BU
+        Medical Center at Harrison Ave & E Concord St"},{"start":1404225000,"end":1404239400,"latitude":42.337087,"longitude":-71.072788,"display":"BU
+        Medical Center at Harrison Ave & E Concord St"},{"start":1404311400,"end":1404325800,"latitude":42.337087,"longitude":-71.072788,"display":"BU
+        Medical Center at Harrison Ave & E Concord St"},{"start":1404397800,"end":1404412200,"latitude":42.335414,"longitude":-71.150712,"display":"Chestnut
+        Hill Avenue, between Beacon street and Clinton street , in Cassidy Park parking
+        lot"},{"start":1404484200,"end":1404498600,"latitude":42.340418,"longitude":-71.089096,"display":"Fenway
+        - Northeastern University at Opera Place and Huntington"}],"last":{"display":"Fenway
+        - Northeastern University at Opera Place and Huntington","latitude":42.340418,"longitude":-71.089096,"time":1404484200},"promoted":false},"savory-3":{"identifier":"savory-3","name":"Savory
+        Food Truck 3","description":"High quality, convenient and economical Asian
+        meals","rating":33,"url":"savoryfoodtruck.com","phone":"(617) 888-1837","email":"info@savoryfoodtruck.com","twitter":"savoryfoodtruck","open":[{"start":1404138600,"end":1404153000,"latitude":42.336928,"longitude":-71.103054,"display":"Longwood
+        Ave & Avenue Louis Pasteur"},{"start":1404225000,"end":1404239400,"latitude":42.336928,"longitude":-71.103054,"display":"Longwood
+        Ave & Avenue Louis Pasteur"},{"start":1404311400,"end":1404325800,"latitude":42.336928,"longitude":-71.103054,"display":"Longwood
+        Ave & Avenue Louis Pasteur"},{"start":1404397800,"end":1404412200,"latitude":42.336928,"longitude":-71.103054,"display":"Longwood
+        Ave & Avenue Louis Pasteur"},{"start":1404484200,"end":1404498600,"latitude":42.336928,"longitude":-71.103054,"display":"Longwood
+        Ave & Avenue Louis Pasteur"}],"last":{"display":"Longwood Ave & Avenue Louis
+        Pasteur","latitude":42.336928,"longitude":-71.103054,"time":1404484200},"promoted":false},"stoked":{"identifier":"stoked","name":"Stoked
+        Wood Fired Pizza Co.","description":"Boston''s only mobile wood fired pizza
+        truck!  Hitting the streets of our beloved city in April, 2014.","rating":87,"url":"stokedpizza.com","phone":"(617)
+        982-3473","email":"stokedpizza@gmail.com","twitter":"Stokedpizza","open":[{"start":1404140400,"end":1404151200,"latitude":42.35670464,"longitude":-71.05063472,"display":"High
+        St"}],"last":{"display":"High St","latitude":42.35670464,"longitude":-71.05063472,"time":1404140400},"promoted":false},"sweet-tomatoes":{"identifier":"sweet-tomatoes","name":"Sweet
+        Tomatoes Pizza","description":"A thin crust Neapolitan style pizzeria gone
+        mobile.","rating":128,"url":"sweettomatoespizzatruck.com","phone":null,"email":"contact@sweettomatoespizzatruck.com","twitter":"swttomatotruck","open":[],"last":{"display":"Worcester","latitude":42.26762314,"longitude":-71.81769022,"time":1403366400},"promoted":false},"taco-party":{"identifier":"taco-party","name":"Taco
+        Party","description":"A food truck serving vegetarian tacos. You can eat here.","rating":151,"url":"tacopartytruck.com","phone":"(617)
+        905-5829","email":"keith@tacopartytruck.com","twitter":"tacopartytruck","open":[{"start":1404142200,"end":1404153000,"latitude":42.352287,"longitude":-71.04678359,"display":"Seaport
+        Blvd & Thomson Pl"},{"start":1404228600,"end":1404239400,"latitude":42.3560372,"longitude":-71.05478952,"display":"Pearl
+        St & Franklin St"},{"start":1404315000,"end":1404324000,"latitude":42.36126175,"longitude":-71.16293397,"display":"Watertown-
+        Commander''s Mansion, 440 Talcott Ave"},{"start":1404401400,"end":1404412200,"latitude":42.3566675,"longitude":-71.05106976,"display":"Greenway-
+        Rowes Wharf Plaza at High St"},{"start":1404424800,"end":1404439200,"latitude":42.38203891,"longitude":-71.1067043,"display":"Somerville-
+        Taco Party Patio behind Brooklyn Boulders on Park St"}],"last":{"display":"Somerville-
+        Taco Party Patio behind Brooklyn Boulders on Park St","latitude":42.38203891,"longitude":-71.1067043,"time":1404424800},"promoted":false},"tenoch-mexican":{"identifier":"tenoch-mexican","name":"Tenoch
+        Mexican","description":"Tenoch M\u00c3\u00b3vil is the on-wheels version of
+        our Medford Square restaurant, exclusively selling tortas, Mexican pressed
+        sandwiches.","rating":81,"url":"tenochmexican.com","phone":"(781) 395-2221","email":"info@tenochmexican.com","twitter":"TenochMexican","open":[{"start":1404140400,"end":1404153000,"latitude":42.3597947,"longitude":-71.05796138,"display":"City
+        Hall Plaza, Boston"},{"start":1404226800,"end":1404239400,"latitude":42.35367609,"longitude":-71.05374092,"display":"Congress
+        St. at Dewey Square, Boston"},{"start":1404313200,"end":1404322200,"latitude":42.39860522,"longitude":-71.14913503,"display":"Cambridge
+        Discovery Park, Cambridge"},{"start":1404399600,"end":1404412200,"latitude":42.35367609,"longitude":-71.05374092,"display":"Congress
+        St. at Dewey Square, Boston"}],"last":{"display":"Congress St. at Dewey Square,
+        Boston","latitude":42.35367609,"longitude":-71.05374092,"time":1404399600},"promoted":false},"chubby-chickpea":{"identifier":"chubby-chickpea","name":"The
+        Chubby Chickpea","description":"Handmade falafels, stuffed grape leaves, rotisserie
+        shawarma, fresh hummus, baklava and more","rating":277,"url":"thechubbychickpea.com","phone":"(781)
+        828-6868","email":"avi@thechubbychickpea.com","twitter":"chubbyfoodtruck","open":[],"last":{"display":"Stuart
+        St & Trinity Pl","latitude":42.34838796,"longitude":-71.07535862,"time":1396539000},"promoted":false},"cod-squad":{"identifier":"cod-squad","name":"The
+        Cod Squad","description":"We have a lobster roll that you will REALLY LOVE!
+        The same freshest seafood that nearly 400 premier chefs in Boston and beyond
+        order daily for their customers. Fresh haddock, clams, scallops, oysters,
+        lobster, calamari, and more! Our well respected Chef Brian Sway is coupling
+        this fresh seafood with very tasty side dishes. The proof is in the pudding!
+        Come taste for yourself and experience Boston''s only lobster roll made with
+        Fresh lobster meat!","rating":56,"url":"cmsfoodtrucks.com","phone":"(617)
+        921-9322","email":"cmsfoodtrucks@captainmardens.com","twitter":"codsquadtruck","open":[],"last":{"display":"Milk
+        St & Kilby St","latitude":42.35732233,"longitude":-71.05503797,"time":1399995000},"promoted":false},"coffee-trike":{"identifier":"coffee-trike","name":"The
+        Coffee Trike","description":"A mobile espresso drink tricycle.","rating":67,"url":"thecoffeetrike.com","phone":"(857)
+        321-0744","email":"info@thecoffeetrike.com","twitter":"thecoffeetrike","open":[{"start":1404127800,"end":1404156600,"latitude":42.35281723,"longitude":-71.05550439,"display":"Dewey
+        Square (South Station)"},{"start":1404214200,"end":1404243000,"latitude":42.35281723,"longitude":-71.05550439,"display":"Dewey
+        Square (South Station)"},{"start":1404300600,"end":1404329400,"latitude":42.35281723,"longitude":-71.05550439,"display":"Dewey
+        Square (South Station)"},{"start":1404387000,"end":1404415800,"latitude":42.35281723,"longitude":-71.05550439,"display":"Dewey
+        Square (South Station)"}],"last":{"display":"Dewey Square (South Station)","latitude":42.35281723,"longitude":-71.05550439,"time":1404387000},"promoted":false},"dining-car":{"identifier":"dining-car","name":"The
+        Dining Car","description":"Sandwiches prepared on freshly baked breads. Our
+        ever-changing menu features meats and seasonal produce that represent our
+        local agricultural community, with selections inspired by cuisines from all
+        over the world.","rating":200,"url":"diningcar.net","phone":null,"email":null,"twitter":"thediningcar","open":[{"start":1404140400,"end":1404153900,"latitude":42.35254852,"longitude":-71.05537227,"display":"Dewey
+        Square - Geenway"},{"start":1404226800,"end":1404239400,"latitude":42.353811,"longitude":-71.053905,"display":"Dewey
+        Square Park at Congress Street on the Greenway"},{"start":1404313200,"end":1404326700,"latitude":42.349265,"longitude":-71.10115,"display":"BU
+        East - 602 Commonwealth Avenue at Morse Auditorium"},{"start":1404414000,"end":1404439200,"latitude":42.11026718,"longitude":-71.1776858,"display":"Sharon,
+        MA Independance  Day Fireworks - Memorial Beach"}],"last":{"display":"Sharon,
+        MA Independance  Day Fireworks - Memorial Beach","latitude":42.11026718,"longitude":-71.1776858,"time":1404414000},"promoted":false},"pasta-pot":{"identifier":"pasta-pot","name":"The
+        Pasta Pot","description":"We are a family owned truck serving up new twists
+        on old Italian favorites with something for even the most demanding critics.
+        The meatball mac & cheese is our specialty!","rating":42,"url":null,"phone":"(781)
+        572-2397","email":"thepastapot@gmail.com","twitter":"thepastapot","open":[],"last":{"display":"SoWa
+        Open Market","latitude":42.34060222,"longitude":-71.065487,"time":1399215600},"promoted":false},"wow-barbecue":{"identifier":"wow-barbecue","name":"Wow
+        Barbecue","description":"Serving authentic barbecue lamb kebab, a type of
+        ethnic food that originated in the Inner Mongolia and In Jiang provinces of
+        China. We also offer skewers of beef, chicken, shrimp, tofu, cabbage, quail
+        eggs, lamb kidney, etc.","rating":73,"url":"facebook.com\/wowbarbecue","phone":"(617)
+        817-1782","email":"wowbarbecue@gmail.com","twitter":"iloveWOWbbq","open":[{"start":1404241200,"end":1404262800,"latitude":42.35226945,"longitude":-71.06297355,"display":"Washington
+        Street & Boylston Street"},{"start":1404327600,"end":1404349200,"latitude":42.35226945,"longitude":-71.06297355,"display":"Washington
+        Street & Boylston Street"},{"start":1404399600,"end":1404435600,"latitude":42.35226945,"longitude":-71.06297355,"display":"Washington
+        Street & Boylston Street"},{"start":1404500400,"end":1404522000,"latitude":42.35226945,"longitude":-71.06297355,"display":"Washington
+        Street & Boylston Street"},{"start":1404572400,"end":1404615600,"latitude":42.35226945,"longitude":-71.06297355,"display":"Washington
+        Street & Boylston Street"},{"start":1404658800,"end":1404694800,"latitude":42.35226945,"longitude":-71.06297355,"display":"Washington
+        Street & Boylston Street"}],"last":{"display":"Washington Street & Boylston
+        Street","latitude":42.35226945,"longitude":-71.06297355,"time":1404658800},"promoted":true,"images":{"logo":"http:\/\/cdn.streetfoodapp.com\/images\/wow-barbecue\/logo\/90w@2x.png","logo_small":"http:\/\/cdn.streetfoodapp.com\/images\/wow-barbecue\/logo\/90w.png","header":["http:\/\/cdn.streetfoodapp.com\/images\/wow-barbecue\/header\/1-1.jpg"]}},"wow-barbecue-2":{"identifier":"wow-barbecue-2","name":"Wow
+        Barbecue 2","description":"We serve one of a kind Chinese BBQ lamb, beef,
+        chicken as well as vegetables and tofu. Our food origin comes from the Xin
+        Jiang and Inner Mongolian region and we are the only authentic place in the
+        Boston area!","rating":9,"url":"facebook.com\/wowbarbecue","phone":"(508)
+        826-3192","email":"wowbarbecue@gmail.com","twitter":"iloveWOWbbq","open":[{"start":1404154800,"end":1404176400,"latitude":42.34976488,"longitude":-71.07762063,"display":"Boston
+        Public Library"},{"start":1404241200,"end":1404262800,"latitude":42.34976488,"longitude":-71.07762063,"display":"Boston
+        Public Library"}],"last":{"display":"Boston Public Library","latitude":42.34976488,"longitude":-71.07762063,"time":1404241200},"promoted":true,"images":{"logo":"http:\/\/cdn.streetfoodapp.com\/images\/wow-barbecue-2\/logo\/90w@2x.png","logo_small":"http:\/\/cdn.streetfoodapp.com\/images\/wow-barbecue-2\/logo\/90w.png","header":["http:\/\/cdn.streetfoodapp.com\/images\/wow-barbecue-2\/header\/1-1.jpg"]}},"zo":{"identifier":"zo","name":"Zo
+        On The Go","description":"Bringing the authentic Greek gyro to Boston. Come
+        discover a new taste and why it''s worth the trip. It''s Zo Good!","rating":50,"url":"zoboston.com","phone":null,"email":"andy@zoboston.com","twitter":"Zo_Boston","open":[],"last":{"display":"Rowes
+        Wharf\/High St on the Greenway","latitude":42.35712133,"longitude":-71.05038868,"time":1401204600},"promoted":false}},"metadata":{"ads":[{"banner":{"identifier":"bostons-baddest-burger","image_url":"http:\/\/cdn.streetfoodapp.com\/images\/bostons-baddest-burger\/logo\/90w.png","image_url_2x":"http:\/\/cdn.streetfoodapp.com\/images\/bostons-baddest-burger\/logo\/90w@2x.png","title":"Boston''s
+        Baddest Burger","subtitle":"Boston''s Baddest Burger: Grillin'' up The Baddest
+        homemade, fresh-ground burgers.","show_vendor":"bostons-baddest-burger"}}],"new":["cookie-monstah-2","wow-barbecue-2","evans-ny-deli","moyzilla","zo","bon-me-4","stoked","latin-spoon-truck","cameo-macaron","wow-barbecue"]}}'
+    http_version: 
+  recorded_at: Mon, 30 Jun 2014 17:40:17 GMT
+- request:
+    method: get
+    uri: http://data.streetfoodapp.com/1.1/locations/boston/stokes
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Date:
+      - Mon, 30 Jun 2014 17:40:17 GMT
+      Server:
+      - Apache/2.2.22 (Ubuntu)
+      Location:
+      - http://streetfoodapp.com/index.php
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '330'
+      Content-Type:
+      - text/html; charset=iso-8859-1
+    body:
+      encoding: UTF-8
+      string: |
+        <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+        <html><head>
+        <title>301 Moved Permanently</title>
+        </head><body>
+        <h1>Moved Permanently</h1>
+        <p>The document has moved <a href="http://streetfoodapp.com/index.php">here</a>.</p>
+        <hr>
+        <address>Apache/2.2.22 (Ubuntu) Server at data.streetfoodapp.com Port 80</address>
+        </body></html>
+    http_version: 
+  recorded_at: Mon, 30 Jun 2014 17:40:17 GMT
+- request:
+    method: get
+    uri: http://streetfoodapp.com/index.php
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 30 Jun 2014 17:40:17 GMT
+      Server:
+      - Apache/2.2.22 (Ubuntu)
+      X-Powered-By:
+      - PHP/5.3.10-1ubuntu3.11
+      X-Mod-Pagespeed:
+      - 1.7.30.4-3847
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - max-age=0, no-cache
+      Content-Length:
+      - '43695'
+      Content-Type:
+      - text/html; charset=utf-8
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\"><html
+        xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n\t<title>Street Food App
+        for iPhone, Android and web. Find food trucks in Boston, Calgary, Columbus,
+        Edmonton, Halifax, Ottawa, Toronto and Vancouver.</title>\t<script type=\"text/javascript\"
+        src=\"http://streetfoodapp.com/js/jquery-1.7.1.min.js.pagespeed.jm.A_xP-993uZ.js\"></script>\n<script
+        type=\"text/javascript\" src=\"http://streetfoodapp.com/bootstrap/js/bootstrap.min.js.pagespeed.jm.D3-apKn9wk.js\"></script>\n<script
+        type=\"text/javascript\">var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-160'+'4'+'9686-5']);_gaq.push(['_trackPageview']);(function(){var
+        ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var
+        s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();</script>\n<script
+        type=\"text/javascript\">$(document).ready(function(){function init(){$(\"#streetfoodapp-prefers-mobile-off\").click(switchToFullSite);$(\"#streetfoodapp-prefers-mobile-on\").click(switchToMobileSite);}\nfunction
+        switchToFullSite(){$.cookie(null,\"0\",{expires:365,path:\"/\"});}\nfunction
+        switchToMobileSite(){$.cookie(null,\"1\",{expires:365,path:\"/\"});}\ninit();});(function($){$.cookie=function(key,value,options){if(arguments.length>1&&(!/Object/.test(Object.prototype.toString.call(value))||value===null||value===undefined)){options=$.extend({},options);if(value===null||value===undefined){options.expires=-1;}\nif(typeof
+        options.expires==='number'){var days=options.expires,t=options.expires=new
+        Date();t.setDate(t.getDate()+days);}\nvalue=String(value);return(document.cookie=[encodeURIComponent(key),'=',options.raw?value:encodeURIComponent(value),options.expires?';
+        expires='+options.expires.toUTCString():'',options.path?'; path='+options.path:'',options.domain?';
+        domain='+options.domain:'',options.secure?'; secure':''].join(''));}\noptions=value||{};var
+        decode=options.raw?function(s){return s;}:decodeURIComponent;var pairs=document.cookie.split(';
+        ');for(var i=0,pair;pair=pairs[i]&&pairs[i].split('=');i++){if(decode(pair[0])===key)return
+        decode(pair[1]||'');}\nreturn null;};})(jQuery);</script>\t<link href=\"http://streetfoodapp.com/bootstrap/A.font-awesome,,_css,,_font-awesome.css+css,,_bootstrap.min.css,Mcc.aKXI_MGMD5.css.pagespeed.cf.FDjj1FCtUb.css\"
+        media=\"screen\" rel=\"stylesheet\" type=\"text/css\"/>\n\t<style type=\"text/css\"
+        media=\"screen\">.breadcrumb{display:none}</style>\n<style type=\"text/css\"
+        media=\"screen\">body{font-family:\"Lucida Grande\",\"Lucida Sans Unicode\",\"Lucida
+        Sans\",Geneva,Verdana,sans-serif;font-size:13px}a{text-decoration:underline;color:#06c}h1{font-family:Signika,\"Myriad
+        Pro\",\"Lucida Grande\",\"Lucida Sans Unicode\",\"Lucida Sans\",Geneva,Verdana,sans-serif;font-size:62px;margin-bottom:10px;font-weight:300;color:#000;line-height:1em;letter-spacing:-2px}h1
+        strong{font-weight:600}h2{font-family:Signika,\"Myriad Pro\",\"Lucida Grande\",\"Lucida
+        Sans Unicode\",Helvetica,Arial,Verdana,sans-serif;font-weight:300;font-size:24px;color:#747474;margin:18px
+        0 18px 0}h3{margin-top:25px;font-size:18px;line-height:1.25em}.footer{margin:25px
+        0 25px 0;color:#777;text-align:center}.footer a,h2 a{color:inherit}textarea:focus,input:focus{border-color:#bbb!important;box-shadow:inset
+        0 1px 1px rgba(0,0,0,.2)!important;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.2)!important;-moz-box-shadow:inset
+        0 1px 1px rgba(0,0,0,.2)!important}form{margin:0}body,.footer{background-repeat:repeat-x}body{background-image:url(http://streetfoodapp.com/img/main/xborder-top.png,q2.pagespeed.ic._2l09c9GHJ.png);background-position-y:80px}.footer{background-image:url(http://streetfoodapp.com/img/main/xborder-bottom.png,q2.pagespeed.ic.OqXmRYx0Xm.png);padding-top:96px}.sfa-body{padding-top:42px}@media
+        (max-width:480px){body{background-position-y:-1px}.sfa-body{padding-top:12px}.footer{background:none;padding-top:0}}a.thumbnail.inline{text-decoration:none;color:#222;display:inline-block;line-height:16px;margin-bottom:3px;padding-left:5px;padding-right:5px}a.thumbnail.inline:hover{border-color:#ccc;box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none;filter:none}.breadcrumb,.no-background-border-box-shadow{background:none;border:none;box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none;filter:none}.centered{text-align:center}.no-bottom-padding{padding-bottom:0}.btn{text-decoration:none}.breadcrumb{padding:0;color:#747474;font-size:15px;margin-bottom:26px}.breadcrumb
+        a{color:inherit}@media (max-width:480px){.breadcrumb{margin-bottom:10px}}.btn:hover{background-position:0!important}.dropdown-menu
+        a{text-decoration:none}.modal h3,.modal h2{margin:0;font-weight:normal}.well{background-repeat:repeat;background-image:url(http://streetfoodapp.com/img/xsubtlepattern-background-brilliant.png.pagespeed.ic.LPSr2l1-yC.png);box-shadow:none;-webkit-box-shadow:none;-moz-box-shadow:none;border-color:#ebebeb}.well
+        h1{color:#444;font-weight:300;font-size:36px}@media (max-width:480px){.well
+        h1{font-size:24px}}.well p{margin-top:8px}.well table{background-color:#fff}select,textarea,input[type=\"text\"],input[type=\"password\"],input[type=\"datetime\"],input[type=\"datetime-local\"],input[type=\"date\"],input[type=\"month\"],input[type=\"time\"],input[type=\"week\"],input[type=\"number\"],input[type=\"email\"],input[type=\"url\"],input[type=\"search\"],input[type=\"tel\"],input[type=\"color\"],.uneditable-input{font-size:13px}.btn.btn-big-block{display:block;padding:12px;margin-bottom:12px;margin-top:5px}button.btn.btn-big-block{width:100%}.btn{xbackground-color:#d7e5f5;xbackground-image:-webkit-gradient(linear,left
+        top,left bottom,from(#d7e5f5),to(#cbe0f5));xbackground-image:-webkit-linear-gradient(top,#d7e5f5,#cbe0f5);xbackground-image:-moz-linear-gradient(top,#d7e5f5,#cbe0f5);xbackground-image:-ms-linear-gradient(top,#d7e5f5,#cbe0f5);xbackground-image:-o-linear-gradient(top,#d7e5f5,#cbe0f5);xbackground-image:linear-gradient(top,#d7e5f5,#cbe0f5);xborder-top:1px
+        solid #abbbcc;xborder-left:1px solid #a7b6c7;xborder-bottom:1px solid #a1afbf;xborder-right:1px
+        solid #a7b6c7;x-webkit-border-radius:4px;x-moz-border-radius:4px;x-ms-border-radius:4px;x-o-border-radius:4px;xborder-radius:4px;x-webkit-box-shadow:inset
+        0 1px 0 0 white;x-moz-box-shadow:inset 0 1px 0 0 white;x-ms-box-shadow:inset
+        0 1px 0 0 white;x-o-box-shadow:inset 0 1px 0 0 white;xbox-shadow:inset 0 1px
+        0 0 white;xcolor:#1a3e66;color:#666;font:14px \"Lucida Grande\",\"Lucida Sans
+        Unicode\",\"Lucida Sans\",Geneva,Verdana,sans-serif;text-align:center;text-shadow:0
+        1px 1px #fff}X.btn:hover{background-color:#ccd9e8;background-image:-webkit-gradient(linear,left
+        top,left bottom,from(#ccd9e8),to(#c1d4e8));background-image:-webkit-linear-gradient(top,#ccd9e8,#c1d4e8);background-image:-moz-linear-gradient(top,#ccd9e8,#c1d4e8);background-image:-ms-linear-gradient(top,#ccd9e8,#c1d4e8);background-image:-o-linear-gradient(top,#ccd9e8,#c1d4e8);background-image:linear-gradient(top,#ccd9e8,#c1d4e8);border-top:1px
+        solid #a1afbf;border-left:1px solid #9caaba;border-bottom:1px solid #96a3b3;border-right:1px
+        solid #9caaba;-webkit-box-shadow:inset 0 1px 0 0 #f2f2f2;-moz-box-shadow:inset
+        0 1px 0 0 #f2f2f2;-ms-box-shadow:inset 0 1px 0 0 #f2f2f2;-o-box-shadow:inset
+        0 1px 0 0 #f2f2f2;box-shadow:inset 0 1px 0 0 #f2f2f2;color:#163659;cursor:pointer}X.btn:active{border:1px
+        solid #8c98a7;-webkit-box-shadow: inset 0 0 4px 2px #abbccf, 0 0 1px 0 #eeeeee;-moz-box-shadow:
+        inset 0 0 4px 2px #abbccf, 0 0 1px 0 #eeeeee;-ms-box-shadow: inset 0 0 4px
+        2px #abbccf, 0 0 1px 0 #eeeeee;-o-box-shadow: inset 0 0 4px 2px #abbccf, 0
+        0 1px 0 #eeeeee;box-shadow: inset 0 0 4px 2px #abbccf, 0 0 1px 0 #eeeeee}.btn.btn-danger{color:#fff;text-shadow:0
+        -1px 0 rgba(0,0,0,.25)}.btn.btn-primary{background-color:#52a8e8;background-image:-webkit-gradient(linear,left
+        top,left bottom,from(#52a8e8),to(#377ad0));background-image:-webkit-linear-gradient(top,#52a8e8,#377ad0);background-image:-moz-linear-gradient(top,#52a8e8,#377ad0);background-image:-ms-linear-gradient(top,#52a8e8,#377ad0);background-image:-o-linear-gradient(top,#52a8e8,#377ad0);background-image:linear-gradient(top,#52a8e8,#377ad0);border-top:1px
+        solid #4081af;border-right:1px solid #2e69a3;border-bottom:1px solid #20559a;border-left:1px
+        solid #2e69a3;-webkit-box-shadow: inset 0 1px 0 0 #72b9eb, 0 1px 2px 0 #b3b3b3;-moz-box-shadow:
+        inset 0 1px 0 0 #72b9eb, 0 1px 2px 0 #b3b3b3;-ms-box-shadow: inset 0 1px 0
+        0 #72b9eb, 0 1px 2px 0 #b3b3b3;-o-box-shadow: inset 0 1px 0 0 #72b9eb, 0 1px
+        2px 0 #b3b3b3;box-shadow: inset 0 1px 0 0 #72b9eb, 0 1px 2px 0 #b3b3b3;color:#fff;text-align:center;text-shadow:0
+        -1px 1px #3275bc;-webkit-background-clip:padding-box}.btn.btn-primary:hover{background-color:#3e9ee5;background-image:-webkit-gradient(linear,left
+        top,left bottom,from(#3e9ee5 0%),to(#206bcb 100%));background-image:-webkit-linear-gradient(top,#3e9ee5
+        0%,#206bcb 100%);background-image:-moz-linear-gradient(top,#3e9ee5 0%,#206bcb
+        100%);background-image:-ms-linear-gradient(top,#3e9ee5 0%,#206bcb 100%);background-image:-o-linear-gradient(top,#3e9ee5
+        0%,#206bcb 100%);background-image:linear-gradient(top,#3e9ee5 0%,#206bcb 100%);border-top:1px
+        solid #2a73a6;border-right:1px solid #165899;border-bottom:1px solid #07428f;border-left:1px
+        solid #165899;-webkit-box-shadow:inset 0 1px 0 0 #62b1e9;-moz-box-shadow:inset
+        0 1px 0 0 #62b1e9;-ms-box-shadow:inset 0 1px 0 0 #62b1e9;-o-box-shadow:inset
+        0 1px 0 0 #62b1e9;box-shadow:inset 0 1px 0 0 #62b1e9;cursor:pointer;text-shadow:0
+        -1px 1px #1d62ab;-webkit-background-clip:padding-box}.btn.btn-primary:active{background:#3282d3;border:1px
+        solid #154c8c;border-bottom:1px solid #0e408e;-webkit-box-shadow: inset 0
+        0 6px 3px #1657b5, 0 1px 0 0 white;-moz-box-shadow: inset 0 0 6px 3px #1657b5,
+        0 1px 0 0 white;-ms-box-shadow: inset 0 0 6px 3px #1657b5, 0 1px 0 0 white;-o-box-shadow:
+        inset 0 0 6px 3px #1657b5, 0 1px 0 0 white;box-shadow: inset 0 0 6px 3px #1657b5,
+        0 1px 0 0 white;text-shadow:0 -1px 1px #2361a4;-webkit-background-clip:padding-box}.btn.btn-success{background-color:#7fbf4d;background-image:-webkit-gradient(linear,left
+        top,left bottom,from(#7fbf4d),to(#63a62f));background-image:-webkit-linear-gradient(top,#7fbf4d,#63a62f);background-image:-moz-linear-gradient(top,#7fbf4d,#63a62f);background-image:-ms-linear-gradient(top,#7fbf4d,#63a62f);background-image:-o-linear-gradient(top,#7fbf4d,#63a62f);background-image:linear-gradient(top,#7fbf4d,#63a62f);border:1px
+        solid #63a62f;border-bottom:1px solid #5b992b;-webkit-box-shadow:inset 0 1px
+        0 0 #96ca6d;-moz-box-shadow:inset 0 1px 0 0 #96ca6d;-ms-box-shadow:inset 0
+        1px 0 0 #96ca6d;-o-box-shadow:inset 0 1px 0 0 #96ca6d;box-shadow:inset 0 1px
+        0 0 #96ca6d;color:#fff;text-align:center;text-shadow:0 -1px 0 #4c9021}.btn.btn-success:hover{background-color:#76b347;background-image:-webkit-gradient(linear,left
+        top,left bottom,from(#76b347),to(#5e9e2e));background-image:-webkit-linear-gradient(top,#76b347,#5e9e2e);background-image:-moz-linear-gradient(top,#76b347,#5e9e2e);background-image:-ms-linear-gradient(top,#76b347,#5e9e2e);background-image:-o-linear-gradient(top,#76b347,#5e9e2e);background-image:linear-gradient(top,#76b347,#5e9e2e);-webkit-box-shadow:inset
+        0 1px 0 0 #8dbf67;-moz-box-shadow:inset 0 1px 0 0 #8dbf67;-ms-box-shadow:inset
+        0 1px 0 0 #8dbf67;-o-box-shadow:inset 0 1px 0 0 #8dbf67;box-shadow:inset 0
+        1px 0 0 #8dbf67;cursor:pointer}.btn.btn-success:active{border:1px solid #5b992b;border-bottom:1px
+        solid #538c27;-webkit-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;-moz-box-shadow:
+        inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;-ms-box-shadow: inset 0 0 8px
+        4px #548c29, 0 1px 0 0 #eeeeee;-o-box-shadow: inset 0 0 8px 4px #548c29, 0
+        1px 0 0 #eeeeee;box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee}.sfa-vendor-chooser{float:right;position:relative;top:-5px}.sfa-navigation-pills
+        li{margin-bottom:10px}.sfa-navigation-pills a{font-family:Signika;text-decoration:none;color:#666;margin-top:0!important;border:solid
+        1px #fff}.sfa-navigation-pills a i{text-align:left;width:auto;margin-right:2px}.sfa-navigation-pills
+        a div{font-size:24px;line-height:24px}.sfa-navigation-pills a small{font-size:13px;display:block;line-height:13px;margin-top:3px;margin-bottom:2px}.sfa-navigation-pills
+        li.active a{background-color:#fff;border:solid 1px #ccc;color:#111}.sfa-navigation-pills
+        li.active a:hover{background-color:inherit;color:inherit}.sfa-navbar-inner{background-image:none;background-color:#fff}.sfa-navbar-pills
+        a{font-family:Signika;text-decoration:none;color:#666;margin-top:0!important}.sfa-navbar-pills
+        a i{text-align:left;width:auto;margin-right:2px}.sfa-navbar-pills a div{font-size:24px;line-height:24px}.sfa-navbar-pills
+        a small{font-size:13px;display:block;line-height:13px;margin-top:3px;margin-bottom:2px}.navbar.sfa-navbar
+        .navbar-inner.sfa-navbar-inner .sfa-navbar-pills li.active a{background-color:#f4f4f4;color:#444;border-left:solid
+        1px #ccc;border-right:solid 1px #ccc}.sfa-navbar-pills li.active a:hover{background-color:inherit;color:inherit}.visible-phone
+        .navbar-inner{padding-left:5px;padding-right:5px;min-height:10px}.visible-phone
+        .sfa-navbar-pills a div{font-size:14px;line-height:14px}.sfa-navigation{padding:25px
+        0 25px 0}.sfa-navigation .btn-group{margin-right:7px}.sfa-navigation .btn{line-height:20px;min-height:20px}.sfa-navigation
+        .btn .caret{margin-top:8px}.sfa-navigation .links{margin-left:0px}.sfa-navigation
+        .links a{display:inline-block;line-height:30px;height:30px;text-decoration:none;color:#999;margin-left:10px}.sfa-navigation
+        .links a.active{font-weight:bold;color:#222}.sfa-help-small{display:inline-block;width:100px}.btn.btn-success.sfa-sign-in-button{margin-right:0}.sfa-signed-in{color:#000;font-size:15px;line-height:28px}.sfa-homepage-hero-unit{text-align:center;background:none;padding:30px}.sfa-homepage-hero-unit
+        h1{font-size:52px}.sfa-homepage-hero-unit a{font:inherit;font-weight:600;text-decoration:none;color:inherit}.sfa-homepage-tweet-button{position:relative;top:4px;margin-left:3px}.sfa-homepage-subtitle{margin-top:5px;color:#999;height:24px}.sfa-homepage-city-screenshot-and-app-store-button{text-align:center}.sfa-homepage-city-screenshot-and-app-store-button
+        a{display:block;margin:10px 0 10px 0}.sfa-homepage-as-seen-in{margin:54px
+        0 0 0;text-align:center}.sfa-homepage-vanmade{text-align:center;margin-top:56px}.sfa-screenshots-list{margin-top:48px}.sfa-screenshots-list
+        .thumbnail{padding:8px;text-align:center}.sfa-widgets-form{margin-top:45px}.sfa-label-open,.sfa-label-closed,.sfa-label-list,.sfa-label-rating{font-family:Arial;text-transform:uppercase;font-size:13px;display:inline-block;line-height:12px;text-shadow:none;-webkit-text-shadow:none;-moz-text-shadow:none;padding:3px}.sfa-label-rating{background-color:#eef8ff;color:#37a;font-weight:normal;text-transform:none;font-size:12px}.sfa-label-open{background-color:#85be28}.sfa-label-closed{background-color:#bd403a}.sfa-label-list{background-color:#fff;border:solid
+        1px #ddd;color:#111;padding:4px;min-width:15px;text-align:center;margin-right:5px}h1
+        .sfa-label-open,h1 .sfa-label-closed,h1 .sfa-label-list{font-size:30px;line-height:28px;vertical-align:middle;padding:5px;position:relative;top:-3px}@media
+        (max-width:480px){h1 .sfa-label-open,h1 .sfa-label-closed,h1 .sfa-label-list{clear:both;margin-top:10px;margin-bottom:10px}}.sfa-vendor-schedule-edit{margin-top:2px;margin-bottom:4px}.sfa-vendor-schedule-edit
+        fieldset{margin-top:0px}.sfa-vendor-schedule-edit-location-new{margin-left:18px;margin-right:4px}.sfa-vendor-schedule-edit-location-new
+        .alert{padding-right:14px;margin-bottom:9px}.sfa-vendor-schedule-edit-location-new-map{width:475px;height:350px;margin-top:3px;margin-bottom:11px}.sfa-vendor-schedule-edit-location-new-map
+        img{max-width:none!important}.sfa-vendor-schedule-edit-share{margin-top:20px;font-size:14px}.sfa-vendor-schedule-edit
+        fieldset i{font-size:16px;width:16px;display:inline-block}@media (max-width:480px){select.sfa-vendor-schedule-edit-time{display:inline;width:auto}.sfa-vendor-schedule-edit-location-new{margin:auto}.sfa-vendor-schedule-edit-location-new-map{width:auto}}.sfa-modal
+        .modal-footer .alert{margin-bottom:14px;clear:both}.sfa-modal .modal-footer
+        .sfa-buttons{clear:both}.sfa-tweet-length{line-height:28px;margin-left:6px}.sfa-tweet-length.invalid{color:#a66}.sfa-vendor-description,.sfa-city-description{margin-bottom:20px}.sfa-vendor-schedule
+        h1,.sfa-vendor-schedule h2,.sfa-vendor-schedule h3,.sfa-vendor-schedule h4,.sfa-vendor-schedule
+        h5,.sfa-city-schedule h1,.sfa-city-schedule h2,.sfa-city-schedule h3,.sfa-city-schedule
+        h4,.sfa-city-schedule h5{margin:0}.sfa-vendor-description h1,.sfa-city-description
+        h1{margin:0 4px 0 0}.sfa-vendor-description h2,.sfa-city-description h2{margin-top:14px}.sfa-vendor-schedule-opening{margin-top:20px}.sfa-vendor-schedule-opening
+        h3,.sfa-vendor-schedule-opening h5,.sfa-city-schedule-opening h3,.sfa-city-schedule-opening
+        h5{font-weight:normal}.sfa-vendor-schedule h5,.sfa-city-schedule h5{margin:0
+        5px 4px 2px}.sfa-vendor-schedule-tweet,.sfa-city-schedule-tweet{margin-top:2px}.sfa-vendor-contact
+        .sfa-vendor-contact-method{margin-top:12px}.sfa-vendor-contact .sfa-vendor-contact-method
+        i{display:inline-block;width:15px;font-size:15px;color:#555;text-align:center}.sfa-vendor-schedule-empty{margin:15px
+        0 0 0}.sfa-vendor-schedule-location{background-color:#fdfdfd;padding:8px 8px
+        5px 8px}h2.sfa-vendor-schedule-opening-time{font-size:21px;margin-right:3px}.sfa-vendor-schedule-opening
+        h3{padding:0;line-height:23px;margin:5px 0 0 0}.sfa-vendor-schedule-report-inaccurate{margin-top:18px}@media
+        (max-width:480px){.sfa-vendor-description h2{margin-top:5px}}.sfa-city-schedule-openings{padding-top:4px}.sfa-city-schedule-opening,.sfa-city-schedule-opening:hover{margin-top:16px;display:block;text-decoration:none}a.sfa-city-schedule-opening:hover{border:solid
+        1px #ddd;box-shadow:0px 1px 3px #ddd;-moz-box-shadow:0px 1px 3px #ddd;-webkit-box-shadow:0px
+        1px 3px #ddd}.sfa-city-schedule h2{margin-bottom:0;line-height:24px}h3.sfa-city-schedule-subtitle{font-size:13px;color:#888;line-height:20px;margin-top:0px}@media
+        (max-width:480px){h3.sfa-city-schedule-subtitle{line-height:15px;margin-top:5px}}h3.sfa-city-schedule-subtitle
+        i{width:11px;display:inline-block;text-align:center}.sfa-city-schedule-opening{padding:10px
+        10px 6px 10px;background-color:#fdfdfd}h2.sfa-city-schedule-opening-vendor{color:#222;margin-bottom:4px}h2.sfa-city-schedule-opening-time{color:#aaa;font-size:20px}.sfa-city-schedule-report-inaccurate{margin-top:20px}.sfa-city-schedule-opening
+        .sfa-fans{float:right;display:inline-block}.sfa-api-content .accordion{background-color:#fff;margin-top:15px;margin-bottom:0}.sfa-api-content
+        .accordion-toggle{text-decoration:none;color:inherit}.sfa-api-content .sfa-api-resource-sample{margin-bottom:0}.sfa-sidebar
+        h1{margin:0}.sfa-sidebar p{margin-bottom:18px;color:#444}.sfa-sidebar ul{margin:0}.sfa-sidebar
+        li{list-style-type:none;line-height:32px}.sfa-sidebar .label{margin-left:3px}.sfa-city-other-trucks{margin-bottom:20px}.sfa-city-other-trucks
+        h2{margin:0}.sfa-sidebar.sfa-ad{background-image:none;background-color:#fff;padding:0;background-repeat:no-repeat;background-position:0
+        50%}.sfa-sidebar.sfa-ad a{display:block;text-decoration:none;margin:0;padding:0;padding-left:100px;padding-top:10px;padding-bottom:5px;padding-right:5px}.sfa-sidebar.sfa-ad
+        h1{font-size:24px;margin:0}.sfa-sidebar.sfa-ad h2{font-size:20px;margin:0;line-height:1.25em;margin-top:5px}.Xsfa-rewards-history-visit{padding:1px}.Xsfa-rewards-history-visit-recent{background-color:#ffffca;color:#323211}.sfa-fans{color:#dadada;font-size:13px}</style>\t<meta
+        http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\n        <meta
+        name=\"apple-mobile-web-app-capable\" content=\"yes\"/>\n        <meta name=\"apple-mobile-web-app-status-bar-style\"
+        content=\"black\"/>\n\t<meta name=\"description\" content=\"Food truck schedules
+        for Boston, Calgary, Columbus, Edmonton, Halifax, Ottawa, Toronto and Vancouver.
+        Updated daily.\">  <link rel=\"apple-touch-icon\" href=\"http://streetfoodapp.com/img/xapple-touch-icon-iphone.png.pagespeed.ic.Z3gsjzrNgd.jpg\"/>\n<link
+        rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"http://streetfoodapp.com/img/xapple-touch-icon-ipad.png.pagespeed.ic.701z1b5OuK.jpg\"/>\n<link
+        rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"http://streetfoodapp.com/img/xapple-touch-icon-iphone4.png.pagespeed.ic.eLR047f7qE.jpg\"/>
+        \ <link href='http://fonts.googleapis.com/css?family=Signika:300,600' rel='stylesheet'
+        type='text/css'>\n  <script type=\"text/javascript\">$(document).ready(function(){$('body').on('touchstart.dropdown','.dropdown-menu',function(e){e.stopPropagation();});});</script>\n\t<link
+        rel=\"canonical\" href=\"http://streetfoodapp.com/index.php\"/>\n</head>\n\n
+        \   <body>\n        <div class=\"container\">\n\n            <div class=\"sfa-navigation
+        hidden-phone\">\n                <div class=\"container\">\n\n                    <div
+        class=\"pull-right\">\n                            <a class=\"btn btn-success
+        sfa-sign-in-button\" href=\"/twitter/login?next=https://streetfoodapp.com/index.php\">Food
+        Truck Sign In</a>\n                    </div>\n\n                    <div
+        class=\"btn-group pull-left\">\n                        <a class=\"btn \"
+        href=\"/\">Street Food App</a>\n                    </div>\n\n                    <div
+        class=\"btn-group pull-left\">\n                      <a class=\"btn dropdown-toggle\"
+        data-toggle=\"dropdown\" href=\"#\">\n                        <i class=\"icon-map-marker\"></i>
+        Find a Truck\n                        <span class=\"caret\"></span>\n                      </a>\n
+        \                     <ul class=\"dropdown-menu\">\n                          <li><a
+        href=\"/boston\">Boston</a></li>\n                          <li><a href=\"/calgary\">Calgary</a></li>\n
+        \                         <li><a href=\"/edmonton\">Edmonton</a></li>\n                          <li><a
+        href=\"/halifax\">Halifax</span></a></li>\n                          <li><a
+        href=\"/ottawa\">Ottawa</span></a></li>\n                          <li><a
+        href=\"/tallahassee\">Tallahassee</a></li>\n                          <li><a
+        href=\"/toronto\">Toronto</a></li>\n                          <li><a href=\"/vancouver\">Vancouver</a></li>\n
+        \                         <li><a href=\"/victoria\">Victoria</a></li>\n                          <!--
+        li class=\"divider\"></li -->\n                          <!-- li><a href=\"/columbus\">Columbus
+        <span class=\"label sfa-label-list\">beta</span></a></li -->\n                          <li
+        class=\"divider\"></li>\n                          <li><a href=\"/go/add-city\">Add
+        your city</a></li>\n                      </ul>\n                    </div>\n\n
+        \                   <div class=\"btn-group pull-left\">\n                      <a
+        class=\"btn dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">\n                        <i
+        class=\"icon-mobile-phone\"></i> iPhone\n                        <span class=\"caret\"></span>\n
+        \                     </a>\n                      <ul class=\"dropdown-menu\">\n
+        \                         <li><a href=\"http://itunes.apple.com/app/street-food-boston/id495605911?mt=8\">Boston</a></li>\n
+        \                         <li><a href=\"http://itunes.apple.com/ca/app/street-food-calgary/id455157244?mt=8\">Calgary</a></li>\n
+        \                         <li><a href=\"http://itunes.apple.com/ca/app/street-food-edmonton/id550037983?mt=8\">Edmonton</a></li>\n
+        \                         <li><a href=\"http://itunes.apple.com/ca/app/street-food-halifax/id846676460?mt=8\">Halifax</a></li>\n
+        \                         <li><a href=\"http://itunes.apple.com/ca/app/street-food-ottawa/id604484063?mt=8\">Ottawa</a></li>\n
+        \                         <li><a href=\"http://itunes.apple.com/app/street-food-tallahassee/id830497238?mt=8\">Tallahassee</a></li>\n
+        \                         <li><a href=\"http://itunes.apple.com/ca/app/street-food-toronto/id516237990?mt=8\">Toronto</a></li>\n
+        \                         <li><a href=\"http://itunes.apple.com/ca/app/street-food-vancouver/id412748042?mt=8\">Vancouver</a></li>\n
+        \                         <li><a href=\"http://itunes.apple.com/ca/app/street-food-victoria/id861375208?mt=8\">Victoria</a></li>\n
+        \                     </ul>\n                    </div>\n                    <div
+        class=\"btn-group pull-left\">\n                      <a class=\"btn dropdown-toggle\"
+        data-toggle=\"dropdown\" href=\"#\">\n                        <i class=\"icon-mobile-phone\"></i>
+        Android \n                        <span class=\"caret\"></span>\n                      </a>\n
+        \                     <ul class=\"dropdown-menu\">\n                          <li><a
+        href=\"https://play.google.com/store/apps/details?id=com.tatlowpark.streetfood.boston\">Boston</a></li>\n
+        \                         <li><a href=\"https://play.google.com/store/apps/details?id=com.tatlowpark.streetfood.calgary\">Calgary</a></li>\n
+        \                         <li><a href=\"https://play.google.com/store/apps/details?id=com.tatlowpark.streetfood.edmonton\">Edmonton</a></li>\n
+        \                         <li><a href=\"https://play.google.com/store/apps/details?id=com.tatlowpark.streetfood.halifax\">Halifax</a></li>\n
+        \                         <li><a href=\"https://play.google.com/store/apps/details?id=com.tatlowpark.streetfood.ottawa\">Ottawa</a></li>\n
+        \                         <li><a href=\"https://play.google.com/store/apps/details?id=com.tatlowpark.streetfood.tallahassee\">Tallahassee</a></li>\n
+        \                         <li><a href=\"https://play.google.com/store/apps/details?id=com.tatlowpark.streetfood.toronto\">Toronto</a></li>\n
+        \                         <li><a href=\"https://play.google.com/store/apps/details?id=com.tatlowpark.streetfood.vancouver\">Vancouver</a></li>\n
+        \                         <li><a href=\"https://play.google.com/store/apps/details?id=com.tatlowpark.streetfood.victoria\">Victoria</a></li>\n
+        \                         <!-- li class=\"divider\"></li>\n                          <li><a
+        href=\"https://play.google.com/store/apps/details?id=com.tatlowpark.streetfood.columbus\">Columbus
+        <span class=\"label sfa-label-list\">beta</span></a></li -->\n                      </ul>\n
+        \                   </div>\n\n                    <div class=\"pull-left links\">\n
+        \                                         </div>\n\n                </div>\n
+        \           </div>\n\n            <div class=\"sfa-body\">\n\n                \n
+        \               <ul class=\"breadcrumb hidden-phone\">\n                    <li><a
+        href=\"/index.php/\">Home</a><span class=\"divider\">/</span></li>                </ul>\n
+        \               <div class=\"sfa-body-content\">\n                    \n<div
+        class=\"hero-unit sfa-homepage-hero-unit\">\n    <h1>\n        The <strong>best</strong>
+        way to find food trucks in<br/>\n        <a href=\"/boston\">Boston</a>,\n
+        \       <a href=\"/calgary\">Calgary</a>,\n        <a href=\"/edmonton\">Edmonton</a>,\n
+        \       <a href=\"/halifax\">Halifax</a>,\n        <a href=\"/ottawa\">Ottawa</a>,\n
+        \       <a href=\"/tallahassee\">Tallahassee</a>,\n        <a href=\"/toronto\">Toronto</a>,\n
+        \       <a href=\"/vancouver\">Vancouver</a> and\n        <a href=\"/victoria\">Victoria</a>\n
+        \   </h1>\n    <div class=\"sfa-homepage-subtitle\">\n        For iPhone,
+        iPad and Android\n                    <a href=\"http://twitter.com/share\"
+        class=\"twitter-share-button sfa-homepage-tweet-button\" data-count=\"horizontal\"
+        data-via=\"StreetFoodApp\">Tweet</a><script type=\"text/javascript\" src=\"http://platform.twitter.com/widgets.js\"></script>\n
+        \           </div>\n</div>\n\n<style>table.sfa-front-page-layout .sfa-sidebar{background:none;border-color:#ccc;border:none}table.sfa-front-page-layout
+        img.sfa-screenshot{margin-right:15px;max-width:inherit}table.sfa-front-page-layout
+        .sfa-app-store-button-container{margin-bottom:5px}table.sfa-front-page-layout
+        table.sfa-front-page-cities{margin-top:0px}table.sfa-front-page-layout table.sfa-front-page-cities
+        td{width:50%}table.sfa-front-page-layout .sfa-sidebar{text-align:center;margin:0px
+        10px 0px 10px}table.sfa-front-page-layout a.sfa-front-page-today-link{text-decoration:none}</style>\n<div
+        class=\"row\">\n    <div class=\"span12\">\n        <table width=\"100%\"
+        border=\"0\" cellpadding=\"0\" class=\"sfa-front-page-layout\">\n            <tr>\n
+        \               <td valign=\"top\">\n                    <img class=\"sfa-screenshot\"
+        src=\"http://streetfoodapp.com/img/screenshots/xios7.png.pagespeed.ic.acUjVWda3n.png\"
+        style=\"min-width:325px\" pagespeed_url_hash=\"3623372321\"/>\n                </td>\n
+        \               <td valign=\"center\" align=\"center\" valign=\"top\">\n                    <table
+        class=\"sfa-front-page-cities\" border=\"0\">\n                        <tr>\n
+        \                           <td>\n                                <div class=\"well
+        sfa-sidebar\">\n                                    <h1>Boston</h1>\n                                    <p><a
+        class=\"sfa-front-page-today-link\" href=\"/boston\">27 food trucks are open
+        today</a></p>\n                                    <div class=\"sfa-app-store-button-container\"><a
+        href=\"http://itunes.apple.com/app/street-food-boston/id495605911?mt=8\"><img
+        src=\"http://streetfoodapp.com/img/xappstore.png.pagespeed.ic.bLK3oycVZv.png\"
+        pagespeed_url_hash=\"3423745205\"/></a></div>\n                                    <div><a
+        href=\"https://play.google.com/store/apps/details?id=com.tatlowpark.streetfood.boston\"><img
+        src=\"http://streetfoodapp.com/img/xgoogleplay.png.pagespeed.ic.4smHTlvNrB.png\"
+        pagespeed_url_hash=\"3515903346\"/></a></div>\n                                </div>\n
+        \                           </td>\n                            <td>\n                                <div
+        class=\"well sfa-sidebar\">\n                                    <h1>Ottawa</h1>\n
+        \                                   <p><a class=\"sfa-front-page-today-link\"
+        href=\"/ottawa\">7 food trucks are open today</a></p>\n                                    <div
+        class=\"sfa-app-store-button-container\"><a href=\"http://itunes.apple.com/ca/app/street-food-ottawa/id604484063?mt=8\"><img
+        src=\"http://streetfoodapp.com/img/xappstore.png.pagespeed.ic.bLK3oycVZv.png\"
+        pagespeed_url_hash=\"3423745205\"/></a></div>\n                                    <div><a
+        href=\"https://play.google.com/store/apps/details?id=com.tatlowpark.streetfood.ottawa\"><img
+        src=\"http://streetfoodapp.com/img/xgoogleplay.png.pagespeed.ic.4smHTlvNrB.png\"
+        pagespeed_url_hash=\"3515903346\"/></a></div>\n                                </div>\n
+        \                           </td>\n                        </tr>\n                        <tr>\n
+        \                           <td>\n                                <div class=\"well
+        sfa-sidebar\">\n                                    <h1>Calgary</h1>\n                                    <p><a
+        class=\"sfa-front-page-today-link\" href=\"/calgary\">4 food trucks are open
+        today</a></p>\n                                    <div class=\"sfa-app-store-button-container\"><a
+        href=\"http://itunes.apple.com/ca/app/street-food-calgary/id455157244?mt=8\"><img
+        src=\"http://streetfoodapp.com/img/xappstore.png.pagespeed.ic.bLK3oycVZv.png\"
+        pagespeed_url_hash=\"3423745205\"/></a></div>\n                                    <div><a
+        href=\"https://play.google.com/store/apps/details?id=com.tatlowpark.streetfood.calgary\"><img
+        src=\"http://streetfoodapp.com/img/xgoogleplay.png.pagespeed.ic.4smHTlvNrB.png\"
+        pagespeed_url_hash=\"3515903346\"/></a></div>\n                                </div>\n
+        \                           </td>\n                            <td>\n                                <div
+        class=\"well sfa-sidebar\">\n                                    <h1>Toronto</h1>\n
+        \                                   <p><a class=\"sfa-front-page-today-link\"
+        href=\"/toronto\">11 food trucks are open today</a></p>\n                                    <div
+        class=\"sfa-app-store-button-container\"><a href=\"http://itunes.apple.com/ca/app/street-food-toronto/id516237990?mt=8\"><img
+        src=\"http://streetfoodapp.com/img/xappstore.png.pagespeed.ic.bLK3oycVZv.png\"
+        pagespeed_url_hash=\"3423745205\"/></a></div>\n                                    <div><a
+        href=\"https://play.google.com/store/apps/details?id=com.tatlowpark.streetfood.toronto\"><img
+        src=\"http://streetfoodapp.com/img/xgoogleplay.png.pagespeed.ic.4smHTlvNrB.png\"
+        pagespeed_url_hash=\"3515903346\"/></a></div>\n                                </div>\n
+        \                           </td>\n                        </tr>\n                        <tr>\n
+        \                           <td>\n                                <div class=\"well
+        sfa-sidebar\">\n                                    <h1>Edmonton</h1>\n                                    <p><a
+        class=\"sfa-front-page-today-link\" href=\"/edmonton\">8 food trucks are open
+        today</a></p>\n                                    <div class=\"sfa-app-store-button-container\"><a
+        href=\"http://itunes.apple.com/app/street-food-edmonton/id550037983?mt=8\"><img
+        src=\"http://streetfoodapp.com/img/xappstore.png.pagespeed.ic.bLK3oycVZv.png\"
+        pagespeed_url_hash=\"3423745205\"/></a></div>\n                                    <div><a
+        href=\"https://play.google.com/store/apps/details?id=com.tatlowpark.streetfood.edmonton\"><img
+        src=\"http://streetfoodapp.com/img/xgoogleplay.png.pagespeed.ic.4smHTlvNrB.png\"
+        pagespeed_url_hash=\"3515903346\"/></a></div>\n                                </div>\n
+        \                           </td>\n                            <td>\n                                <div
+        class=\"well sfa-sidebar\">\n                                    <h1>Vancouver</h1>\n
+        \                                   <p><a class=\"sfa-front-page-today-link\"
+        href=\"/vancouver\">21 food trucks are open today</a></p>\n                                    <div
+        class=\"sfa-app-store-button-container\"><a href=\"http://itunes.apple.com/ca/app/street-food-vancouver/id412748042?mt=8\"><img
+        src=\"http://streetfoodapp.com/img/xappstore.png.pagespeed.ic.bLK3oycVZv.png\"
+        pagespeed_url_hash=\"3423745205\"/></a></div>\n                                    <div><a
+        href=\"https://play.google.com/store/apps/details?id=com.tatlowpark.streetfood.vancouver\"><img
+        src=\"http://streetfoodapp.com/img/xgoogleplay.png.pagespeed.ic.4smHTlvNrB.png\"
+        pagespeed_url_hash=\"3515903346\"/></a></div>\n                                </div>\n
+        \                           </td>\n                        </tr>\n                        <tr>\n
+        \                           <td>\n                                <div class=\"well
+        sfa-sidebar\">\n                                    <h1>Halifax</h1>\n                                    <p><a
+        class=\"sfa-front-page-today-link\" href=\"/halifax\">3 food trucks are open
+        today</a></p>\n                                    <div class=\"sfa-app-store-button-container\"><a
+        href=\"http://appstore.com/StreetFoodHalifax\"><img src=\"http://streetfoodapp.com/img/xappstore.png.pagespeed.ic.bLK3oycVZv.png\"
+        pagespeed_url_hash=\"3423745205\"/></a></div>\n                                    <div><a
+        href=\"https://play.google.com/store/apps/details?id=com.tatlowpark.streetfood.halifax\"><img
+        src=\"http://streetfoodapp.com/img/xgoogleplay.png.pagespeed.ic.4smHTlvNrB.png\"
+        pagespeed_url_hash=\"3515903346\"/></a></div>\n                                </div>\n
+        \                           </td>\n                            <td>\n                                <div
+        class=\"well sfa-sidebar\">\n                                    <h1>Tallahassee</h1>\n
+        \                                   <p><a class=\"sfa-front-page-today-link\"
+        href=\"/tallahassee\">3 food trucks are open today</a></p>\n                                    <div
+        class=\"sfa-app-store-button-container\"><a href=\"http://appstore.com/StreetFoodTallahassee\"><img
+        src=\"http://streetfoodapp.com/img/xappstore.png.pagespeed.ic.bLK3oycVZv.png\"
+        pagespeed_url_hash=\"3423745205\"/></a></div>\n                                    <div><a
+        href=\"https://play.google.com/store/apps/details?id=com.tatlowpark.streetfood.tallahassee\"><img
+        src=\"http://streetfoodapp.com/img/xgoogleplay.png.pagespeed.ic.4smHTlvNrB.png\"
+        pagespeed_url_hash=\"3515903346\"/></a></div>\n                                </div>\n
+        \                           </td>\n                        </tr>\n                        <tr>\n
+        \                           <td>\n                                <div class=\"well
+        sfa-sidebar\">\n                                    <h1>Victoria</h1>\n                                    <p><a
+        class=\"sfa-front-page-today-link\" href=\"/victoria\">9 food trucks are open
+        today</a></p>\n                                    <div class=\"sfa-app-store-button-container\"><a
+        href=\"http://appstore.com/StreetFoodVictoria\"><img src=\"http://streetfoodapp.com/img/xappstore.png.pagespeed.ic.bLK3oycVZv.png\"
+        pagespeed_url_hash=\"3423745205\"/></a></div>\n                                    <div><a
+        href=\"https://play.google.com/store/apps/details?id=com.tatlowpark.streetfood.victoria\"><img
+        src=\"http://streetfoodapp.com/img/xgoogleplay.png.pagespeed.ic.4smHTlvNrB.png\"
+        pagespeed_url_hash=\"3515903346\"/></a></div>\n                                </div>\n
+        \                           </td>\n\t\t\t</tr>\n                    </table>\n
+        \               </td>\n            </tr>\n        </table>\n\n    </div>\n</div>\n\n<!--
+        div class=\"row\">\n    <div class=\"span3 sfa-homepage-city-screenshot-and-app-store-button\">\n
+        \       <img src=\"/img/main/index/screenshot-boston.png\" width=\"180\" height=\"395\"/>\n
+        \       <h2><a href=\"/boston\" style=\"text-decoration:none;\">Boston</a></h2>\n
+        \       <a href=\"http://itunes.apple.com/app/street-food-boston/id495605911?mt=8\"><img
+        src=\"/img/appstore.png\"/></a>\n        <a href=\"https://play.google.com/store/apps/details?id=com.tatlowpark.streetfood.boston\"><img
+        src=\"/img/googleplay.png\"/></a>\n        <a href=\"/boston\">See the food
+        trucks</a>\n    </div>\n    <div class=\"span3 sfa-homepage-city-screenshot-and-app-store-button\">\n
+        \       <img src=\"/img/main/index/screenshot-calgary.png\" width=\"180\"
+        height=\"395\"/>\n        <h2><a href=\"/calgary\" style=\"text-decoration:none;\">Calgary</a></h2>\n
+        \       <a href=\"http://itunes.apple.com/app/street-food-calgary/id455157244?mt=8\"><img
+        src=\"/img/appstore.png\"/></a>\n        <a href=\"https://play.google.com/store/apps/details?id=com.tatlowpark.streetfood.calgary\"><img
+        src=\"/img/googleplay.png\"/></a>\n        <a href=\"/calgary\">See the food
+        trucks</a>\n    </div>\n    <div class=\"span3 sfa-homepage-city-screenshot-and-app-store-button\">\n
+        \       <img src=\"/img/main/index/screenshot-toronto.png\" width=\"180\"
+        height=\"395\"/>\n        <h2><a href=\"/toronto\" style=\"text-decoration:none;\">Toronto</a></h2>\n
+        \       <a href=\"http://itunes.apple.com/app/street-food-toronto/id516237990?mt=8\"><img
+        src=\"/img/appstore.png\"/></a>\n        <a href=\"https://play.google.com/store/apps/details?id=com.tatlowpark.streetfood.toronto\"><img
+        src=\"/img/googleplay.png\"/></a>\n        <a href=\"/toronto\">See the food
+        trucks</a>\n    </div>\n    <div class=\"span3 sfa-homepage-city-screenshot-and-app-store-button\">\n
+        \       <img src=\"/img/main/index/screenshot-vancouver.png\" width=\"180\"
+        height=\"395\"/>\n        <h2><a href=\"/vancouver\" style=\"text-decoration:none;\">Vancouver</a></h2>\n
+        \       <a href=\"http://itunes.apple.com/app/street-food-vancouver/id412748042?mt=8\"><img
+        src=\"/img/appstore.png\"/></a>\n        <a href=\"https://play.google.com/store/apps/details?id=com.tatlowpark.streetfood.vancouver\"><img
+        src=\"/img/googleplay.png\"/></a>\n        <a href=\"/vancouver\">See the
+        food trucks</a>\n    </div>\n</div -->\n\n\n<!-- div style=\"text-align:center;margin-top:25px;\">\n
+        \   <a href=\"/android\"><img src=\"/img/Android_Robot_100.png\"></a>\n    <p><a
+        href=\"/android\">Looking for an Android version?</a></p>\n</div -->\n\n\n<div
+        class=\"sfa-homepage-as-seen-in\">\nAs seen on <a href=\"http://www.youtube.com/watch?v=mhZchMug6fQ\"><strong>CTV
+        Ottawa</strong></a>, <a href=\"http://www.iphoneincanada.ca/app-store/first-look-street-food-toronto-iphone-app-promo-codes/\"><strong>iPhoneInCanada.ca</strong></a>,
+        <a href=\"http://arstechnica.com/business/news/2012/04/dude-wheres-my-truck-mapping-businesses-that-move.ars\"><strong>Ars
+        Technica</strong></a>, <a href=\"http://www.globaltvbc.com/video/trending+now+street+food+app,+cute+kitten/video.html?v=2218332697#trendingnow/video\"><strong>Global
+        BC</strong></a>,\n<a href=\"http://www.flickr.com/photos/tatlowpark/5720252976/in/set-72157625590687921\"><strong>Canadian
+        House and Home Magazine</strong></a> &amp; more!\n</div>\n\n<div class=\"sfa-homepage-vanmade\">\n
+        \    <a href=\"http://www.vanmade.ca/\"><img src=\"http://streetfoodapp.com/img/xvanmade.png.pagespeed.ic.qy4bpNpi8t.jpg\"
+        pagespeed_url_hash=\"2866142581\"/></a>\n</div>\n\n\n                </div>\n
+        \           </div>\n\n        </div>\n\n        <div class=\"footer hidden-phone\">\n
+        \           <p>\n              <a href=\"/screenshots\"><i class=\"icon-camera\"></i>
+        Screenshots</a>\n            | <a href=\"/rewards\"><i class=\"icon-gift\"></i>
+        Rewards</a>\n            | <a href=\"/contact\"><i class=\"icon-envelope\"></i>
+        Contact</a>\n            | <a href=\"/api\"><i class=\"icon-wrench\"></i>
+        Developers</a>\n            | <a href=\"/widgets\"><i class=\"icon-cog\"></i>
+        Widgets</a>\n            </p>\n            Copyright &copy; 2011-2014 <a href=\"http://tatlowpark.com/\">Tatlow
+        Park Software Inc.</a>\n            | <a href=\"/terms\">Terms of Service</a>\n
+        \           | <a href=\"/privacy\">Privacy Policy</a>\n        </div>\n\n
+        \       \n    <script pagespeed_no_defer=\"\" type=\"text/javascript\">//<![CDATA[\n(function(){var
+        e=encodeURIComponent,f=window,h=document,m=\"width\",n=\"documentElement\",p=\"height\",q=\"length\",r=\"prototype\",s=\"body\",t=\"&\",u=\"&ci=\",w=\"&n=\",x=\"&rd=\",y=\",\",z=\"?\",A=\"Content-Type\",B=\"Microsoft.XMLHTTP\",C=\"Msxml2.XMLHTTP\",D=\"POST\",E=\"application/x-www-form-urlencoded\",F=\"img\",G=\"input\",H=\"load\",I=\"oh=\",J=\"on\",K=\"pagespeed_url_hash\",L=\"url=\",M=function(a,c,d){if(a.addEventListener)a.addEventListener(c,d,!1);else
+        if(a.attachEvent)a.attachEvent(J+c,d);else{var b=a[J+c];a[J+c]=function(){d.call(this);b&&b.call(this)}}};f.pagespeed=f.pagespeed||{};var
+        N=f.pagespeed,O=function(a,c,d,b,g){this.d=a;this.f=c;this.g=d;this.a=g;this.c={height:f.innerHeight||h[n].clientHeight||h[s].clientHeight,width:f.innerWidth||h[n].clientWidth||h[s].clientWidth};this.e=b;this.b={}};O[r].j=function(a){a=a.getBoundingClientRect();return{top:a.top+(void
+        0!==f.pageYOffset?f.pageYOffset:(h[n]||h[s].parentNode||h[s]).scrollTop),left:a.left+(void
+        0!==f.pageXOffset?f.pageXOffset:(h[n]||h[s].parentNode||h[s]).scrollLeft)}};O[r].i=function(a){if(0>=a.offsetWidth&&0>=a.offsetHeight)return!1;a=this.j(a);var
+        c=a.top.toString()+y+a.left.toString();if(this.b.hasOwnProperty(c))return!1;this.b[c]=!0;return
+        a.top<=this.c[p]&&a.left<=this.c[m]};O[r].l=function(){for(var a=[F,G],c=[],d={},b=0;b<a[q];++b)for(var
+        g=h.getElementsByTagName(a[b]),k=0;k<g[q];++k){var v=g[k].getAttribute(K);v&&g[k].getBoundingClientRect&&this.i(g[k])&&!(v
+        in d)&&(c.push(v),d[v]=!0)}b=!1;a=I+this.g;this.a&&(a+=w+this.a);if(0!=c[q]){a+=u+e(c[0]);for(b=1;b<c[q];++b){d=y+e(c[b]);if(131072<a[q]+d[q])break;a+=d}b=!0}this.e&&(d=x+e(JSON.stringify(this.h())),131072>=a[q]+d[q]&&(a+=d),b=!0);N.criticalImagesBeaconData=a;if(b){var
+        c=this.d,b=this.f,l;if(f.XMLHttpRequest)l=new XMLHttpRequest;else if(f.ActiveXObject)try{l=new
+        ActiveXObject(C)}catch(P){try{l=new ActiveXObject(B)}catch(Q){}}l&&(l.open(D,c+(-1==c.indexOf(z)?z:t)+L+e(b)),l.setRequestHeader(A,E),l.send(a))}};O[r].h=function(){for(var
+        a={},c=h.getElementsByTagName(F),d=0;d<c[q];++d){var b=c[d],g=b.getAttribute(K);if(\"undefined\"==typeof
+        b.naturalWidth||\"undefined\"==typeof b.naturalHeight||\"undefined\"==typeof
+        g)break;if(\"undefined\"==typeof a[b.src]&&0<b[m]&&0<b[p]&&0<b.naturalWidth&&0<b.naturalHeight||\"undefined\"!=typeof
+        a[b.src]&&b[m]>=a[b.src].n&&b[p]>=a[b.src].m)a[g]={renderedWidth:b[m],renderedHeight:b[p],originalWidth:b.naturalWidth,originalHeight:b.naturalHeight}}return
+        a};N.k=function(a,c,d,b,g){var k=new O(a,c,d,b,g);M(f,H,function(){f.setTimeout(function(){k.l()},0)})};N.criticalImagesBeaconInit=N.k;})();pagespeed.criticalImagesBeaconInit('/mod_pagespeed_beacon','http://streetfoodapp.com/index.php','WyQ3C4mRrQ',false,'YQY9n5gW-K0');\n//]]></script></body>\n</html>\n"
+    http_version: 
+  recorded_at: Mon, 30 Jun 2014 17:40:17 GMT
+recorded_with: VCR 2.9.2
