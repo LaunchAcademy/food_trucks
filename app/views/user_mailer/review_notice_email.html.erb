@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>New Review</h1>
+    <p>Someone has written a new review about your food truck,
+      <%= @food_truck.name %>.<br>
+    </p>
+    <p>
+      To see the review, please click the following link:
+      <%= link_to food_truck_url(@food_truck), food_truck_url(@food_truck) %>.
+    </p>
+  </body>
+</html>

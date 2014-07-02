@@ -1,4 +1,7 @@
 class FoodTruck < ActiveRecord::Base
+
+  scope :reviews, -> {order('cached_votes_score desc')}
+
   validates :name, :description, :category, presence: true
   validates :description, length: { minimum: 25 }
   validates :user, presence: true
@@ -9,4 +12,12 @@ class FoodTruck < ActiveRecord::Base
   belongs_to :user
   has_many :stops
   has_many :locations, through: :stops
+
+  def self.search(search)
+    if search
+      FoodTruck.where('name ILIKE ?', "%#{search}%")
+    else
+      FoodTruck.all
+    end
+  end
 end

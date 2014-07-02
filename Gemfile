@@ -46,6 +46,10 @@ gem 'sinatra', '>= 1.3.0', require: false
 
 gem 'slim'
 
+gem 'acts_as_votable', '~> 0.10.0'
+
+gem 'mandrill-api'
+
 group :development, :test do
   gem 'coveralls', require: false
   gem 'capybara'

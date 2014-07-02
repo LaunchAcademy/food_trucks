@@ -27,6 +27,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
+    acts_as_votable (0.10.0)
     addressable (2.3.6)
     arel (5.0.1.20140414130214)
     bcrypt (3.1.7)
@@ -126,6 +127,9 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    mandrill-api (1.0.52)
+      excon (>= 0.16.0, < 1.0)
+      json (>= 1.7.7, < 2.0)
     method_source (0.8.2)
     mime-types (1.25.1)
     mini_magick (3.7.0)
@@ -261,6 +265,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  acts_as_votable (~> 0.10.0)
   capybara
   carrierwave
   coffee-rails (~> 4.0.0)
@@ -274,6 +279,7 @@ DEPENDENCIES
   jquery-rails
   kaminari
   launchy
+  mandrill-api
   mini_magick
   pg
   pry-rails
