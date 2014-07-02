@@ -4,7 +4,6 @@ class FoodTrucksController < ApplicationController
   def index
     @food_trucks = FoodTruck.search(params[:search]).order(created_at: :desc)
         .page(params[:page])
-    @home_page = true
   end
 
   def show
@@ -25,7 +24,6 @@ class FoodTrucksController < ApplicationController
 
   def new
     @food_truck = FoodTruck.new
-    @food = true
   end
 
   def edit

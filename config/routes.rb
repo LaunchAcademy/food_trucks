@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
 
   resources :food_trucks do
-    resources :reviews, only: [:create, :new, :destroy, :edit, :update]
+    resources :reviews, only: [:create, :new, :destroy, :edit, :update] do
+      member do
+        post "upvote", to: "reviews#upvote"
+        post "downvote", to: "reviews#downvote"
+      end
+    end
   end
 
   scope '/admin' do
