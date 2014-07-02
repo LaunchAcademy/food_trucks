@@ -56,7 +56,6 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'pry-rails'
   gem 'factory_girl_rails'
-  gem 'factory_girl_json'
   gem 'launchy'
   gem 'dotenv-rails'
 end

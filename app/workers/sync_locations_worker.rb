@@ -2,7 +2,7 @@ class SyncLocationsWorker
   include Sidekiq::Worker
   include Sidetiq::Schedulable
 
-  recurrence { minutely }
+  recurrence { hourly }
 
   def perform
     FoodTruck.pluck(:id).each do |truck_id|
