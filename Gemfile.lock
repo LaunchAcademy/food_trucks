@@ -236,12 +236,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-
+  acts_as_votable (~> 0.10.0)
   autoprefixer-rails
   bootstrap-sass (~> 3.2.0)
-
-  acts_as_votable (~> 0.10.0)
-
   capybara
   carrierwave
   coffee-rails (~> 4.0.0)
