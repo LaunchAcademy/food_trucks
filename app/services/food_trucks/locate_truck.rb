@@ -13,7 +13,7 @@ class FoodTrucks::LocateTruck
       )
 
       stop = Stop.find_or_create_by(food_truck: food_truck,
-        time_arrive: location_info['last'], location: location)
+        time_arrive: Time.at(location_info['last']), location: location)
     end
    end
 end

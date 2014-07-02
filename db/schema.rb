@@ -64,7 +64,7 @@ ActiveRecord::Schema.define(version: 20140701223743) do
   create_table "stops", force: true do |t|
     t.integer "location_id",   null: false
     t.integer "food_truck_id", null: false
-    t.integer "time_arrive",   null: false
+    t.string  "time_arrive",   null: false
   end
 
   create_table "users", force: true do |t|

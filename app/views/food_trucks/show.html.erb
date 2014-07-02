@@ -7,7 +7,7 @@
 <% if @food_truck.stops.any? %>
   <% @food_truck.stops.each do |stop| %>
     <ul>
-      <li><%= Time.at(stop.time_arrive) %></li>
+      <li><%= stop.time_arrive %></li>
       <li><%= stop.location.name %></li>
     </ul>
   <% end %>
