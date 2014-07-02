@@ -12,8 +12,8 @@ class FoodTrucks::LocateTruck
         longitude: location_info['longitude']
       )
 
-      location.stops.create(food_truck: food_truck,
-        time_arrive: location_info['last'].to_f, location: location)
-     end
+      stop = Stop.find_or_create_by(food_truck: food_truck,
+        time_arrive: location_info['last'], location: location)
+    end
    end
 end
