@@ -6,15 +6,38 @@
     <% end %>
     </ul>
   <% end %>
-  
-  <%= f.label :name %>:
-  <%= f.text_field :name %><br>
-
-  <%= f.label :category %>:
-  <%= f.text_field :category %><br>
-
-  <%= f.label :description %>:
-  <%= f.text_area :description %><br>
-
-  <%= f.submit 'Submit' %>
+<div class="container">
+  <div class="row">
+      <div class="col-md-6 col-md-offset-4">
+        <div class="well well-sm">
+          <fieldset>
+            <legend class="text-center">Create A New Food Truck</legend>
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="name"><%= f.label :name %>:</label>
+              <div class="col-md-9">
+                <%= f.text_field :name, class: "form-control" %>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="email"><%= f.label :category %>:</label>
+              <div class="col-md-9">
+                <%= f.text_field :category, class: "form-control" %>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="message"><%= f.label :description %>:</label>
+              <div class="col-md-9">
+                <%= f.text_area :description, class: "form-control" %>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-12 text-right">
+                <%= f.submit 'Submit', class: "btn btn-primary" %>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+  </div>
+</div>
 <% end %>

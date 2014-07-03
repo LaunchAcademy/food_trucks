@@ -37,6 +37,8 @@ gem 'mini_magick'
 
 gem 'fog'
 
+gem 'devise-bootstrap-views'
+
 gem 'rest-client'
 
 gem 'sidekiq'
@@ -52,6 +54,10 @@ gem 'acts_as_votable', '~> 0.10.0'
 gem 'mandrill-api'
 
 gem 'rails_12factor', group: :production
+
+gem 'bootstrap-sass', '~> 3.2.0'
+
+gem 'autoprefixer-rails'
 
 group :development, :test do
   gem 'coveralls', require: false
