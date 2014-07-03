@@ -12,3 +12,8 @@ admin_user = User.create(email: 'admin@admin.com',
   password: 'admin123456',role: 'admin')
 
 FoodTrucks::FetchTrucks.call
+
+
+FoodTruck.find_each do |truck|
+  FoodTrucks::LocateTruck.call(truck.id)
+end
