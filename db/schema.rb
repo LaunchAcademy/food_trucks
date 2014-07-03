@@ -17,15 +17,24 @@ ActiveRecord::Schema.define(version: 20140701223743) do
   enable_extension "plpgsql"
 
   create_table "food_trucks", force: true do |t|
-    t.string   "name",        null: false
-    t.text     "description", null: false
-    t.string   "category",    null: false
+    t.string   "name",           null: false
+    t.text     "description",    null: false
+    t.string   "category",       null: false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
+    t.string   "api_identifier"
+    t.string   "twitter"
   end
 
+  add_index "food_trucks", ["api_identifier"], name: "index_food_trucks_on_api_identifier", unique: true, using: :btree
   add_index "food_trucks", ["user_id"], name: "index_food_trucks_on_user_id", using: :btree
+
+  create_table "locations", force: true do |t|
+    t.string "name",      null: false
+    t.float  "latitude",  null: false
+    t.float  "longitude", null: false
+  end
 
   create_table "reviews", force: true do |t|
     t.integer  "rating",                                null: false
@@ -51,6 +60,12 @@ ActiveRecord::Schema.define(version: 20140701223743) do
   add_index "reviews", ["cached_weighted_score"], name: "index_reviews_on_cached_weighted_score", using: :btree
   add_index "reviews", ["cached_weighted_total"], name: "index_reviews_on_cached_weighted_total", using: :btree
   add_index "reviews", ["user_id", "food_truck_id"], name: "index_reviews_on_user_id_and_food_truck_id", unique: true, using: :btree
+
+  create_table "stops", force: true do |t|
+    t.integer  "location_id",   null: false
+    t.integer  "food_truck_id", null: false
+    t.datetime "time_arrive",   null: false
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "",       null: false

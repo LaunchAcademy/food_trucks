@@ -12,7 +12,7 @@ feature 'Login and Signup', %Q(
 
     visit food_trucks_path
 
-    fill_in 'Search Trucks', with: pizza_truck.name
+    fill_in 'Search For Trucks', with: pizza_truck.name
     click_on 'Search'
 
     expect(page).to have_content pizza_truck.name
