@@ -30,7 +30,6 @@ feature 'user adds an avatar', %Q(
       fill_in 'review_body', with: review.body
     end
     click_on 'Submit'
-    save_and_open_page
     expect(page).to have_css("img[src*='fancydoge']")
   end
 end
