@@ -39,6 +39,8 @@
           method: :post %>
     </li>
     <li>Score: <%= review.cached_votes_score %></li>
+    <br>
+    <%= image_tag(review.user.avatar.url, size: "80x80") %>
     <li><%= review.rating %></li>
     <li><%= review.body %></li>
     <% if review.user == current_user %>
