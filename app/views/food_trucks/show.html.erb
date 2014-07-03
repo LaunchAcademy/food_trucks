@@ -36,7 +36,7 @@
           method: :post, class: "upvote", id:"upvote", remote: true  %>
       <%= link_to "Downvote",
           downvote_food_truck_review_path(@food_truck, review),
-          method: :post, class: "downvote", id:"downvote" %>
+          method: :post, class: "downvote", id:"downvote", remote: true %>
     </li>
     <li class="Vote_Score">Score: <%= review.cached_votes_score %></li>
     <li><%= review.rating %></li>
