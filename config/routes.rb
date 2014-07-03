@@ -11,15 +11,15 @@ Rails.application.routes.draw do
     end
   end
 
-  scope '/admin' do
+  scope :admin do
     resources :food_trucks, only: [:destroy]
+  end
+
+  authenticate :user, lambda {|u| u.admin? } do
+    mount Sidekiq::Web, at: '/sidekiq'
   end
 
   devise_for :users
 
   root to: "food_trucks#index"
-
-  if Rails.env.development?
-    mount Sidekiq::Web, at: '/sidekiq'
-  end
 end

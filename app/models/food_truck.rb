@@ -8,9 +8,9 @@ class FoodTruck < ActiveRecord::Base
   validates :api_identifier, uniqueness: true,
     if: Proc.new { |ft| ft.api_identifier.present? }
 
-  has_many :reviews
+  has_many :reviews, dependent: :destroy
   belongs_to :user
-  has_many :stops
+  has_many :stops, dependent: :destroy
   has_many :locations, through: :stops
 
   def self.search(search)
