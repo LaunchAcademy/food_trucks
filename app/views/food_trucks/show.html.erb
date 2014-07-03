@@ -24,12 +24,12 @@
     <li>
       <%= link_to "Upvote",
           upvote_food_truck_review_path(@food_truck, review),
-          method: :post %>
+          method: :post, class: "upvote", id:"upvote", remote: true  %>
       <%= link_to "Downvote",
           downvote_food_truck_review_path(@food_truck, review),
-          method: :post %>
+          method: :post, class: "downvote", id:"downvote" %>
     </li>
-    <li>Score: <%= review.cached_votes_score %></li>
+    <li class="Vote_Score">Score: <%= review.cached_votes_score %></li>
     <li><%= review.rating %></li>
     <li><%= review.body %></li>
     <% if review.user == current_user %>

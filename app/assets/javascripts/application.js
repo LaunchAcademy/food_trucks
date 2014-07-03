@@ -14,3 +14,44 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$("#upvote").on('click', function(e){
+  e.preventDefault();
+  $.ajax({
+    url: '/food_trucks/:food_truck_id/reviews/:id/upvote',
+    dataType: 'json',
+    type: "POST",
+    success: function(data){
+      //somehow update the cached_votes_score on the page
+      //would be cool to change the color of the link to indicate the state of the vote
+      alert("the score is now" + data.cached_votes_score);
+    }
+  });
+});
+
+$("downvote").on('click', function(e){
+  e.preventDefault();
+  $.ajax({
+    url: '/food_trucks/:food_truck_id/reviews/:id/downvote',
+    dataType: 'json',
+    type: "POST",
+    success: function(data){
+      alert("the score is now" + data.cached_votes_score);
+    }
+  });
+});
+
+
+function upvote()
+{
+  $.ajax({
+    url: '/food_trucks/:food_truck_id/reviews/:id/upvote',
+    dataType: 'json',
+    type: "POST",
+    success: function(data){
+      //somehow update the cached_votes_score on the page
+      //would be cool to change the color of the link to indicate the state of the vote
+      alert("the score is now" + data.cached_votes_score);
+    };
+  });
+};
