@@ -18,9 +18,18 @@ feature 'user adds an avatar', %Q(
       File.join(Rails.root, '/spec/images/fancydoge.jpg')
 
     click_on 'Sign up'
-
     expect(User.count).to eq(1)
     expect(page).to have_content 'successfully'
+
+    truck = FactoryGirl.create(:food_truck)
+    review = FactoryGirl.build(:review)
+
+    visit food_truck_path(truck)
+    within('.new_review') do
+      choose 'Fantastic'
+      fill_in 'review_body', with: review.body
+    end
+    click_on 'Submit'
     expect(page).to have_css("img[src*='fancydoge']")
   end
 end
