@@ -1,4 +1,5 @@
 class ReviewsController < ApplicationController
+  respond_to :html, :json
   def create
     @food_truck = FoodTruck.find(params[:food_truck_id])
     @review = @food_truck.reviews.build(review_params)
@@ -40,10 +41,19 @@ class ReviewsController < ApplicationController
     @review = Review.find(params[:id])
     if current_user.voted_up_on? @review
       @review.unliked_by current_user
+      puts('check')
+      puts(@review.get_upvotes)
+      puts(@review.get_downvotes)
     else
       @review.liked_by current_user
     end
-    redirect_to @food_truck
+    # redirect_to @food_truck
+
+    respond_to do |format|
+      # format.html { redirect_to @food_truck, notice: "We heard your vote!" }
+      format.json { render json: @review }
+    end
+
   end
 
   def downvote
