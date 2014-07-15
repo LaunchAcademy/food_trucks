@@ -39,6 +39,9 @@
           method: :post, class: "downvote", id:"downvote-#{review.id}" %>
     </li>
     <li id="vote_score-<%= review.id %>">Score: <%= review.get_upvotes.size - review.get_downvotes.size %></li>
+    <br>
+    <%= image_tag(review.user.avatar.url, size: "80x80") %>
+
     <li><%= review.rating %></li>
     <li><%= review.body %></li>
     <% if review.user == current_user %>

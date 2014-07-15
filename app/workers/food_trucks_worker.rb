@@ -2,7 +2,7 @@ class FoodTrucksWorker
   include Sidekiq::Worker
   include Sidetiq::Schedulable
 
-  recurrence { daily } 
+  recurrence { daily }
 
   def perform
     FoodTrucks::FetchTrucks.call()

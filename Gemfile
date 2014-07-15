@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby "2.1.2"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
@@ -52,6 +53,8 @@ gem 'acts_as_votable', '~> 0.10.0'
 
 gem 'mandrill-api'
 
+gem 'rails_12factor', group: :production
+
 gem 'bootstrap-sass', '~> 3.2.0'
 
 gem 'autoprefixer-rails'
@@ -70,7 +73,9 @@ end
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
+gem 'unicorn-rails'
+gem 'foreman'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
