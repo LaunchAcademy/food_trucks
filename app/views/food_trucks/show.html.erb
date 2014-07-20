@@ -1,13 +1,18 @@
 <h1> <%= @food_truck.name %> </h1>
 
-<p><%= @food_truck.category %></p>
-<br>
+<% unless @food_truck.category == 'Unknown' %>
+  <p>
+    <%= @food_truck.category %>
+  </p>
+<% end %>
+
 <p><%= @food_truck.description %></p>
 
+<h2>Schedule: </h2>
 <% if @food_truck.stops.any? %>
   <% @food_truck.stops.each do |stop| %>
-    <ul>
-      <li><%= stop.time_arrive %></li>
+    <ul class = 'schedule'>
+      <li><%= stop.time_arrive.strftime "%A %I:%M %p %d/%m/%Y" %></li>
       <li><%= stop.location.name %></li>
     </ul>
   <% end %>
