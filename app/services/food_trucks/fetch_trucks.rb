@@ -1,3 +1,5 @@
+require 'streetfoodr'
+
 class FoodTrucks::FetchTrucks
    API_URL = 'http://data.streetfoodapp.com/1.1/schedule/boston/'
 
@@ -19,21 +21,14 @@ class FoodTrucks::FetchTrucks
       truck.category = 'Unknown'
       truck.description = attributes['description']
       truck.name = attributes['name']
-      
+
       truck.save
     end
   end
 
   def food_trucks
-    food_truck_data['vendors'].map do |truck|
+    Streetfoodr::FoodTruck.get_city_trucks('boston')['vendors'].map do |truck|
       truck[1]
     end
-  end
-
-  private
-
-  def food_truck_data
-    response = RestClient.get(API_URL)
-    JSON.parse(response)
   end
 end
