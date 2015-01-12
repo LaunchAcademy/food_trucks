@@ -1,11 +1,12 @@
+require 'streetfoodr'
+
 class FoodTrucks::LocateTruck
 
   def self.call(food_truck_id)
-    food_truck = FoodTruck.find(food_truck_id)
-    response = RestClient.get("http://data.streetfoodapp.com/1.1/locations/boston/#{food_truck.api_identifier}")
-    location_data = JSON.parse response
+    food_truck_identifier = FoodTruck.find(food_truck_id).api_identifier
+    streetfooder_truck = Streetfoodr::FoodTruck.new(food_truck_identifier, "boston")
 
-    location_data.to_a.each do |location_info|
+    streetfooder_truck.locations.to_a.each do |location_info|
       location = Location.find_or_create_by(
         name: location_info['display'],
         latitude: location_info['latitude'],

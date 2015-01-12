@@ -1,7 +1,6 @@
 require 'streetfoodr'
 
 class FoodTrucks::FetchTrucks
-   API_URL = 'http://data.streetfoodapp.com/1.1/schedule/boston/'
 
   def self.call
     self.new.import
